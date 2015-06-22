@@ -1,11 +1,14 @@
+{% load i18n %}
 {% load staticfiles %}
 {% load pipeline %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}PyConES{% endblock title %}</title>
+    <title>{% block title %}PyConES 2015{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -27,8 +30,41 @@
 
 <body>
 
-{% block header %}{% endblock header %}
+{% block header %}
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar-sections-collapse">
+                    <span class="sr-only">{% trans "Toggle navigation" %}</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url "home" %}">PyConES 2015</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-sections-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url "home" %}">{% trans "Introducción" %}</a></li>
+                    <li><a href="{% url "blog:list" %}">{% trans "Blog" %}</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+{% endblock header %}
+
 {% block container %}{% endblock container %}
+
+{% block footer %}
+    <footer>
+        <div class="container">
+            <a href="{% url "code_of_conduct" %}">{% trans "Codigo de Conducta" %}</a>
+        </div>
+    </footer>
+{% endblock footer %}
 
 <!-- Le javascript
 ================================================== -->

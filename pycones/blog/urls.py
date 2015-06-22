@@ -10,7 +10,7 @@ from blog.views import PostsListView, PostDetailsView, PostsTagListView, PostsFe
 
 urlpatterns = patterns(
     '',
-    url(r'^$', PostsListView.as_view(), name="blog"),
+    url(r'^$', PostsListView.as_view(), name="list"),
 
     url(r'^feed/', PostsFeed(), name="blog_feed"),
     url(r'^atom/', PostsAtomFeed(), name="blog_atom"),

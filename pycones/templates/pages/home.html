@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block container %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>{% trans "¿Qué es PyConES 2015?" %}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>{% trans "Valencia, 21-22 de noviembre de 2015" %}</h2>
+                <h3>{% trans "Escuela Técnica Superior de Ingeniería Informática, Universidad Politécnica de Valencia" %}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <iframe height="400" frameborder="0" style="border:0; width: 100%" src="https://www.google.com/maps/embed/v1/place?q=ETS%20de%20Ingenieria%20Informatica%2C%20Valencia&key=AIzaSyCZTvSEn05OpP31BwP4A1bt9bROHgZ4ur4"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>{% trans "Patrocinadores" %}</h2>
+            </div>
+        </div>
+    </div>
+{% endblock container %}

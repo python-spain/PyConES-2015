@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 @pycones-blue:   rgb(57, 120, 170);
 @pycones-yellow: rgb(254, 207, 82);
@@ -9,3 +9,24 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
+@brand-primary:         #44c3bd; //darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            lighten(#44c3bd, 6.5%);
+@brand-warning:         rgb(254, 234, 103);
+@brand-danger:          rgb(254, 119, 119);
+
+// Basics of a navbar
+@navbar-height:                    100px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@headings-color: @brand-primary;
+
+@palette-color-base: #44C3BD;
+@palette-color-1: #3D9DF6;
+@palette-color-2: #46525D;
+@palette-color-3: #CA8979;
+@palette-color-4: #F6473D;
