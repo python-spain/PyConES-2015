@@ -9,16 +9,16 @@
             <h2><i class="icon-arrow"></i>{% trans "¿Qué es PyConES 2015?" %}</h2>
             <p class="loud indented">
                 {% blocktrans %}
-                <strong>PyConES</strong> es la conferencia nacional sobre Python más importante de España.
-                La PyConES celebrará su tercera edición los días <strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de
-                dos exitosas ediciones en Madrid y Zaragoza respectivamente y siguiendo el formato del evento mundial
-                <a href="http://pycon.org" target="_blank">PyCon</a>.
+                    <strong>PyConES</strong> es la conferencia nacional sobre Python más importante de España.
+                    La PyConES celebrará su tercera edición los días <strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de
+                    dos exitosas ediciones en Madrid y Zaragoza respectivamente y siguiendo el formato del evento mundial
+                    <a href="http://pycon.org" target="_blank">PyCon</a>.
                 {% endblocktrans %}
             </p>
             <p class="loud indented">
                 {% blocktrans %}
-                Concretamente, la conferencia tendrá lugar en la <strong>Universidad Politécnica de Valencia (UPV)</strong> y
-                será organizada conjuntamente por la comunidad local y la asociación Python España.
+                    Concretamente, la conferencia tendrá lugar en la <strong>Universidad Politécnica de Valencia (UPV)</strong> y
+                    será organizada conjuntamente por la comunidad local y la asociación Python España.
                 {% endblocktrans %}
             </p>
             <h3 class="indented">{% trans "Ediciones anteriores" %}:</h3>
@@ -31,8 +31,13 @@
     <div class="row">
         <div class="col-xs-12">
             <h2><i class="icon-arrow"></i> {% trans "Compra de entradas" %}</h2>
-            <p class="text-center">
+            <p class="text-center" style="margin: 35px 0 35px 0">
                 <a href="" class="btn btn-primary btn-lg">{% trans "Compra tus estradas" %}</a>
+            </p>
+            <p class="loud">
+                Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio
+                te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te
+                entregaremos el WelcomePack.
             </p>
         </div>
     </div>
@@ -41,25 +46,36 @@
     <div class="row">
         <div class="col-xs-12">
             <h2><i class="icon-arrow"></i> {% trans "Patrocinadores" %}</h2>
-            <p class="text-center">
-                <a href="{% static "pdf/pycones2015_es.pdf" %}" class="btn btn-info" target="_blank">{% trans "Folleto (PDF)" %}</a>
-            </p>
             {% sponsor_levels as levels %}
             {% for level in levels %}
                 {% sponsors level.pk as sponsors %}
                 {% if sponsors %}
-                <h3>{{ level.name }}</h3>
-                <ul class="list-inline">
-                    {% for sponsor in sponsors %}
-                    <li>
-                        <a href="{{ sponsor.external_url }}" target="_blank">
-                            <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}">
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                    <h3>{{ level.name }}</h3>
+                    <ul class="list-inline">
+                        {% for sponsor in sponsors %}
+                            <li>
+                                <a href="{{ sponsor.external_url }}" target="_blank">
+                                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}">
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 {% endif %}
             {% endfor %}
+            <hr />
+            <p class="text-center loud">
+                <a href="{% static "pdf/pycones2015_es.pdf" %}" class="btn btn-info" target="_blank">
+                    <i class="icon-download"></i> {% trans "Folleto (ES)" %}
+                </a>
+                <a href="{% static "pdf/pycones2015_en.pdf" %}" class="btn btn-info" target="_blank">
+                    <i class="icon-download"></i> {% trans "Folleto (EN)" %}
+                </a>
+            </p>
+            <p class="text-center loud">
+                <a href="mailto:patrocinadores2015@es.pycon.org" target="_blank">
+                    patrocinadores2015@es.pycon.org
+                </a>
+            </p>
         </div>
     </div>
 {% endblock content %}

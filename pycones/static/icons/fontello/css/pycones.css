@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'pycones';
-  src: url('../font/pycones.eot?54996193');
-  src: url('../font/pycones.eot?54996193#iefix') format('embedded-opentype'),
-       url('../font/pycones.woff?54996193') format('woff'),
-       url('../font/pycones.ttf?54996193') format('truetype'),
-       url('../font/pycones.svg?54996193#pycones') format('svg');
+  src: url('../font/pycones.eot?61734037');
+  src: url('../font/pycones.eot?61734037#iefix') format('embedded-opentype'),
+       url('../font/pycones.woff?61734037') format('woff'),
+       url('../font/pycones.ttf?61734037') format('truetype'),
+       url('../font/pycones.svg?61734037#pycones') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'pycones';
-    src: url('../font/pycones.svg?54996193#pycones') format('svg');
+    src: url('../font/pycones.svg?61734037#pycones') format('svg');
   }
 }
 */
@@ -55,3 +55,6 @@
 }
  
 .icon-arrow:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-github-circled:before { content: '\e802'; } /* '' */
+.icon-download:before { content: '\e803'; } /* '' */
