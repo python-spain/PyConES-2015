@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block container %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2><i class="icon-arrow"></i>{% trans "¿Cuándo?" %}</h2>
+                        <h3>{% trans "Valencia, 21-22 de noviembre de 2015" %}</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2><i class="icon-arrow"></i>{% trans "¿Dónde?" %}</h2>
+                        <h3>{% trans "Escuela Técnica Superior de Ingeniería Informática" %}</h3>
+                        <h3>{% trans "Universidad Politécnica de Valencia" %}</h3>
+                        <p>
+                            <iframe height="400" frameborder="0" style="border:0; width: 100%" src="https://www.google.com/maps/embed/v1/place?q=ETS%20de%20Ingenieria%20Informatica%2C%20Valencia&key=AIzaSyCZTvSEn05OpP31BwP4A1bt9bROHgZ4ur4"></iframe>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock container %}

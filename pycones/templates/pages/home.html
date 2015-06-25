@@ -1,29 +1,65 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% load i18n %}
+{% load sponsorship_tags %}
 
-{% block container %}
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>{% trans "¿Qué es PyConES 2015?" %}</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>{% trans "Valencia, 21-22 de noviembre de 2015" %}</h2>
-                <h3>{% trans "Escuela Técnica Superior de Ingeniería Informática, Universidad Politécnica de Valencia" %}</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <iframe height="400" frameborder="0" style="border:0; width: 100%" src="https://www.google.com/maps/embed/v1/place?q=ETS%20de%20Ingenieria%20Informatica%2C%20Valencia&key=AIzaSyCZTvSEn05OpP31BwP4A1bt9bROHgZ4ur4"></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>{% trans "Patrocinadores" %}</h2>
-            </div>
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i>{% trans "¿Qué es PyConES 2015?" %}</h2>
+            <p class="loud indented">
+                {% blocktrans %}
+                <strong>PyConES</strong> es la conferencia nacional sobre Python más importante de España.
+                La PyConES celebrará su tercera edición los días <strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de
+                dos exitosas ediciones en Madrid y Zaragoza respectivamente y siguiendo el formato del evento mundial
+                <a href="http://pycon.org" target="_blank">PyCon</a>.
+                {% endblocktrans %}
+            </p>
+            <p class="loud indented">
+                {% blocktrans %}
+                Concretamente, la conferencia tendrá lugar en la <strong>Universidad Politécnica de Valencia (UPV)</strong> y
+                será organizada conjuntamente por la comunidad local y la asociación Python España.
+                {% endblocktrans %}
+            </p>
+            <h3 class="indented">{% trans "Ediciones anteriores" %}:</h3>
+            <p class="text-center loud indented">
+                <a href="http://2013.es.pycon.org/" target="_blank">PyConES 2013</a> | <a href="http://2014.es.pycon.org/" target="_blank">PyConES 2014</a>
+            </p>
         </div>
     </div>
-{% endblock container %}
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i> {% trans "Compra de entradas" %}</h2>
+            <p class="text-center">
+                <a href="" class="btn btn-primary btn-lg">{% trans "Compra tus estradas" %}</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i> {% trans "Patrocinadores" %}</h2>
+            <p class="text-center">
+                <a href="{% static "pdf/pycones2015_es.pdf" %}" class="btn btn-info" target="_blank">{% trans "Folleto (PDF)" %}</a>
+            </p>
+            {% sponsor_levels as levels %}
+            {% for level in levels %}
+                {% sponsors level.pk as sponsors %}
+                {% if sponsors %}
+                <h3>{{ level.name }}</h3>
+                <ul class="list-inline">
+                    {% for sponsor in sponsors %}
+                    <li>
+                        <a href="{{ sponsor.external_url }}" target="_blank">
+                            <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

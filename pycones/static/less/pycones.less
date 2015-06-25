@@ -1,16 +1,47 @@
 @import "../vendor/bootstrap/less/bootstrap";
+@import "fonts";
 @import "varaibles";
 @import "landing";
 @import "navbar";
 @import "utils";
+@import "type";
 
 footer {
   margin-top: 30px;
   padding-top: 15px;
   background-color: @brand-primary;
+  border-top: 2px solid @palette-color-2;
   color: #fff;
   min-height: 100px;
+  .box-shadow(0px -2px 5px 0px rgba(0,0,0,0.2));
   a {
     color: #fff;
+  }
+}
+
+.indented {
+  margin-top: 25px;
+}
+
+.pycones-logo {
+  background: url("../img/logo-retina.png") 0 0 no-repeat;
+  width: 305px;
+  height: 212px;
+  background-size: 305px 212px;
+  @media (max-width: @screen-xs-max) {
+    width: 305px*0.75;
+    height: 212px*0.75;
+    background-size: 305px*0.75 212px*0.75;
+  }
+}
+
+.wrapper-claim {
+  width: 100%;
+  background-color: @palette-color-2;
+  border-bottom: 2px solid @brand-primary;
+  .box-shadow(0px 2px 5px 0px rgba(0,0,0,0.5));
+  .claim {
+    padding: 50px 0;
+    background: @palette-color-2 url("../img/claim.png") no-repeat center center;
   }
 }

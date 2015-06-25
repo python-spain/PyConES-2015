@@ -211,6 +211,7 @@ LOCAL_APPS = (
     'schedule',
     'speakers',
     'proposals',
+    'sponsorship',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -229,6 +230,7 @@ SUIT_CONFIG = {
         'proposals': 'icon-inbox',
         'schedule': 'icon-calendar',
         'speakers': 'icon-bullhorn',
+        'sponsorship': 'icon-briefcase',
     }
 }
 ########## END DJANGO SUIT CONFIGURATION
@@ -291,6 +293,8 @@ PIPELINE_CSS = {
     'pycones': {
         'source_filenames': (
             'less/pycones.less',
+            'icons/fontello/css/pycones.css',
+            'icons/fontello/css/animation.css',
         ),
         'output_filename': 'css/pycones.css',
         'extra_context': {

@@ -43,11 +43,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% url "home" %}">PyConES 2015</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-sections-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{% url "home" %}">{% trans "Introducción" %}</a></li>
+                <ul class="nav navbar-nav navbar">
+                    <li><a href="{% url "home" %}">{% trans "PyConES 2015" %}</a></li>
+                    <li><a href="{% url "info" %}">{% trans "Información del evento" %}</a></li>
                     <li><a href="{% url "blog:list" %}">{% trans "Blog" %}</a></li>
                 </ul>
             </div>
@@ -56,12 +56,38 @@
     </nav>
 {% endblock header %}
 
-{% block container %}{% endblock container %}
+<div class="wrapper-claim">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 claim text-center">
+                <div class="center-block pycones-logo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block container %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+    </div>
+{% endblock container %}
 
 {% block footer %}
     <footer>
         <div class="container">
-            <a href="{% url "code_of_conduct" %}">{% trans "Codigo de Conducta" %}</a>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+                    <ul class="list-unstyled">
+                        <li><i class="icon-arrow"></i> <a href="{% url "code_of_conduct" %}">{% trans "Codigo de Conducta" %}</a></li>
+                        <li><i class="icon-arrow"></i> {% trans "Contacta con nosostros" %}: <a href="mailto:contacto2015@es.pycon.org">contacto2015@es.pycon.org</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 {% endblock footer %}
