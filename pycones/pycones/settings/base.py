@@ -289,13 +289,13 @@ PIPELINE_COMPILERS = (
 PIPELINE_CSS = {
     'pycones': {
         'source_filenames': (
-            'less/pycones.less',
             'icons/fontello/css/pycones.css',
             'icons/fontello/css/animation.css',
+            'less/pycones.less',
         ),
         'output_filename': 'css/pycones.css',
         'extra_context': {
-            'media': 'screen,projection',
+            'media': 'screen,projection,print',
         },
     }
 }
