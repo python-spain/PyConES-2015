@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 09:54+0200\n"
+"POT-Creation-Date: 2015-06-26 17:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,28 +219,29 @@ msgstr ""
 msgid "file"
 msgstr ""
 
-#: templates/base.html:41
+#: templates/base.html:42
 msgid "Toggle navigation"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:50
 msgid "PyConES 2015"
 msgstr ""
 
-#: templates/base.html:50
+#: templates/base.html:51
 msgid "Información del evento"
 msgstr ""
 
-#: templates/base.html:51
+#: templates/base.html:52
 msgid "Blog"
 msgstr ""
 
-#: templates/base.html:87
-msgid "Codigo de Conducta"
+#: templates/base.html:88 templates/pages/code_of_conduct.html:8
+#: templates/pages/info.html:30
+msgid "Código de conducta"
 msgstr ""
 
-#: templates/base.html:88
-msgid "Contacta con nosostros"
+#: templates/base.html:89
+msgid "Contacta con nosotros"
 msgstr ""
 
 #: templates/landing.html:42
@@ -255,10 +256,6 @@ msgstr ""
 msgid ""
 "Estamos preparando la nueva edición de la PyConES, dentro de poco habrán más "
 "novedades."
-msgstr ""
-
-#: templates/pages/code_of_conduct.html:8 templates/pages/info.html:30
-msgid "Código de conducta"
 msgstr ""
 
 #: templates/pages/code_of_conduct.html:9
@@ -420,11 +417,11 @@ msgstr ""
 #: templates/pages/home.html:38
 msgid ""
 "\n"
-"                Con tu entrada podrás acceder los dos días de la conferencia "
-"completos. En la entrada del edificio\n"
-"                te cambiaremos tu entrada de ticketea (no olvides traerla) "
-"por tu acreditación y te\n"
-"                entregaremos el WelcomePack.\n"
+"                    Con tu entrada podrás acceder los dos días de la "
+"conferencia completos. En la entrada del edificio\n"
+"                    te cambiaremos tu entrada de ticketea (no olvides "
+"traerla) por tu acreditación y te\n"
+"                    entregaremos el WelcomePack.\n"
 "                "
 msgstr ""
 
@@ -432,11 +429,21 @@ msgstr ""
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:70
+#: templates/pages/home.html:68
+#, python-format
+msgid ""
+"\n"
+"                        ¿Quieres ser el primer patrocinador %(level_name)s? "
+"<a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank"
+"\">¡Contacta con nosotros!</a>\n"
+"                        "
+msgstr ""
+
+#: templates/pages/home.html:77
 msgid "Folleto (ES)"
 msgstr ""
 
-#: templates/pages/home.html:73
+#: templates/pages/home.html:80
 msgid "Folleto (EN)"
 msgstr ""
 

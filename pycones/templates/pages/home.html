@@ -36,9 +36,9 @@
             </p>
             <p class="loud">
                 {% blocktrans %}
-                Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio
-                te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te
-                entregaremos el WelcomePack.
+                    Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio
+                    te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te
+                    entregaremos el WelcomePack.
                 {% endblocktrans %}
             </p>
         </div>
@@ -62,6 +62,13 @@
                             </div>
                         {% endfor %}
                     </div>
+                {% else %}
+                    <h3>{{ level.name }}</h3>
+                    <p class="loud">
+                        {% blocktrans with level_name=level.name|lower %}
+                        ¿Quieres ser el primer patrocinador {{ level_name }}? <a href="mailto:patrocinadores2015@es.pycon.org" target="_blank">¡Contacta con nosotros!</a>
+                        {% endblocktrans %}
+                    </p>
                 {% endif %}
             {% endfor %}
             <hr />
