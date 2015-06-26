@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-25 13:21+0200\n"
+"POT-Creation-Date: 2015-06-26 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,18 +108,6 @@ msgid "Español"
 msgstr ""
 
 #: pycones/settings/base.py:67
-msgid "Català"
-msgstr ""
-
-#: pycones/settings/base.py:68
-msgid "Euskera"
-msgstr ""
-
-#: pycones/settings/base.py:69
-msgid "Galego"
-msgstr ""
-
-#: pycones/settings/base.py:70
 msgid "English"
 msgstr ""
 
@@ -247,11 +235,11 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "Codigo de Conducta"
 msgstr ""
 
-#: templates/base.html:87
+#: templates/base.html:88
 msgid "Contacta con nosostros"
 msgstr ""
 
@@ -269,7 +257,7 @@ msgid ""
 "novedades."
 msgstr ""
 
-#: templates/pages/code_of_conduct.html:8
+#: templates/pages/code_of_conduct.html:8 templates/pages/info.html:30
 msgid "Código de conducta"
 msgstr ""
 
@@ -395,23 +383,25 @@ msgstr ""
 #: templates/pages/home.html:11
 msgid ""
 "\n"
-"                <strong>PyConES</strong> es la conferencia nacional sobre "
-"Python más importante de España.\n"
-"                La PyConES celebrará su tercera edición los días <strong>21 "
-"y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de\n"
-"                dos exitosas ediciones en Madrid y Zaragoza respectivamente "
-"y siguiendo el formato del evento mundial\n"
-"                <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>.\n"
+"                    <strong>PyConES</strong> es la conferencia nacional "
+"sobre Python más importante de España.\n"
+"                    La PyConES celebrará su tercera edición los días "
+"<strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, "
+"después de\n"
+"                    dos exitosas ediciones en Madrid y Zaragoza "
+"respectivamente y siguiendo el formato del evento mundial\n"
+"                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</"
+"a>.\n"
 "                "
 msgstr ""
 
 #: templates/pages/home.html:19
 msgid ""
 "\n"
-"                Concretamente, la conferencia tendrá lugar en la "
+"                    Concretamente, la conferencia tendrá lugar en la "
 "<strong>Universidad Politécnica de Valencia (UPV)</strong> y\n"
-"                será organizada conjuntamente por la comunidad local y la "
-"asociación Python España.\n"
+"                    será organizada conjuntamente por la comunidad local y "
+"la asociación Python España.\n"
 "                "
 msgstr ""
 
@@ -427,12 +417,27 @@ msgstr ""
 msgid "Compra tus estradas"
 msgstr ""
 
-#: templates/pages/home.html:43
+#: templates/pages/home.html:38
+msgid ""
+"\n"
+"                Con tu entrada podrás acceder los dos días de la conferencia "
+"completos. En la entrada del edificio\n"
+"                te cambiaremos tu entrada de ticketea (no olvides traerla) "
+"por tu acreditación y te\n"
+"                entregaremos el WelcomePack.\n"
+"                "
+msgstr ""
+
+#: templates/pages/home.html:50
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:45
-msgid "Folleto (PDF)"
+#: templates/pages/home.html:70
+msgid "Folleto (ES)"
+msgstr ""
+
+#: templates/pages/home.html:73
+msgid "Folleto (EN)"
 msgstr ""
 
 #: templates/pages/info.html:12
@@ -453,4 +458,55 @@ msgstr ""
 
 #: templates/pages/info.html:21
 msgid "Universidad Politécnica de Valencia"
+msgstr ""
+
+#: templates/pages/info.html:32
+msgid ""
+"\n"
+"                            PyConES aspira a crear un ambiente libre de "
+"acosos o discriminaciones por razón de género, orientación sexual, "
+"discapacidad, aspecto físico, etnia o religión. No se tolerará "
+"discriminación alguna bajo ninguna circunstancia.\n"
+"                            "
+msgstr ""
+
+#: templates/pages/info.html:37
+msgid ""
+"\n"
+"                            Todo el contenido de la conferencia deberá "
+"ajustarse a una audiencia profesional integrada por personas procedentes de "
+"sectores diferentes. Tanto el lenguaje como las imágenes sexualmente "
+"explícitos son inapropiados en la conferencia y en las charlas.\n"
+"                            "
+msgstr ""
+
+#: templates/pages/info.html:42
+msgid ""
+"\n"
+"                            Sé amable con los demás. No insultes o humilles "
+"a otros asistentes. Compórtate de manera profesional. Recuerda que las "
+"bromas sexistas, racistas o discriminatorias están prohibidas en la "
+"PyConES.\n"
+"                            "
+msgstr ""
+
+#: templates/pages/info.html:47
+msgid ""
+"\n"
+"                            Los asistentes que incumplan estas reglas podrán "
+"-a discreción de los organizadores- ser sancionados o expulsados de la "
+"conferencia sin derecho a reembolso.\n"
+"                            "
+msgstr ""
+
+#: templates/pages/info.html:52
+msgid ""
+"\n"
+"                            Gracias por ayudarnos a hacer este evento "
+"amistoso y abierto para todos.\n"
+"                            "
+msgstr ""
+
+#: templates/pages/info.html:56
+msgid "Codigo de Conducta Completo"
 msgstr ""

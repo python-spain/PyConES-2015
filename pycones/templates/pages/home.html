@@ -35,9 +35,11 @@
                 <a href="" class="btn btn-primary btn-lg">{% trans "Compra tus estradas" %}</a>
             </p>
             <p class="loud">
+                {% blocktrans %}
                 Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio
                 te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te
                 entregaremos el WelcomePack.
+                {% endblocktrans %}
             </p>
         </div>
     </div>
@@ -51,15 +53,15 @@
                 {% sponsors level.pk as sponsors %}
                 {% if sponsors %}
                     <h3>{{ level.name }}</h3>
-                    <ul class="list-inline">
+                    <div class="row">
                         {% for sponsor in sponsors %}
-                            <li>
+                            <div class="col-xs-6 col-md-4">
                                 <a href="{{ sponsor.external_url }}" target="_blank">
-                                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}">
+                                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}" class="img-responsive">
                                 </a>
-                            </li>
+                            </div>
                         {% endfor %}
-                    </ul>
+                    </div>
                 {% endif %}
             {% endfor %}
             <hr />

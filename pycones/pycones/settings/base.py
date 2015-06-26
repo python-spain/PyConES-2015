@@ -64,9 +64,6 @@ LANGUAGE_CODE = 'es'
 ugettext = lambda s: s
 LANGUAGES = (
     ('es', ugettext(u'Español')),
-    ('ca', ugettext(u'Català')),
-    ('eu', ugettext(u'Euskera')),
-    ('ga', ugettext(u'Galego')),
     ('en', ugettext(u'English')),
 )
 LOCALE_PATHS = (
