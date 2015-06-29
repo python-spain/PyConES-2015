@@ -3,8 +3,6 @@ from __future__ import unicode_literals
 from os.path import abspath, basename, dirname, join, normpath
 from sys import path
 
-from django.utils.translation import ugettext_lazy as _
-
 
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
@@ -62,14 +60,11 @@ DATABASES = {
 TIME_ZONE = 'Europe/Madrid'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'es-es'
+LANGUAGE_CODE = 'es'
 ugettext = lambda s: s
 LANGUAGES = (
-    ('es', _(u'Español')),
-    ('ca', _(u'Català')),
-    ('eu', _(u'Euskera')),
-    ('ga', _(u'Galego')),
-    ('en', _(u'English')),
+    ('es', ugettext(u'Español')),
+    ('en', ugettext(u'English')),
 )
 LOCALE_PATHS = (
     normpath(join(SITE_ROOT, 'locale')),
@@ -174,6 +169,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -207,6 +204,11 @@ DJANGO_APPS = (
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'blog',
+    'conference',
+    'schedule',
+    'speakers',
+    'proposals',
+    'sponsorship',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -221,6 +223,11 @@ SUIT_CONFIG = {
         'auth': 'icon-lock',
         'blog': 'icon-pencil',
         'sites': 'icon-leaf',
+        'conference': 'icon-globe',
+        'proposals': 'icon-inbox',
+        'schedule': 'icon-calendar',
+        'speakers': 'icon-bullhorn',
+        'sponsorship': 'icon-briefcase',
     }
 }
 ########## END DJANGO SUIT CONFIGURATION
@@ -282,11 +289,13 @@ PIPELINE_COMPILERS = (
 PIPELINE_CSS = {
     'pycones': {
         'source_filenames': (
+            'icons/fontello/css/pycones.css',
+            'icons/fontello/css/animation.css',
             'less/pycones.less',
         ),
         'output_filename': 'css/pycones.css',
         'extra_context': {
-            'media': 'screen,projection',
+            'media': 'screen,projection,print',
         },
     }
 }
@@ -343,11 +352,13 @@ MARKUP_FIELD_TYPES = (
 INSTALLED_APPS += (
     'modeltranslation',
 )
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'es'
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('es', )
 ########## END MODELTRANSLATION CONFIGURATION
 
 # Rosetta settings
 ROSETTA_MESSAGES_SOURCE_LANGUAGE_CODE = 'es'
-ROSETTA_MESSAGES_SOURCE_LANGUAGE_NAME = u'Español'
+ROSETTA_MESSAGES_SOURCE_LANGUAGE_NAME = 'Español'
 ROSETTA_STORAGE_CLASS = 'rosetta.storage.CacheRosettaStorage'
 ROSETTA_MESSAGES_PER_PAGE = 25
 

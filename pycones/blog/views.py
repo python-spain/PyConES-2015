@@ -65,7 +65,7 @@ class PostsFeed(Feed):
 
     def item_link(self, item):
         # item_link is only needed if NewsItem has no get_absolute_url method.
-        return reverse('post', kwargs={"slug": item.slug})
+        return reverse('blog:post', kwargs={"slug": item.slug})
 
 
 class PostsAtomFeed(PostsFeed):

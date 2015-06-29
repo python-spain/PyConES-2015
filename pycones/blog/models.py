@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from __future__ import unicode_literals, absolute_import
 
 from django.conf import settings
 from django.core.urlresolvers import reverse
@@ -56,6 +56,9 @@ class Post(AbstractArticle):
             reverse("post", kwargs={'slug': self.slug}),
             _("Seguir leyendo...")
         )
+
+    def get_absolute_url(self):
+        return reverse('blog:post', kwargs={"slug": self.slug})
 
     def summary(self):
         """Split content using <!--more-->"""

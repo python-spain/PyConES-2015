@@ -9,4 +9,5 @@ from blog.models import Post
 class PostTranslationOptions(TranslationOptions):
     fields = ('title', 'slug', 'content')
 
+
 translator.register(Post, PostTranslationOptions)

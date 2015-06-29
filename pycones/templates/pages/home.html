@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% load sponsorship_tags %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i>{% trans "¿Qué es PyConES 2015?" %}</h2>
+            <p class="loud indented">
+                {% blocktrans %}
+                    <strong>PyConES</strong> es la conferencia nacional sobre Python más importante de España.
+                    La PyConES celebrará su tercera edición los días <strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de
+                    dos exitosas ediciones en Madrid y Zaragoza respectivamente y siguiendo el formato del evento mundial
+                    <a href="http://pycon.org" target="_blank">PyCon</a>.
+                {% endblocktrans %}
+            </p>
+            <p class="loud indented">
+                {% blocktrans %}
+                    Concretamente, la conferencia tendrá lugar en la <strong>Universidad Politécnica de Valencia (UPV)</strong> y
+                    será organizada conjuntamente por la comunidad local y la asociación Python España.
+                {% endblocktrans %}
+            </p>
+            <h3 class="indented">{% trans "Ediciones anteriores" %}:</h3>
+            <p class="text-center loud indented">
+                <a href="http://2013.es.pycon.org/" target="_blank">PyConES 2013</a> | <a href="http://2014.es.pycon.org/" target="_blank">PyConES 2014</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i> {% trans "Compra de entradas" %}</h2>
+            <p class="text-center" style="margin: 35px 0 35px 0">
+                <a href="https://www.ticketea.com/pycones2015/" class="btn btn-primary btn-lg" target="_blank">{% trans "Compra tus estradas" %}</a>
+            </p>
+            <p class="loud">
+                {% blocktrans %}
+                    Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio
+                    te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te
+                    entregaremos el WelcomePack.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i> {% trans "Patrocinadores" %}</h2>
+            {% sponsor_levels as levels %}
+            {% for level in levels %}
+                {% sponsors level.pk as sponsors %}
+                {% if sponsors %}
+                    <h3>{{ level.name }}</h3>
+                    <div class="row">
+                        {% for sponsor in sponsors %}
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="{{ sponsor.external_url }}" target="_blank">
+                                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}" class="img-responsive">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <h3>{{ level.name }}</h3>
+                    <p class="loud">
+                        {% blocktrans with level_name=level.name|lower %}
+                        ¿Quieres ser el primer patrocinador {{ level_name }}? <a href="mailto:patrocinadores2015@es.pycon.org" target="_blank">¡Contacta con nosotros!</a>
+                        {% endblocktrans %}
+                    </p>
+                {% endif %}
+            {% endfor %}
+            <hr />
+            <p class="text-center loud">
+                <a href="{% static "pdf/pycones2015_es.pdf" %}" class="btn btn-info" target="_blank">
+                    <i class="icon-download"></i> {% trans "Folleto (ES)" %}
+                </a>
+                <a href="{% static "pdf/pycones2015_en.pdf" %}" class="btn btn-info" target="_blank">
+                    <i class="icon-download"></i> {% trans "Folleto (EN)" %}
+                </a>
+            </p>
+            <p class="text-center loud">
+                <a href="mailto:patrocinadores2015@es.pycon.org" target="_blank">
+                    patrocinadores2015@es.pycon.org
+                </a>
+            </p>
+        </div>
+    </div>
+{% endblock content %}
