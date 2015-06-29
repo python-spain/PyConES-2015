@@ -2,14 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-26 17:19+0200\n"
-"PO-Revision-Date: 2015-06-29 10:40+0200\n"
+"PO-Revision-Date: 2015-06-29 10:58+0200\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -253,7 +252,6 @@ msgid "Valencia 2015"
 msgstr ""
 
 #: templates/landing.html:44
-#, fuzzy
 msgid ""
 "Estamos preparando la nueva edición de la PyConES, dentro de poco habrán más"
 " novedades."
@@ -443,15 +441,15 @@ msgstr ""
 
 #: templates/pages/home.html:24
 msgid "Ediciones anteriores"
-msgstr ""
+msgstr "Previous editions"
 
 #: templates/pages/home.html:33
 msgid "Compra de entradas"
-msgstr ""
+msgstr "Registration"
 
 #: templates/pages/home.html:35
 msgid "Compra tus estradas"
-msgstr ""
+msgstr "Buy your tickets"
 
 #: templates/pages/home.html:38
 msgid ""
@@ -461,10 +459,12 @@ msgid ""
 "                    entregaremos el WelcomePack.\n"
 "                "
 msgstr ""
+"\n"
+"With your ticket you will have access for the whole conference. At the entrance we will give you your acreditation (don't forget your ticketea ticket) and your Welcome Pack."
 
 #: templates/pages/home.html:50
 msgid "Patrocinadores"
-msgstr ""
+msgstr "Sponsors"
 
 #: templates/pages/home.html:68
 #, python-format
@@ -473,26 +473,28 @@ msgid ""
 "                        ¿Quieres ser el primer patrocinador %(level_name)s? <a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank\">¡Contacta con nosotros!</a>\n"
 "                        "
 msgstr ""
+"\n"
+"Do you want to be the first %(level_name)s sponsor? <a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank\">Contact with us!</a>"
 
 #: templates/pages/home.html:77
 msgid "Folleto (ES)"
-msgstr ""
+msgstr "Leaflet (ES)"
 
 #: templates/pages/home.html:80
 msgid "Folleto (EN)"
-msgstr ""
+msgstr "Leaflet (EN)"
 
 #: templates/pages/info.html:12
 msgid "¿Cuándo?"
-msgstr ""
+msgstr "When?"
 
 #: templates/pages/info.html:13
 msgid "Valencia, 21-22 de noviembre de 2015"
-msgstr ""
+msgstr "Valencia, 21st-22nd November 2015"
 
 #: templates/pages/info.html:19
 msgid "¿Dónde?"
-msgstr ""
+msgstr "Where?"
 
 #: templates/pages/info.html:20
 msgid "Escuela Técnica Superior de Ingeniería Informática"
@@ -508,6 +510,8 @@ msgid ""
 "                            PyConES aspira a crear un ambiente libre de acosos o discriminaciones por razón de género, orientación sexual, discapacidad, aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo ninguna circunstancia.\n"
 "                            "
 msgstr ""
+"\n"
+"PyConES is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form."
 
 #: templates/pages/info.html:37
 msgid ""
@@ -515,6 +519,8 @@ msgid ""
 "                            Todo el contenido de la conferencia deberá ajustarse a una audiencia profesional integrada por personas procedentes de sectores diferentes. Tanto el lenguaje como las imágenes sexualmente explícitos son inapropiados en la conferencia y en las charlas.\n"
 "                            "
 msgstr ""
+"\n"
+"All communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate for any conference venue, including talks."
 
 #: templates/pages/info.html:42
 msgid ""
@@ -522,6 +528,8 @@ msgid ""
 "                            Sé amable con los demás. No insultes o humilles a otros asistentes. Compórtate de manera profesional. Recuerda que las bromas sexistas, racistas o discriminatorias están prohibidas en la PyConES.\n"
 "                            "
 msgstr ""
+"\n"
+"Be kind to others. Do not insult or put down other attendees. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for PyCon."
 
 #: templates/pages/info.html:47
 msgid ""
@@ -529,6 +537,8 @@ msgid ""
 "                            Los asistentes que incumplan estas reglas podrán -a discreción de los organizadores- ser sancionados o expulsados de la conferencia sin derecho a reembolso.\n"
 "                            "
 msgstr ""
+"\n"
+"Attendees violating these rules may be asked to leave the conference without a refund at the sole discretion of the conference organizers."
 
 #: templates/pages/info.html:52
 msgid ""
@@ -536,7 +546,9 @@ msgid ""
 "                            Gracias por ayudarnos a hacer este evento amistoso y abierto para todos.\n"
 "                            "
 msgstr ""
+"\n"
+"Thank you for helping make this a welcoming, friendly event for all."
 
 #: templates/pages/info.html:56
 msgid "Codigo de Conducta Completo"
-msgstr ""
+msgstr "Complete Code of Conduct"
