@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-26 17:19+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-06-29 10:40+0200\n"
+"Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.6\n"
 
 #: blog/models.py:21
 msgid "Draft"
@@ -31,11 +32,11 @@ msgstr ""
 
 #: blog/models.py:57
 msgid "Seguir leyendo..."
-msgstr ""
+msgstr "Go on reading..."
 
 #: blog/views.py:48
 msgid "Web de la PyConES 2015"
-msgstr ""
+msgstr "PyConES 2015 web"
 
 #: conference/models.py:10 sponsorship/models.py:27 sponsorship/models.py:159
 msgid "name"
@@ -85,8 +86,8 @@ msgstr ""
 #: proposals/models.py:94
 msgid ""
 "Anything else you'd like the program committee to know when making their "
-"selection: your past experience, etc. This is not made public. Edit using <a "
-"href='http://daringfireball.net/projects/markdown/basics' "
+"selection: your past experience, etc. This is not made public. Edit using <a"
+" href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
 
@@ -104,7 +105,7 @@ msgstr ""
 
 #: pycones/settings/base.py:66
 msgid "Español"
-msgstr ""
+msgstr "Spanish"
 
 #: pycones/settings/base.py:67
 msgid "English"
@@ -228,7 +229,7 @@ msgstr ""
 
 #: templates/base.html:51
 msgid "Información del evento"
-msgstr ""
+msgstr "About the event"
 
 #: templates/base.html:52
 msgid "Blog"
@@ -237,11 +238,11 @@ msgstr ""
 #: templates/base.html:88 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:30
 msgid "Código de conducta"
-msgstr ""
+msgstr "Code of Conduct"
 
 #: templates/base.html:89
 msgid "Contacta con nosotros"
-msgstr ""
+msgstr "Contact"
 
 #: templates/landing.html:42
 msgid "PyConES"
@@ -252,59 +253,84 @@ msgid "Valencia 2015"
 msgstr ""
 
 #: templates/landing.html:44
+#, fuzzy
 msgid ""
-"Estamos preparando la nueva edición de la PyConES, dentro de poco habrán más "
-"novedades."
-msgstr ""
+"Estamos preparando la nueva edición de la PyConES, dentro de poco habrán más"
+" novedades."
+msgstr "We are preparing the new edition of PyConES, coming soon!"
 
 #: templates/pages/code_of_conduct.html:9
 msgid ""
 "PyConES es una conferencia hecha por la comunidad pensada para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
+"PyConES is a community conference intended for networking and collaboration "
+"in the developer community."
 
 #: templates/pages/code_of_conduct.html:10
 msgid ""
-"Valoramos la participación de cada miembro de la comunidad Python y queremos "
-"que todos los asistentes tengan una experiencia entretenida y satisfactoria. "
-"Para ello, se espera que todos los asistentes muestren respeto y cortesía "
-"hacia el resto durante la conferencia y todos los eventos relacionados con "
-"ella, estén oficialmente auspiciados por PyConES o no."
+"Valoramos la participación de cada miembro de la comunidad Python y queremos"
+" que todos los asistentes tengan una experiencia entretenida y "
+"satisfactoria. Para ello, se espera que todos los asistentes muestren "
+"respeto y cortesía hacia el resto durante la conferencia y todos los eventos"
+" relacionados con ella, estén oficialmente auspiciados por PyConES o no."
 msgstr ""
+"We value the participation of each member of the Python community and want "
+"all attendees to have an enjoyable and fulfilling experience. Accordingly, "
+"all attendees are expected to show respect and courtesy to other attendees "
+"throughout the conference and at all conference events, whether officially "
+"sponsored by PyConES or not."
 
 #: templates/pages/code_of_conduct.html:11
 msgid ""
-"En concreto, todos los delegados, disertantes, expositores y voluntarios que "
-"tomen parte en actividades relacionadas con PyConES deberán acatar el "
+"En concreto, todos los delegados, disertantes, expositores y voluntarios que"
+" tomen parte en actividades relacionadas con PyConES deberán acatar el "
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
+"To make clear what is expected, all delegates/attendees, speakers, "
+"exhibitors, organizers and volunteers at any PyConES event are required to "
+"conform to the following Code of Conduct. Organizers will enforce this code "
+"throughout the event."
 
 #: templates/pages/code_of_conduct.html:19
 msgid ""
-"Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias "
-"sexuales, discapacidades, aspecto físico, etnias y religiones; toda "
+"Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias"
+" sexuales, discapacidades, aspecto físico, etnias y religiones; toda "
 "pornografía en espacios públicos; toda intimidación deliberada, acecho o "
 "persecución; todo acoso mediante fotografías o grabaciones; toda "
 "interrupción constante de charlas u otras actividades; todo contacto físico "
 "inapropiado y toda propuesta sexual no deseada."
 msgstr ""
+"Harassment includes offensive verbal comments related to gender, sexual "
+"orientation, disability, physical appearance, body size, race, religion, "
+"sexual images in public spaces, deliberate intimidation, stalking, "
+"following, harassing photography or recording, sustained disruption of talks"
+" or other events, inappropriate physical contact, and unwelcome sexual "
+"attention."
 
 #: templates/pages/code_of_conduct.html:20
 msgid ""
-"Los participantes que sean apercibidos deberán desistir inmediatamente de su "
-"actitud."
+"Los participantes que sean apercibidos deberán desistir inmediatamente de su"
+" actitud."
 msgstr ""
+"Participants asked to stop any harassing behavior are expected to comply "
+"immediately."
 
 #: templates/pages/code_of_conduct.html:21
 msgid ""
 "Los expositores, las casetas o pabellones de patrocinadores o empresas y "
 "actividades similares también están sujetas a la política antiacoso. En "
 "particular, los expositores no deberían utilizar material o llevar a cabo "
-"actividades sexistas. El personal de las casetas (incluyendo voluntarios) no "
-"deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un "
-"ambiente sexualizado."
+"actividades sexistas. El personal de las casetas (incluyendo voluntarios) no"
+" deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía "
+"un ambiente sexualizado."
 msgstr ""
+"Exhibitors in the expo hall, sponsor or vendor booths, or similar activities"
+" are also subject to the anti-harassment policy. In particular, exhibitors "
+"should not use sexualized images, activities, or other material. Booth staff"
+" (including volunteers) should not use sexualized "
+"clothing/uniforms/costumes, or otherwise create a sexualized environment."
 
 #: templates/pages/code_of_conduct.html:22
 msgid ""
@@ -312,6 +338,9 @@ msgid ""
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
 "y las bromas ofensivas son inapropiadas en PyConES."
 msgstr ""
+"Be careful in the words that you choose. Remember that sexist, racist, and "
+"other exclusionary jokes can be offensive to those around you. Excessive "
+"swearing and offensive jokes are not appropriate for PyCon."
 
 #: templates/pages/code_of_conduct.html:23
 msgid ""
@@ -319,10 +348,13 @@ msgid ""
 "podrá tomar las medidas que considere adecuadas, como la amonestación o la "
 "expulsión sin derecho a reembolso."
 msgstr ""
+"If a participant engages in behavior that violates this code of conduct, the"
+" conference organizers may take any action they deem appropriate, including "
+"warning the offender or expulsion from the conference with no refund."
 
 #: templates/pages/code_of_conduct.html:24
 msgid "Información de contacto"
-msgstr ""
+msgstr "Contact information"
 
 #: templates/pages/code_of_conduct.html:25
 msgid ""
@@ -333,73 +365,81 @@ msgid ""
 "hablar con el personal del lugar y pedir que se te ponga en contacto con el "
 "responsable de la conferencia - Juan Luis Cano."
 msgstr ""
+"If you are being harassed, notice that someone else is being harassed, or "
+"have any other concerns, please contact a member of conference staff. "
+"Conference staff will be wearing \"Personal PyConES Staff\" t-shirts. You "
+"may also contact hotel staff and ask to be put in touch with the conference "
+"chair — Juan Luis Cano."
 
 #: templates/pages/code_of_conduct.html:26
 msgid ""
 "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
 "estas personas:"
 msgstr ""
+"If the matter is especially urgent, please call/contact any of these "
+"individuals:"
 
 #: templates/pages/code_of_conduct.html:34
 msgid ""
-"El personal de la conferencia ayudará gustosamente a los participantes a que "
-"se pongan en contacto con el personal de seguridad del lugar o la policía "
+"El personal de la conferencia ayudará gustosamente a los participantes a que"
+" se pongan en contacto con el personal de seguridad del lugar o la policía "
 "local, y proporcionará escolta o socorrerá de cualquier otra forma a las "
 "víctimas de acoso para que puedan sentirse seguras durante el desarrollo de "
 "la conferencia. Tu bienestar es una de nuestras prioridades."
 msgstr ""
+"Conference staff will be happy to help participants contact hotel/venue "
+"security or local law enforcement, provide escorts, or otherwise assist "
+"those experiencing harassment to feel safe for the duration of the "
+"conference. We value your attendance."
 
 #: templates/pages/code_of_conduct.html:35
 msgid "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
-msgstr ""
+msgstr "Thank you for helping make this a welcoming, friendly event for all."
 
 #: templates/pages/code_of_conduct.html:36
 msgid "Licencia"
-msgstr ""
+msgstr "License"
 
 #: templates/pages/code_of_conduct.html:38
 msgid ""
 "\n"
-"                        Este Código de Conducta se basa en los códigos de "
-"conducta de PyCon US 2013\n"
-"                        (<a href=\"https://us.pycon.org/2013/about/code-of-"
-"conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>) y\n"
-"                        PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/"
-"conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), "
-"y\n"
-"                        está disponible bajo una licencia Creative Commons "
-"Atribución 3.0 España.\n"
+"                        Este Código de Conducta se basa en los códigos de conducta de PyCon US 2013\n"
+"                        (<a href=\"https://us.pycon.org/2013/about/code-of-conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>) y\n"
+"                        PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), y\n"
+"                        está disponible bajo una licencia Creative Commons Atribución 3.0 España.\n"
 "                    "
 msgstr ""
+"\n"
+"This Code of Conduct is based on the ones used for PyCon US 2013\n"
+"(<a href=\"https://us.pycon.org/2013/about/code-of-conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>) and\n"
+"PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), and is available under a Creative Commons Atribución 3.0 Spain license."
 
 #: templates/pages/home.html:9
 msgid "¿Qué es PyConES 2015?"
-msgstr ""
+msgstr "What is PyConES 2015?"
 
 #: templates/pages/home.html:11
 msgid ""
 "\n"
-"                    <strong>PyConES</strong> es la conferencia nacional "
-"sobre Python más importante de España.\n"
-"                    La PyConES celebrará su tercera edición los días "
-"<strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, "
-"después de\n"
-"                    dos exitosas ediciones en Madrid y Zaragoza "
-"respectivamente y siguiendo el formato del evento mundial\n"
-"                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</"
-"a>.\n"
+"                    <strong>PyConES</strong> es la conferencia nacional sobre Python más importante de España.\n"
+"                    La PyConES celebrará su tercera edición los días <strong>21 y 22 noviembre de 2015</strong> en <strong>Valencia</strong>, después de\n"
+"                    dos exitosas ediciones en Madrid y Zaragoza respectivamente y siguiendo el formato del evento mundial\n"
+"                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>.\n"
 "                "
 msgstr ""
+"\n"
+"<strong>PyConES</strong> is the most important nation-wide Python conference in Spain.\n"
+"PyConES will celebrate its third edition on <strong>November 21st and 22nd 2015</strong> in <strong>Valencia</strong>, after two successful ones in Madrid and Zaragoza and following the path of the <a href=\"http://pycon.org\" target=\"_blank\">PyCon international event</a>."
 
 #: templates/pages/home.html:19
 msgid ""
 "\n"
-"                    Concretamente, la conferencia tendrá lugar en la "
-"<strong>Universidad Politécnica de Valencia (UPV)</strong> y\n"
-"                    será organizada conjuntamente por la comunidad local y "
-"la asociación Python España.\n"
+"                    Concretamente, la conferencia tendrá lugar en la <strong>Universidad Politécnica de Valencia (UPV)</strong> y\n"
+"                    será organizada conjuntamente por la comunidad local y la asociación Python España.\n"
 "                "
 msgstr ""
+"\n"
+"Specifically, the conference will take place at <strong>Universidad Politécnica de Valencia (UPV)</strong> and will be organized by a joint effort between the local user group and Python España association."
 
 #: templates/pages/home.html:24
 msgid "Ediciones anteriores"
@@ -416,10 +456,8 @@ msgstr ""
 #: templates/pages/home.html:38
 msgid ""
 "\n"
-"                    Con tu entrada podrás acceder los dos días de la "
-"conferencia completos. En la entrada del edificio\n"
-"                    te cambiaremos tu entrada de ticketea (no olvides "
-"traerla) por tu acreditación y te\n"
+"                    Con tu entrada podrás acceder los dos días de la conferencia completos. En la entrada del edificio\n"
+"                    te cambiaremos tu entrada de ticketea (no olvides traerla) por tu acreditación y te\n"
 "                    entregaremos el WelcomePack.\n"
 "                "
 msgstr ""
@@ -432,9 +470,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"                        ¿Quieres ser el primer patrocinador %(level_name)s? "
-"<a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank"
-"\">¡Contacta con nosotros!</a>\n"
+"                        ¿Quieres ser el primer patrocinador %(level_name)s? <a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank\">¡Contacta con nosotros!</a>\n"
 "                        "
 msgstr ""
 
@@ -469,47 +505,35 @@ msgstr ""
 #: templates/pages/info.html:32
 msgid ""
 "\n"
-"                            PyConES aspira a crear un ambiente libre de "
-"acosos o discriminaciones por razón de género, orientación sexual, "
-"discapacidad, aspecto físico, etnia o religión. No se tolerará "
-"discriminación alguna bajo ninguna circunstancia.\n"
+"                            PyConES aspira a crear un ambiente libre de acosos o discriminaciones por razón de género, orientación sexual, discapacidad, aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo ninguna circunstancia.\n"
 "                            "
 msgstr ""
 
 #: templates/pages/info.html:37
 msgid ""
 "\n"
-"                            Todo el contenido de la conferencia deberá "
-"ajustarse a una audiencia profesional integrada por personas procedentes de "
-"sectores diferentes. Tanto el lenguaje como las imágenes sexualmente "
-"explícitos son inapropiados en la conferencia y en las charlas.\n"
+"                            Todo el contenido de la conferencia deberá ajustarse a una audiencia profesional integrada por personas procedentes de sectores diferentes. Tanto el lenguaje como las imágenes sexualmente explícitos son inapropiados en la conferencia y en las charlas.\n"
 "                            "
 msgstr ""
 
 #: templates/pages/info.html:42
 msgid ""
 "\n"
-"                            Sé amable con los demás. No insultes o humilles "
-"a otros asistentes. Compórtate de manera profesional. Recuerda que las "
-"bromas sexistas, racistas o discriminatorias están prohibidas en la "
-"PyConES.\n"
+"                            Sé amable con los demás. No insultes o humilles a otros asistentes. Compórtate de manera profesional. Recuerda que las bromas sexistas, racistas o discriminatorias están prohibidas en la PyConES.\n"
 "                            "
 msgstr ""
 
 #: templates/pages/info.html:47
 msgid ""
 "\n"
-"                            Los asistentes que incumplan estas reglas podrán "
-"-a discreción de los organizadores- ser sancionados o expulsados de la "
-"conferencia sin derecho a reembolso.\n"
+"                            Los asistentes que incumplan estas reglas podrán -a discreción de los organizadores- ser sancionados o expulsados de la conferencia sin derecho a reembolso.\n"
 "                            "
 msgstr ""
 
 #: templates/pages/info.html:52
 msgid ""
 "\n"
-"                            Gracias por ayudarnos a hacer este evento "
-"amistoso y abierto para todos.\n"
+"                            Gracias por ayudarnos a hacer este evento amistoso y abierto para todos.\n"
 "                            "
 msgstr ""
 
