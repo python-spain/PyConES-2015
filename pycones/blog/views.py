@@ -48,7 +48,7 @@ class PostsFeed(Feed):
     description = _("Web de la PyConES 2015")
 
     def items(self):
-        return Post.objects.order_by('-created')
+        return Post.objects.filter(status=Post.PUBLISHED).order_by('-created')
 
     def item_title(self, item):
         return item.title
