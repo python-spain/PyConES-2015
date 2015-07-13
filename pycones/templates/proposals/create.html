@@ -1,0 +1,86 @@
+{% extends "proposals/base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1>{% trans "Envia tu propuesta para dar una charla o taller en la PyConES 2015" %}</h1>
+
+    <form method="post" action="{% url "proposals:submit" %}" class="form-horizontal">
+        {% csrf_token %}
+
+        <div class="form-group{% if form.speaker_name.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.speaker_name.label }}</label>
+            <div class="col-sm-9">
+                {{ form.speaker_name }}
+                <span class="help-text text-danger">{{ form.speaker_name.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.speaker_email.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.speaker_email.label }}</label>
+            <div class="col-sm-9">
+                {{ form.speaker_email }}
+                <span class="help-text text-danger">{{ form.speaker_email.errors }}</span>
+            </div>
+        </div>
+
+
+        <div class="form-group{% if form.kind.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.kind.label }}</label>
+            <div class="col-sm-9">
+                {{ form.kind }}
+                <span class="help-text text-danger">{{ form.kind.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.title.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.title.label }}</label>
+            <div class="col-sm-9">
+                {{ form.title }}
+                <span class="help-text text-danger">{{ form.title.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.description.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.description.label }}</label>
+            <div class="col-sm-9">
+                {{ form.description }}
+                <span class="help-text text-danger">{{ form.description.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.abstract.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.abstract.label }}</label>
+            <div class="col-sm-9">
+                {{ form.abstract }}
+                <span class="help-text text-danger">{{ form.abstract.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.additional_notes.errors %} has-error{% endif %}">
+            <label class="col-sm-3 control-label">{{ form.additional_notes.label }}</label>
+            <div class="col-sm-9">
+                {{ form.additional_notes }}
+                <span class="help-text text-danger">{{ form.additional_notes.errors }}</span>
+            </div>
+        </div>
+
+        <div class="form-group{% if form.paper.errors %} has-error{% endif %}">
+            <div class="col-sm-offset-3 col-sm-9">
+                <div class="checkbox">
+                    <label>
+                        {{ form.paper }} {% trans "¿Estarías dispuesto a preparar un paper que acompañe la charla?" %}
+                    </label>
+                </div>
+            </div>
+            <span class="help-text text-danger">{{ form.paper.errors }}</span>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button class="btn btn-primary" type="submit">{% trans "Enviar propuesta" %}</button>
+            </div>
+        </div>
+
+    </form>
+{% endblock content %}
