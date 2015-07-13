@@ -96,6 +96,9 @@ class ProposalBase(models.Model):
                     "<a href='http://daringfireball.net/projects/markdown/basics' "
                     "target='_blank'>Markdown</a>.")
     )
+
+    paper = models.BooleanField()
+
     submitted = models.DateTimeField(
         default=now,
         editable=False,
