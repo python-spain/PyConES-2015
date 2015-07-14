@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:41+0200\n"
+"POT-Creation-Date: 2015-07-14 11:04+0200\n"
 "PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.1\n"
 
 #: blog/models.py:21
@@ -69,11 +69,11 @@ msgstr "Speaker email"
 
 #: proposals/forms.py:49
 msgid ""
-"¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar tu "
-"charla indicando un breve esquema, si habrá demos en directo o qué "
-"conocimientos previos debería tener la audiencia"
+"¡El resumen es demasiado corto! Tiene que tener al menos 80 palabras. Ayuda "
+"al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
+"habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 msgstr ""
-"The outline is too short! Help the organizer team to select your proposal "
+"The outline is too short! It has to have at least 80 words. Help the organizer team to select your proposal "
 "describing a brief summary, whether there will be live demos or which "
 "previous knowledge should the audience have"
 
@@ -140,7 +140,7 @@ msgstr "Advanced"
 msgid "Nivel de la audiencia"
 msgstr "Audience level"
 
-#: proposals/models.py:165 templates/proposals/create.html:98
+#: proposals/models.py:165 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr "Are you willing to prepare an accompanying paper?"
 
@@ -693,7 +693,7 @@ msgstr ""
 msgid "Codigo de Conducta Completo"
 msgstr "Complete Code of Conduct"
 
-#: templates/proposals/base.html:13 templates/proposals/create.html:107
+#: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
 msgstr "Submit proposal"
 
@@ -714,6 +714,10 @@ msgstr ""
 "deadline is September 1st 00:00.\n"
 "                    These are the accepted formats:\n"
 "                "
+
+#: templates/proposals/create.html:18
+msgid "Más información en el blog"
+msgstr "More info on the blog"
 
 #: templates/proposals/success.html:7
 msgid "¡Gracias por tu propuesta!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:41+0200\n"
+"POT-Creation-Date: 2015-07-14 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,9 @@ msgstr ""
 
 #: proposals/forms.py:49
 msgid ""
-"¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar tu "
-"charla indicando un breve esquema, si habrá demos en directo o qué "
-"conocimientos previos debería tener la audiencia"
+"¡El resumen es demasiado corto! Tiene que tener al menos 80 palabras. Ayuda "
+"al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
+"habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 msgstr ""
 
 #: proposals/models.py:69
@@ -94,8 +94,8 @@ msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
 msgstr ""
-"Si tu propuesta es aceptada esto se hará público y se añadirá al "
-"programa. Tiene que ser un párrafo, máximo 500 caracteres."
+"Si tu propuesta es aceptada esto se hará público y se añadirá al programa. "
+"Tiene que ser un párrafo, máximo 500 caracteres."
 
 #: proposals/models.py:90
 msgid "Resumen detallado"
@@ -122,10 +122,10 @@ msgid ""
 "duration. This is not made public. Edit using <a href='http://daringfireball."
 "net/projects/markdown/basics' target='_blank'>Markdown</a>."
 msgstr ""
-"Cualquier cosa más que quieras que los organizadores conozcan cuando hagan su "
-"selección: tu experiencia, etc. Si se trata de un taller, indica la duración. "
-"Esto no se hará público. Edita usando <a href='http://daringfireball."
-"net/projects/markdown/basics' target='_blank'>Markdown</a>."
+"Cualquier cosa más que quieras que los organizadores conozcan cuando hagan "
+"su selección: tu experiencia, etc. Si se trata de un taller, indica la "
+"duración. Esto no se hará público. Edita usando <a href='http://"
+"daringfireball.net/projects/markdown/basics' target='_blank'>Markdown</a>."
 
 #: proposals/models.py:155
 msgid "Básico"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:165 templates/proposals/create.html:98
+#: proposals/models.py:165 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
@@ -605,7 +605,7 @@ msgstr ""
 msgid "Codigo de Conducta Completo"
 msgstr ""
 
-#: templates/proposals/base.html:13 templates/proposals/create.html:107
+#: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
 msgstr ""
 
@@ -620,6 +620,10 @@ msgid ""
 "plazo termina el 1 de septiembre a\n"
 "            las 00:00. Estos son los tipos aceptados:\n"
 "        "
+msgstr ""
+
+#: templates/proposals/create.html:18
+msgid "Más información en el blog"
 msgstr ""
 
 #: templates/proposals/success.html:7
