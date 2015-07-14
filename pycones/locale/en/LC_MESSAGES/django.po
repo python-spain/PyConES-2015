@@ -61,7 +61,7 @@ msgstr ""
 
 #: proposals/forms.py:19
 msgid "Nombre del ponente"
-msgstr "Spealer name"
+msgstr "Speaker name"
 
 #: proposals/forms.py:24
 msgid "Email del ponente"
