@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:41+0200\n"
+"POT-Creation-Date: 2015-07-14 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,9 @@ msgstr ""
 
 #: proposals/forms.py:49
 msgid ""
-"¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar tu "
-"charla indicando un breve esquema, si habrá demos en directo o qué "
-"conocimientos previos debería tener la audiencia"
+"¡El resumen es demasiado corto! Tiene que tener al menos 80 palabras. Ayuda "
+"al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
+"habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 msgstr ""
 
 #: proposals/models.py:69
@@ -134,7 +134,7 @@ msgstr ""
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:165 templates/proposals/create.html:98
+#: proposals/models.py:165 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
@@ -596,7 +596,7 @@ msgstr ""
 msgid "Codigo de Conducta Completo"
 msgstr ""
 
-#: templates/proposals/base.html:13 templates/proposals/create.html:107
+#: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
 msgstr ""
 
@@ -611,6 +611,10 @@ msgid ""
 "plazo termina el 1 de septiembre a\n"
 "            las 00:00. Estos son los tipos aceptados:\n"
 "        "
+msgstr ""
+
+#: templates/proposals/create.html:18
+msgid "Más información en el blog"
 msgstr ""
 
 #: templates/proposals/success.html:7
