@@ -16,3 +16,4 @@ To pull the translations done via the web interface into the project::
 To push translations done locally::
 
     $ tx push -s -r --skip  # Push all, skipping empty translations
+

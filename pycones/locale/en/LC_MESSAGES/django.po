@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:27+0200\n"
+"POT-Creation-Date: 2015-07-14 09:41+0200\n"
 "PO-Revision-Date: 2015-06-29 10:58+0200\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: proposals/forms.py:19
 msgid "Nombre del ponente"
-msgstr ""
+msgstr "Spealer name"
 
 #: proposals/forms.py:24
 msgid "Email del ponente"
-msgstr ""
+msgstr "Speaker email"
 
 #: proposals/forms.py:49
 msgid ""
@@ -78,15 +78,15 @@ msgstr ""
 
 #: proposals/models.py:80
 msgid "Tipo de propuesta"
-msgstr ""
+msgstr "Kind of proposal"
 
 #: proposals/models.py:82
 msgid "Título"
 msgstr "Title"
 
 #: proposals/models.py:84
-msgid "Breve Descripción"
-msgstr "Brief Description"
+msgid "Breve descripción"
+msgstr "Brief description"
 
 #: proposals/models.py:86
 msgid ""
@@ -96,7 +96,7 @@ msgstr ""
 
 #: proposals/models.py:90
 msgid "Resumen detallado"
-msgstr "Detailed Ab"
+msgstr "Detailed abstract"
 
 #: proposals/models.py:93
 msgid ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: proposals/models.py:98
 msgid "Notas adicionales"
-msgstr ""
+msgstr "Additional notes"
 
 #: proposals/models.py:102
 msgid ""
@@ -119,19 +119,19 @@ msgstr ""
 
 #: proposals/models.py:155
 msgid "Básico"
-msgstr ""
+msgstr "Basic"
 
 #: proposals/models.py:156
 msgid "Intermedio"
-msgstr ""
+msgstr "Intermediate"
 
 #: proposals/models.py:157
 msgid "Avanzado"
-msgstr ""
+msgstr "Advanced"
 
 #: proposals/models.py:161
 msgid "Nivel de la audiencia"
-msgstr ""
+msgstr "Audience level"
 
 #: proposals/models.py:165 templates/proposals/create.html:98
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"

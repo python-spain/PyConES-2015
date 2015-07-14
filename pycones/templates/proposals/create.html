@@ -14,6 +14,9 @@
         <li>{% trans "<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 y domingo 22." %}</li>
         <li>{% trans "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20." %}</li>
     </ul>
+    {% if more_info_link %}
+    <p><a href="{{ more_info_link }}">{% trans "Más información en el blog" %}</a></p>
+    {% endif %}
     <form method="post" action="{% url "proposals:submit" %}" class="form-horizontal" style="margin-top: 25px">
         {% csrf_token %}
 
