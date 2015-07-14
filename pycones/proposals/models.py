@@ -84,7 +84,7 @@ class ProposalBase(models.Model):
         _("Breve Descripción"),
         max_length=500,
         help_text=_("If your proposal is accepted this will be made public and printed in the "
-                    "program. Should be one paragraph, maximum 400 characters.")
+                    "program. Should be one paragraph, maximum 500 characters.")
     )
     abstract = MarkupField(
         _("Resumen detallado"),
