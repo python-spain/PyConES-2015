@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:27+0200\n"
+"POT-Creation-Date: 2015-07-05 19:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,115 +38,68 @@ msgstr ""
 msgid "Web de la PyConES 2015"
 msgstr ""
 
-#: conference/models.py:12 sponsorship/models.py:27 sponsorship/models.py:159
+#: conference/models.py:10 sponsorship/models.py:27 sponsorship/models.py:159
 msgid "name"
 msgstr ""
 
-#: conference/models.py:15
+#: conference/models.py:13
 msgid "start date"
 msgstr ""
 
-#: conference/models.py:16
+#: conference/models.py:14
 msgid "end date"
 msgstr ""
 
-#: conference/models.py:19
+#: conference/models.py:17
 msgid "section"
 msgstr ""
 
-#: conference/models.py:20
+#: conference/models.py:18
 msgid "sections"
 msgstr ""
 
-#: proposals/forms.py:19
-msgid "Nombre del ponente"
-msgstr ""
-
-#: proposals/forms.py:24
-msgid "Email del ponente"
-msgstr ""
-
-#: proposals/forms.py:49
-msgid ""
-"¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar tu "
-"charla indicando un breve esquema, si habrá demos en directo o qué "
-"conocimientos previos debería tener la audiencia"
-msgstr ""
-
-#: proposals/models.py:69
+#: proposals/models.py:66
 msgid "Name"
 msgstr ""
 
-#: proposals/models.py:80
-msgid "Tipo de propuesta"
+#: proposals/models.py:81
+msgid "Brief Description"
 msgstr ""
 
-#: proposals/models.py:82
-msgid "Título"
-msgstr ""
-
-#: proposals/models.py:84
-msgid "Breve Descripción"
-msgstr ""
-
-#: proposals/models.py:86
+#: proposals/models.py:83
 msgid ""
 "If your proposal is accepted this will be made public and printed in the "
-"program. Should be one paragraph, maximum 500 characters."
+"program. Should be one paragraph, maximum 400 characters."
 msgstr ""
 
-#: proposals/models.py:90
-msgid "Resumen detallado"
+#: proposals/models.py:87
+msgid "Detailed Abstract"
 msgstr ""
 
-#: proposals/models.py:93
+#: proposals/models.py:88
 msgid ""
 "Detailed outline. Will be made public if your proposal is accepted. Edit "
 "using <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
 
-#: proposals/models.py:98
-msgid "Notas adicionales"
-msgstr ""
-
-#: proposals/models.py:102
+#: proposals/models.py:94
 msgid ""
 "Anything else you'd like the program committee to know when making their "
-"selection: your past experience, etc. If it's a workshop, specify the "
-"duration. This is not made public. Edit using <a href='http://daringfireball."
-"net/projects/markdown/basics' target='_blank'>Markdown</a>."
+"selection: your past experience, etc. This is not made public. Edit using <a "
+"href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a>."
 msgstr ""
 
-#: proposals/models.py:155
-msgid "Básico"
-msgstr ""
-
-#: proposals/models.py:156
-msgid "Intermedio"
-msgstr ""
-
-#: proposals/models.py:157
-msgid "Avanzado"
-msgstr ""
-
-#: proposals/models.py:161
-msgid "Nivel de la audiencia"
-msgstr ""
-
-#: proposals/models.py:165 templates/proposals/create.html:98
-msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
-msgstr ""
-
-#: proposals/models.py:176
+#: proposals/models.py:148
 msgid "Pending"
 msgstr ""
 
-#: proposals/models.py:177
+#: proposals/models.py:149
 msgid "Accepted"
 msgstr ""
 
-#: proposals/models.py:178
+#: proposals/models.py:150
 msgid "Declined"
 msgstr ""
 
@@ -279,19 +232,15 @@ msgid "Información del evento"
 msgstr ""
 
 #: templates/base.html:55
-msgid "Envía tu propuesta"
-msgstr ""
-
-#: templates/base.html:56
 msgid "Blog"
 msgstr ""
 
-#: templates/base.html:92 templates/pages/code_of_conduct.html:8
+#: templates/base.html:91 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:30
 msgid "Código de conducta"
 msgstr ""
 
-#: templates/base.html:93
+#: templates/base.html:92
 msgid "Contacta con nosotros"
 msgstr ""
 
@@ -458,41 +407,14 @@ msgid "Ediciones anteriores"
 msgstr ""
 
 #: templates/pages/home.html:33
-msgid "Llamada a propuestas"
-msgstr ""
-
-#: templates/pages/home.html:35
-msgid "¡Envía tu propuesta!"
-msgstr ""
-
-#: templates/pages/home.html:38
-msgid ""
-"\n"
-"                    ¡Está abierta la llamada a propuestas para la PyConES "
-"2015! El plazo termina el 1 de septiembre a\n"
-"                    las 00:00. Estos son los tipos aceptados:\n"
-"                "
-msgstr ""
-
-#: templates/pages/home.html:44 templates/proposals/create.html:14
-msgid ""
-"<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
-"y domingo 22."
-msgstr ""
-
-#: templates/pages/home.html:45 templates/proposals/create.html:15
-msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
-msgstr ""
-
-#: templates/pages/home.html:52
 msgid "Compra de entradas"
 msgstr ""
 
-#: templates/pages/home.html:54
+#: templates/pages/home.html:35
 msgid "Compra tus entradas"
 msgstr ""
 
-#: templates/pages/home.html:57
+#: templates/pages/home.html:38
 msgid ""
 "\n"
 "                    Con tu entrada podrás acceder los dos días de la "
@@ -503,11 +425,11 @@ msgid ""
 "                "
 msgstr ""
 
-#: templates/pages/home.html:69
+#: templates/pages/home.html:50
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:93
+#: templates/pages/home.html:68
 #, python-format
 msgid ""
 "\n"
@@ -517,11 +439,11 @@ msgid ""
 "                        "
 msgstr ""
 
-#: templates/pages/home.html:102
+#: templates/pages/home.html:77
 msgid "Folleto (ES)"
 msgstr ""
 
-#: templates/pages/home.html:105
+#: templates/pages/home.html:80
 msgid "Folleto (EN)"
 msgstr ""
 
@@ -594,25 +516,4 @@ msgstr ""
 
 #: templates/pages/info.html:56
 msgid "Codigo de Conducta Completo"
-msgstr ""
-
-#: templates/proposals/base.html:13 templates/proposals/create.html:107
-msgid "Enviar propuesta"
-msgstr ""
-
-#: templates/proposals/create.html:6
-msgid "Envia tu propuesta para dar una charla o taller en la PyConES 2015"
-msgstr ""
-
-#: templates/proposals/create.html:8
-msgid ""
-"\n"
-"            ¡Está abierta la llamada a propuestas para la PyConES 2015! El "
-"plazo termina el 1 de septiembre a\n"
-"            las 00:00. Estos son los tipos aceptados:\n"
-"        "
-msgstr ""
-
-#: templates/proposals/success.html:7
-msgid "¡Gracias por tu propuesta!"
 msgstr ""
