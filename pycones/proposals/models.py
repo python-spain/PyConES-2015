@@ -100,7 +100,8 @@ class ProposalBase(models.Model):
         default="",
         default_markup_type='markdown',
         help_text=_("Anything else you'd like the program committee to know when making their "
-                    "selection: your past experience, etc. This is not made public. Edit using "
+                    "selection: your past experience, etc. If it's a workshop, specify the duration. This is not made "
+                    "public. Edit using "
                     "<a href='http://daringfireball.net/projects/markdown/basics' "
                     "target='_blank'>Markdown</a>.")
     )

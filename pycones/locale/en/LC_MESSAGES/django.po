@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 09:12+0200\n"
+"POT-Creation-Date: 2015-07-14 09:27+0200\n"
 "PO-Revision-Date: 2015-06-29 10:58+0200\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,10 @@ msgid "Email del ponente"
 msgstr ""
 
 #: proposals/forms.py:49
-msgid "El resumen tiene que tener al menos 300 palabras"
+msgid ""
+"¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar tu "
+"charla indicando un breve esquema, si habrá demos en directo o qué "
+"conocimientos previos debería tener la audiencia"
 msgstr ""
 
 #: proposals/models.py:69
@@ -79,21 +82,21 @@ msgstr ""
 
 #: proposals/models.py:82
 msgid "Título"
-msgstr ""
+msgstr "Title"
 
 #: proposals/models.py:84
 msgid "Breve Descripción"
-msgstr ""
+msgstr "Brief Description"
 
 #: proposals/models.py:86
 msgid ""
 "If your proposal is accepted this will be made public and printed in the "
-"program. Should be one paragraph, maximum 400 characters."
+"program. Should be one paragraph, maximum 500 characters."
 msgstr ""
 
 #: proposals/models.py:90
 msgid "Resumen detallado"
-msgstr ""
+msgstr "Detailed Ab"
 
 #: proposals/models.py:93
 msgid ""
@@ -109,40 +112,40 @@ msgstr ""
 #: proposals/models.py:102
 msgid ""
 "Anything else you'd like the program committee to know when making their "
-"selection: your past experience, etc. This is not made public. Edit using <a "
-"href='http://daringfireball.net/projects/markdown/basics' "
-"target='_blank'>Markdown</a>."
-msgstr ""
-
-#: proposals/models.py:154
-msgid "Básico"
+"selection: your past experience, etc. If it's a workshop, specify the "
+"duration. This is not made public. Edit using <a href='http://daringfireball."
+"net/projects/markdown/basics' target='_blank'>Markdown</a>."
 msgstr ""
 
 #: proposals/models.py:155
-msgid "Intermedio"
+msgid "Básico"
 msgstr ""
 
 #: proposals/models.py:156
+msgid "Intermedio"
+msgstr ""
+
+#: proposals/models.py:157
 msgid "Avanzado"
 msgstr ""
 
-#: proposals/models.py:160
+#: proposals/models.py:161
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:164 templates/proposals/create.html:98
+#: proposals/models.py:165 templates/proposals/create.html:98
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
-#: proposals/models.py:175
+#: proposals/models.py:176
 msgid "Pending"
 msgstr ""
 
-#: proposals/models.py:176
+#: proposals/models.py:177
 msgid "Accepted"
 msgstr ""
 
-#: proposals/models.py:177
+#: proposals/models.py:178
 msgid "Declined"
 msgstr ""
 
