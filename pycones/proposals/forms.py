@@ -46,7 +46,9 @@ class ProposalFrom(TranslationModelForm):
         abstract = self.cleaned_data["abstract"]
         words = "".join(character if character.isalnum() else " " for character in abstract).split()
         if len(words) < 100:
-            raise forms.ValidationError(_("El resumen tiene que tener al menos 300 palabras"))
+            raise forms.ValidationError(_("¡El resumen es demasiado corto! Ayuda al equipo organizador a seleccionar "
+                                          "tu charla indicando un breve esquema, si habrá demos en directo o qué "
+                                          "conocimientos previos debería tener la audiencia"))
         return abstract
 
     def get_speaker(self):
