@@ -5,17 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-14 09:41+0200\n"
-"PO-Revision-Date: 2015-06-29 10:58+0200\n"
+"PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.1\n"
 
 #: blog/models.py:21
 msgid "Draft"
@@ -71,6 +73,9 @@ msgid ""
 "charla indicando un breve esquema, si habrá demos en directo o qué "
 "conocimientos previos debería tener la audiencia"
 msgstr ""
+"The outline is too short! Help the organizer team to select your proposal "
+"describing a brief summary, whether there will be live demos or which "
+"previous knowledge should the audience have"
 
 #: proposals/models.py:69
 msgid "Name"
@@ -93,6 +98,8 @@ msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
 msgstr ""
+"If your proposal is accepted this will be made public and printed in the "
+"program. Should be one paragraph, maximum 500 characters."
 
 #: proposals/models.py:90
 msgid "Resumen detallado"
@@ -135,7 +142,7 @@ msgstr "Audience level"
 
 #: proposals/models.py:165 templates/proposals/create.html:98
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
-msgstr ""
+msgstr "Are you willing to prepare an accompanying paper?"
 
 #: proposals/models.py:176
 msgid "Pending"
@@ -279,7 +286,7 @@ msgstr "About the event"
 
 #: templates/base.html:55
 msgid "Envía tu propuesta"
-msgstr ""
+msgstr "Submit your proposal"
 
 #: templates/base.html:56
 msgid "Blog"
@@ -517,11 +524,11 @@ msgstr "Previous editions"
 
 #: templates/pages/home.html:33
 msgid "Llamada a propuestas"
-msgstr ""
+msgstr "Call for proposals"
 
 #: templates/pages/home.html:35
 msgid "¡Envía tu propuesta!"
-msgstr ""
+msgstr "Submit your proposal!"
 
 #: templates/pages/home.html:38
 msgid ""
@@ -531,16 +538,23 @@ msgid ""
 "                    las 00:00. Estos son los tipos aceptados:\n"
 "                "
 msgstr ""
+"\n"
+"                    the call for proposals for PyConES 2015 is open! The "
+"deadline is September 1st 00:00.\n"
+"                    These are the accepted formats:\n"
+"                "
 
 #: templates/pages/home.html:44 templates/proposals/create.html:14
 msgid ""
 "<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
 "y domingo 22."
 msgstr ""
+"<strong>Talk</strong>: 30 minutes + 5 minutes Q&A + 5 minutes break. "
+"Saturday 21st and Sunday 22nd."
 
 #: templates/pages/home.html:45 templates/proposals/create.html:15
 msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
-msgstr ""
+msgstr "<strong>Workshop/Tutorial</strong>: 2-3 hours. Friday 20th."
 
 #: templates/pages/home.html:52
 msgid "Compra de entradas"
@@ -681,11 +695,11 @@ msgstr "Complete Code of Conduct"
 
 #: templates/proposals/base.html:13 templates/proposals/create.html:107
 msgid "Enviar propuesta"
-msgstr ""
+msgstr "Submit proposal"
 
 #: templates/proposals/create.html:6
 msgid "Envia tu propuesta para dar una charla o taller en la PyConES 2015"
-msgstr ""
+msgstr "Submit your talk or tutorial proposal for PyConES 2015."
 
 #: templates/proposals/create.html:8
 msgid ""
@@ -695,7 +709,12 @@ msgid ""
 "            las 00:00. Estos son los tipos aceptados:\n"
 "        "
 msgstr ""
+"\n"
+"                    the call for proposals for PyConES 2015 is open! The "
+"deadline is September 1st 00:00.\n"
+"                    These are the accepted formats:\n"
+"                "
 
 #: templates/proposals/success.html:7
 msgid "¡Gracias por tu propuesta!"
-msgstr ""
+msgstr "Thanks for your proposal!"
