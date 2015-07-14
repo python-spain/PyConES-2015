@@ -15,7 +15,7 @@ admin.site.register(
         "speaker",
         "speaker_email",
         "kind",
-        # "audience_level",
+        "audience_level",
         "paper",
         "cancelled",
     ],

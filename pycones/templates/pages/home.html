@@ -30,6 +30,25 @@
 
     <div class="row">
         <div class="col-xs-12">
+            <h2><i class="icon-arrow"></i> {% trans "Llamada a propuestas" %}</h2>
+            <p class="text-center" style="margin: 35px 0 35px 0">
+                <a href="{% url "proposals:submit" %}" class="btn btn-primary btn-lg" >{% trans "¡Envía tu propuesta!" %}</a>
+            </p>
+            <p class="loud">
+                {% blocktrans %}
+                    ¡Está abierta la llamada a propuestas para la PyConES 2015! El plazo termina el 1 de septiembre a
+                    las 00:00. Estos son los tipos aceptados:
+                {% endblocktrans %}
+            </p>
+            <ul class="loud">
+                <li>{% trans "<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 y domingo 22." %}</li>
+                <li>{% trans "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20." %}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
             <h2><i class="icon-arrow"></i> {% trans "Compra de entradas" %}</h2>
             <p class="text-center" style="margin: 35px 0 35px 0">
                 <a href="https://www.ticketea.com/pycones2015/" class="btn btn-primary btn-lg" target="_blank">{% trans "Compra tus entradas" %}</a>

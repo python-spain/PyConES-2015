@@ -77,7 +77,7 @@ class ProposalBase(models.Model):
 
     objects = InheritanceManager()
 
-    kind = models.ForeignKey(ProposalKind, verbose_name=_("Tipo de popuesta"))
+    kind = models.ForeignKey(ProposalKind, verbose_name=_("Tipo de propuesta"))
 
     title = models.CharField(max_length=100, verbose_name=_("Título"))
     description = models.TextField(
@@ -149,6 +149,16 @@ reversion.register(ProposalBase)
 
 class Proposal(ProposalBase):
 
+    BASIC_LEVEL, INTERMEDIATE_LEVEL, ADVANCED_LEVEL = "basic", "intermediate", "advanced"
+    PROPOSAL_LEVELS = (
+        (BASIC_LEVEL, _("Básico")),
+        (INTERMEDIATE_LEVEL, _("Intermedio")),
+        (ADVANCED_LEVEL, _("Avanzado")),
+    )
+
+    audience_level = models.CharField(
+        verbose_name=_("Nivel de la audiencia"), choices=PROPOSAL_LEVELS, null=True, default=BASIC_LEVEL, max_length=32
+    )
     paper = models.BooleanField(
         default=False,
         help_text=_("¿Estarías dispuesto a preparar un paper que acompañe la charla?")

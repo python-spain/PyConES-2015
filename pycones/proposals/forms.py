@@ -35,11 +35,19 @@ class ProposalFrom(TranslationModelForm):
                    ]
         widgets = {
             "kind": forms.Select(attrs={"class": "form-control"}),
+            "audience_level": forms.Select(attrs={"class": "form-control"}),
             "title": forms.TextInput(attrs={"class": "form-control"}),
             "description": forms.Textarea(attrs={"class": "form-control"}),
             "abstract": MarkupTextarea(attrs={"class": "form-control"}),
             "additional_notes": MarkupTextarea(attrs={"class": "form-control"}),
         }
+
+    def clean_abstract(self):
+        abstract = self.cleaned_data["abstract"]
+        words = "".join(character if character.isalnum() else " " for character in abstract).split()
+        if len(words) < 300:
+            raise forms.ValidationError(_("El resumen tiene que tener al menos 300 palabras"))
+        return abstract
 
     def get_speaker(self):
         name = self.cleaned_data.get("speaker_name", "")
