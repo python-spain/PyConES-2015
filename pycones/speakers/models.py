@@ -6,9 +6,11 @@ import datetime
 from django.conf import settings
 from django.db import models
 from django.core.urlresolvers import reverse
+from django.utils.encoding import python_2_unicode_compatible
 from markupfield.fields import MarkupField
 
 
+@python_2_unicode_compatible
 class Speaker(models.Model):
 
     SESSION_COUNT_CHOICES = [
@@ -19,10 +21,14 @@ class Speaker(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, null=True, related_name="speaker_profile")
     name = models.CharField(max_length=100, help_text=("As you would like it to appear in the "
                                                        "conference program."))
-    biography = MarkupField(blank=True, help_text=("A little bit about you.  Edit using "
-                                                   "<a href='http://warpedvisions.org/projects/"
-                                                   "markdown-cheat-sheet/target='_blank'>"
-                                                   "Markdown</a>."))
+    biography = MarkupField(
+        blank=True,
+        default_markup_type='markdown',
+        help_text=("A little bit about you.  Edit using "
+                   "<a href='http://warpedvisions.org/projects/"
+                   "markdown-cheat-sheet/target='_blank'>"
+                   "Markdown</a>.")
+    )
     photo = models.ImageField(upload_to="speaker_photos", blank=True)
     annotation = models.TextField()  # staff only
     invite_email = models.CharField(max_length=200, unique=True, null=True, db_index=True)
@@ -35,7 +41,7 @@ class Speaker(models.Model):
     class Meta:
         ordering = ['name']
 
-    def __unicode__(self):
+    def __str__(self):
         if self.user:
             return self.name
         else:

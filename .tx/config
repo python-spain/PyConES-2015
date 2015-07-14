@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[web-pycones-2015.web]
+file_filter = pycones/locale/<lang>/LC_MESSAGES/django.po
+source_file = pycones/locale/es/LC_MESSAGES/django.po
+source_lang = es
+type = PO
+

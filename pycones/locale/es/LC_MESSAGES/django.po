@@ -94,6 +94,8 @@ msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
 msgstr ""
+"Si tu propuesta es aceptada esto se hará público y se añadirá al "
+"programa. Tiene que ser un párrafo, máximo 500 caracteres."
 
 #: proposals/models.py:90
 msgid "Resumen detallado"
@@ -105,6 +107,9 @@ msgid ""
 "using <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
+"Descripción detallada. Se hará publica si tu propuesta es aceptada. Edita "
+"usando <a href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a>."
 
 #: proposals/models.py:98
 msgid "Notas adicionales"
@@ -117,6 +122,10 @@ msgid ""
 "duration. This is not made public. Edit using <a href='http://daringfireball."
 "net/projects/markdown/basics' target='_blank'>Markdown</a>."
 msgstr ""
+"Cualquier cosa más que quieras que los organizadores conozcan cuando hagan su "
+"selección: tu experiencia, etc. Si se trata de un taller, indica la duración. "
+"Esto no se hará público. Edita usando <a href='http://daringfireball."
+"net/projects/markdown/basics' target='_blank'>Markdown</a>."
 
 #: proposals/models.py:155
 msgid "Básico"

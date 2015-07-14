@@ -6,6 +6,7 @@ import uuid
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models import Q
+from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 from django.utils.timezone import now
 
@@ -15,6 +16,7 @@ from model_utils.managers import InheritanceManager
 import reversion
 
 
+@python_2_unicode_compatible
 class ProposalSection(models.Model):
     """
     configuration of proposal submissions for a specific Section.
@@ -49,10 +51,11 @@ class ProposalSection(models.Model):
             return False
         return True
 
-    def __unicode__(self):
+    def __str__(self):
         return self.section.name
 
 
+@python_2_unicode_compatible
 class ProposalKind(models.Model):
     """
     e.g. talk vs panel vs tutorial vs poster
@@ -66,7 +69,7 @@ class ProposalKind(models.Model):
     name = models.CharField(_("Name"), max_length=100)
     slug = models.SlugField()
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -74,28 +77,35 @@ class ProposalBase(models.Model):
 
     objects = InheritanceManager()
 
-    kind = models.ForeignKey(ProposalKind)
+    kind = models.ForeignKey(ProposalKind, verbose_name=_("Tipo de propuesta"))
 
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, verbose_name=_("Título"))
     description = models.TextField(
-        _("Brief Description"),
-        max_length=400,  # @@@ need to enforce 400 in UI
+        _("Breve descripción"),
+        max_length=500,
         help_text=_("If your proposal is accepted this will be made public and printed in the "
-                    "program. Should be one paragraph, maximum 400 characters.")
+                    "program. Should be one paragraph, maximum 500 characters.")
     )
     abstract = MarkupField(
-        _("Detailed Abstract"),
+        _("Resumen detallado"),
+        default="",
+        default_markup_type='markdown',
         help_text=_("Detailed outline. Will be made public if your proposal is accepted. Edit "
                     "using <a href='http://daringfireball.net/projects/markdown/basics' "
                     "target='_blank'>Markdown</a>.")
     )
     additional_notes = MarkupField(
+        _("Notas adicionales"),
         blank=True,
+        default="",
+        default_markup_type='markdown',
         help_text=_("Anything else you'd like the program committee to know when making their "
-                    "selection: your past experience, etc. This is not made public. Edit using "
+                    "selection: your past experience, etc. If it's a workshop, specify the duration. This is not made "
+                    "public. Edit using "
                     "<a href='http://daringfireball.net/projects/markdown/basics' "
                     "target='_blank'>Markdown</a>.")
     )
+
     submitted = models.DateTimeField(
         default=now,
         editable=False,
@@ -136,6 +146,24 @@ class ProposalBase(models.Model):
 
 
 reversion.register(ProposalBase)
+
+
+class Proposal(ProposalBase):
+
+    BASIC_LEVEL, INTERMEDIATE_LEVEL, ADVANCED_LEVEL = "basic", "intermediate", "advanced"
+    PROPOSAL_LEVELS = (
+        (BASIC_LEVEL, _("Básico")),
+        (INTERMEDIATE_LEVEL, _("Intermedio")),
+        (ADVANCED_LEVEL, _("Avanzado")),
+    )
+
+    audience_level = models.CharField(
+        verbose_name=_("Nivel de la audiencia"), choices=PROPOSAL_LEVELS, null=True, default=BASIC_LEVEL, max_length=32
+    )
+    paper = models.BooleanField(
+        default=False,
+        help_text=_("¿Estarías dispuesto a preparar un paper que acompañe la charla?")
+    )
 
 
 class AdditionalSpeaker(models.Model):

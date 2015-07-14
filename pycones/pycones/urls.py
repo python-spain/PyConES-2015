@@ -14,6 +14,7 @@ urlpatterns = i18n_patterns(
     url(r'^code-of-conduct/$', TemplateView.as_view(template_name='pages/code_of_conduct.html'), name="code_of_conduct"),
     url(r'^info/$', TemplateView.as_view(template_name='pages/info.html'), name="info"),
     url(r'^blog/', include('blog.urls', namespace="blog")),
+    url(r'^proposals/', include('proposals.urls', namespace="proposals")),
     url(r'^schedule/', include('schedule.urls', namespace="schedule")),
 )
 
