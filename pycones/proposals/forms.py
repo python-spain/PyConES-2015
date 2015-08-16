@@ -59,10 +59,10 @@ class ProposalFrom(TranslationModelForm):
             speaker = Speaker.objects.get(user__email=email)
         except Speaker.DoesNotExist:
             user = User.objects.create_user(
-                username=random_string(), email=email, first_name=name, password=random_string()
+                username=random_string(), email=email, first_name=name[:30], password=random_string()
             )
             speaker = Speaker.objects.create(
-                user=user, name=name,
+                user=user, name=name[:100],
                 biography="", biography_markup_type='markdown',
                 biography_es="", biography_es_markup_type='markdown',
                 biography_en="", biography_en_markup_type='markdown'
