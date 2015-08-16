@@ -18,6 +18,7 @@ class ProposalFrom(TranslationModelForm):
     speaker_name = forms.CharField(
         label=_("Nombre del ponente"),
         required=True,
+        max_length=100,
         widget=forms.TextInput(attrs={"class": "form-control"})
     )
     speaker_email = forms.EmailField(
