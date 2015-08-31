@@ -26,7 +26,7 @@ class AbstractArticle(TimeStampedModel):
     status = models.PositiveIntegerField(choices=STATUSES, default=DRAFT)
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.TextField()
-    slug = models.SlugField(blank=True, unique=True)
+    slug = models.SlugField(blank=True, unique=True, max_length=128)
     content = MarkupField(default="", default_markup_type="markdown", blank=True)
 
     scheduled_at = models.DateTimeField(null=True, blank=True)
