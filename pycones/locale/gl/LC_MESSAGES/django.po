@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 11:04+0200\n"
+"POT-Creation-Date: 2015-09-08 23:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,11 +62,11 @@ msgstr ""
 msgid "Nombre del ponente"
 msgstr ""
 
-#: proposals/forms.py:24
+#: proposals/forms.py:25
 msgid "Email del ponente"
 msgstr ""
 
-#: proposals/forms.py:49
+#: proposals/forms.py:50
 msgid ""
 "¡El resumen es demasiado corto! Tiene que tener al menos 80 palabras. Ayuda "
 "al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
@@ -469,7 +469,7 @@ msgstr ""
 msgid ""
 "\n"
 "                    ¡Está abierta la llamada a propuestas para la PyConES "
-"2015! El plazo termina el 1 de septiembre a\n"
+"2015! El plazo termina el <del>1</del> <ins>9</ins> de septiembre a\n"
 "                    las 00:00. Estos son los tipos aceptados:\n"
 "                "
 msgstr ""
@@ -600,6 +600,10 @@ msgstr ""
 msgid "Enviar propuesta"
 msgstr ""
 
+#: templates/proposals/close.html:7
+msgid "¡La llamada a propuestas ha terminado!"
+msgstr ""
+
 #: templates/proposals/create.html:6
 msgid "Envia tu propuesta para dar una charla o taller en la PyConES 2015"
 msgstr ""
@@ -608,7 +612,7 @@ msgstr ""
 msgid ""
 "\n"
 "            ¡Está abierta la llamada a propuestas para la PyConES 2015! El "
-"plazo termina el 1 de septiembre a\n"
+"plazo termina el <del>1</del> <ins>9</ins> de septiembre a\n"
 "            las 00:00. Estos son los tipos aceptados:\n"
 "        "
 msgstr ""
