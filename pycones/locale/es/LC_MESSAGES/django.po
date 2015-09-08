@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-01 07:57+0200\n"
+"POT-Creation-Date: 2015-09-08 23:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -607,6 +607,10 @@ msgstr ""
 
 #: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
+msgstr ""
+
+#: templates/proposals/close.html:7
+msgid "¡La llamada a propuestas ha terminado!"
 msgstr ""
 
 #: templates/proposals/create.html:6

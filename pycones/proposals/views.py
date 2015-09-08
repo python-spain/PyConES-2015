@@ -20,21 +20,20 @@ class SubmitProposalView(View):
         return more_info_link
 
     def get(self, request):
-        form = ProposalFrom()
+        # form = ProposalFrom()
         data = {
-            "form": form,
-            "more_info_link": self.get_more_info_link()
+            # "form": form,
+            # "more_info_link": self.get_more_info_link()
         }
+        return render(request, "proposals/close.html", data)
 
-        return render(request, "proposals/create.html", data)
-
-    def post(self, request):
-        form = ProposalFrom(request.POST)
-        data = {
-            "form": form,
-            "more_info_link": self.get_more_info_link()
-        }
-        if form.is_valid():
-            form.save()
-            return redirect("proposals:success")
-        return render(request, "proposals/create.html", data)
+    # def post(self, request):
+    #     form = ProposalFrom(request.POST)
+    #     data = {
+    #         "form": form,
+    #         "more_info_link": self.get_more_info_link()
+    #     }
+    #     if form.is_valid():
+    #         form.save()
+    #         return redirect("proposals:success")
+    #     return render(request, "proposals/create.html", data)
