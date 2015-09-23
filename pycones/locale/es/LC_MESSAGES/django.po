@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-08 23:43+0200\n"
+"POT-Creation-Date: 2015-09-18 11:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,8 +287,8 @@ msgstr ""
 msgid "Información del evento"
 msgstr ""
 
-#: templates/base.html:55
-msgid "Envía tu propuesta"
+#: templates/base.html:55 templates/pages/home.html:52
+msgid "Keynoters Speakers"
 msgstr ""
 
 #: templates/base.html:56
@@ -466,57 +466,67 @@ msgstr ""
 msgid "Ediciones anteriores"
 msgstr ""
 
-#: templates/pages/home.html:33
-msgid "Llamada a propuestas"
+#: templates/pages/home.html:53 templates/pages/keynoters.html:10
+msgid "Yamila Moreno"
 msgstr ""
 
-#: templates/pages/home.html:35
-msgid "¡Envía tu propuesta!"
-msgstr ""
-
-#: templates/pages/home.html:38
+#: templates/pages/home.html:55
 msgid ""
-"\n"
-"                    ¡Está abierta la llamada a propuestas para la PyConES "
-"2015! El plazo termina el <del>1</del> <ins>9</ins> de septiembre a\n"
-"                    las 00:00. Estos son los tipos aceptados:\n"
+"Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
+"Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
+"cuestión de tiempo que se empezara a involucrar con Python y con el Open "
+"Source, como afición y como profesión.\n"
 "                "
 msgstr ""
 
-#: templates/pages/home.html:44 templates/proposals/create.html:14
+#: templates/pages/home.html:59 templates/pages/keynoters.html:19
 msgid ""
-"<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
-"y domingo 22."
+"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
+"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
+"España, fundó PyLadies España, y ha organizado conferencias internacional "
+"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
+"tiempo libre entrena a su drone para, algún día, dominar el mundo."
 msgstr ""
 
-#: templates/pages/home.html:45 templates/proposals/create.html:15
-msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
+#: templates/pages/home.html:61 templates/pages/keynoters.html:22
+msgid "Víctor Terrón"
 msgstr ""
 
-#: templates/pages/home.html:52
+#: templates/pages/home.html:63 templates/pages/keynoters.html:28
+msgid ""
+"Respecto a mí, escrito en primera persona porque sólo la Reina de Inglaterra "
+"y los raperos pueden hablar de sí mismos en tercera:"
+msgstr ""
+
+#: templates/pages/home.html:66 templates/pages/keynoters.html:31
+msgid ""
+"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
+"inmisericorde cruzada contra el código poco legible, los algoritmos "
+"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
+"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
+"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
+msgstr ""
+
+#: templates/pages/home.html:74
 msgid "Compra de entradas"
 msgstr ""
 
-#: templates/pages/home.html:54
+#: templates/pages/home.html:76
 msgid "Compra tus entradas"
 msgstr ""
 
-#: templates/pages/home.html:57
+#: templates/pages/home.html:79
 msgid ""
-"\n"
-"                    Con tu entrada podrás acceder los dos días de la "
-"conferencia completos. En la entrada del edificio\n"
-"                    te cambiaremos tu entrada de ticketea (no olvides "
-"traerla) por tu acreditación y te\n"
-"                    entregaremos el WelcomePack.\n"
-"                "
+"Con tu entrada podrás acceder los dos días de la conferencia completos. En "
+"la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
+"traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
 
-#: templates/pages/home.html:69
+#: templates/pages/home.html:87
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:93
+#: templates/pages/home.html:111
 #, python-format
 msgid ""
 "\n"
@@ -526,11 +536,11 @@ msgid ""
 "                        "
 msgstr ""
 
-#: templates/pages/home.html:102
+#: templates/pages/home.html:120
 msgid "Folleto (ES)"
 msgstr ""
 
-#: templates/pages/home.html:105
+#: templates/pages/home.html:123
 msgid "Folleto (EN)"
 msgstr ""
 
@@ -605,6 +615,46 @@ msgstr ""
 msgid "Codigo de Conducta Completo"
 msgstr ""
 
+#: templates/pages/keynoters.html:11
+msgid "Python y Plutarco: el poder de una historia"
+msgstr ""
+
+#: templates/pages/keynoters.html:13
+msgid ""
+"¿Qué tienen que ver las 'Vidas paralelas' de Plutarco y Python? ¿Qué podemos "
+"aprender de un tipo griego de hace 20 siglos? En esta keynote hablaré de "
+"historia de la literatura, de diversidad, de la Constitución, de un nuevo "
+"PEP y de por qué Python, y por extensión su comunidad, pueden ser un motor "
+"de cambio social muy potente."
+msgstr ""
+
+#: templates/pages/keynoters.html:16
+msgid ""
+"Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
+"Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
+"cuestión de tiempo que se empezara a involucrar con Python y con el Open "
+"Source, como afición y como profesión."
+msgstr ""
+
+#: templates/pages/keynoters.html:23
+msgid "Dijkstra es mi pastor, nada me falta"
+msgstr ""
+
+#: templates/pages/keynoters.html:25
+msgid ""
+"¡Python es genial! Lo escuchamos una y otra vez en cada PyCon, pero ¿por qué "
+"es tan increíble Python? A menudo se oyen argumentos como que \"hay "
+"librerías para todo\" o \"las listas por comprensión\", pero nada de esto es "
+"específico de Python y podría aplicarse a muchos otros lenguajes de "
+"programación. En esta charla planteo que, en el fondo y como propugnaba "
+"Edsger W.Dijkstra, todo se reduce a una cuestión de elegancia y sencillez. "
+"Y, como demostración, vamos a ver una implementación del algoritmo de "
+"Dijkstra: comenzando con el críptico código quesuele encontrarse por "
+"Internet y mejorándolo poco a poco, haciéndolo más Pythónico a cada paso "
+"hasta reducir el algoritmo a su más pura esencia. ¡Eso de encontrar el "
+"camino más corto en un grafo suena difícil, pero desde 1956 no lo es!"
+msgstr ""
+
 #: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
 msgstr ""
@@ -624,6 +674,16 @@ msgid ""
 "plazo termina el <del>1</del> <ins>9</ins> de septiembre a\n"
 "            las 00:00. Estos son los tipos aceptados:\n"
 "        "
+msgstr ""
+
+#: templates/proposals/create.html:14
+msgid ""
+"<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
+"y domingo 22."
+msgstr ""
+
+#: templates/proposals/create.html:15
+msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
 msgstr ""
 
 #: templates/proposals/create.html:18

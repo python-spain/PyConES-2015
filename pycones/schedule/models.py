@@ -9,7 +9,6 @@ from markupfield.fields import MarkupField
 from proposals.models import ProposalBase
 
 
-
 @python_2_unicode_compatible
 class Schedule(models.Model):
 

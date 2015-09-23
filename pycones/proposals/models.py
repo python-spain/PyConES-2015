@@ -73,6 +73,7 @@ class ProposalKind(models.Model):
         return self.name
 
 
+@python_2_unicode_compatible
 class ProposalBase(models.Model):
 
     objects = InheritanceManager()
@@ -114,6 +115,9 @@ class ProposalBase(models.Model):
     additional_speakers = models.ManyToManyField("speakers.Speaker", through="AdditionalSpeaker",
                                                  blank=True)
     cancelled = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "%s - %s" % (self.pk, self.title)
 
     def can_edit(self):
         return True

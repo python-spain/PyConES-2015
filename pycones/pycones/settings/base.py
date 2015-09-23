@@ -64,6 +64,9 @@ LANGUAGE_CODE = 'es'
 ugettext = lambda s: s
 LANGUAGES = (
     ('es', ugettext(u'Español')),
+    ('ca', ugettext(u'Catalán')),
+    ('gl', ugettext(u'Gallego')),
+    ('eu', ugettext(u'Euskera')),
     ('en', ugettext(u'English')),
 )
 LOCALE_PATHS = (
@@ -146,6 +149,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
+    'schedule.context_processors.schedule_active',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
@@ -353,7 +357,7 @@ INSTALLED_APPS += (
     'modeltranslation',
 )
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'es'
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('es', )
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('es', 'en')
 ########## END MODELTRANSLATION CONFIGURATION
 
 # Rosetta settings
