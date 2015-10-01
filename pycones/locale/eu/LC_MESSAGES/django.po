@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 11:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-01 11:02+0200\n"
+"PO-Revision-Date: 2015-07-09 10:31+0000\n"
+"Last-Translator: Aitzol Naberan <anaberan@codesyntax.com>\n"
+"Language-Team: Basque (http://www.transifex.com/python-espana/web-"
+"pycones-2015/language/eu/)\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,43 +20,43 @@ msgstr ""
 
 #: blog/models.py:21
 msgid "Draft"
-msgstr ""
+msgstr "Zirriborroa"
 
 #: blog/models.py:22
 msgid "Scheduled"
-msgstr ""
+msgstr "Programatuta"
 
 #: blog/models.py:23
 msgid "Published"
-msgstr ""
+msgstr "Argitaratuta"
 
 #: blog/models.py:57
 msgid "Seguir leyendo..."
-msgstr ""
+msgstr "Jarraitu irakurtzen..."
 
 #: blog/views.py:48
 msgid "Web de la PyConES 2015"
-msgstr ""
+msgstr "PyConES 2015 webgunea"
 
 #: conference/models.py:12 sponsorship/models.py:27 sponsorship/models.py:159
 msgid "name"
-msgstr ""
+msgstr "izena"
 
 #: conference/models.py:15
 msgid "start date"
-msgstr ""
+msgstr "hasiera data"
 
 #: conference/models.py:16
 msgid "end date"
-msgstr ""
+msgstr "azken eguna"
 
 #: conference/models.py:19
 msgid "section"
-msgstr ""
+msgstr "sekzioa"
 
 #: conference/models.py:20
 msgid "sections"
-msgstr ""
+msgstr "sekzioak"
 
 #: proposals/forms.py:19
 msgid "Nombre del ponente"
@@ -75,100 +75,121 @@ msgstr ""
 
 #: proposals/models.py:69
 msgid "Name"
-msgstr ""
+msgstr "Izena"
 
-#: proposals/models.py:80
+#: proposals/models.py:81
 msgid "Tipo de propuesta"
 msgstr ""
 
-#: proposals/models.py:82
+#: proposals/models.py:83
 msgid "Título"
 msgstr ""
 
-#: proposals/models.py:84
+#: proposals/models.py:85
 msgid "Breve descripción"
-msgstr ""
+msgstr "Azalpen laburra"
 
-#: proposals/models.py:86
+#: proposals/models.py:87
 msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
 msgstr ""
+"Zure proposamena onartzen badugu, publikatu egingo dugu eta programan "
+"argitaratuko dugu. Paragrafo bakarra, eta gehienez 500 karaktere."
 
-#: proposals/models.py:90
+#: proposals/models.py:91
 msgid "Resumen detallado"
 msgstr ""
 
-#: proposals/models.py:93
+#: proposals/models.py:94
 msgid ""
 "Detailed outline. Will be made public if your proposal is accepted. Edit "
 "using <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
+"Zirriborro zehatza. Zure proposamena onartzen bada, argitaratu egingo da. "
+"Editatu <a href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a> erabiliz."
 
-#: proposals/models.py:98
+#: proposals/models.py:99
 msgid "Notas adicionales"
 msgstr ""
 
-#: proposals/models.py:102
+#: proposals/models.py:103
 msgid ""
 "Anything else you'd like the program committee to know when making their "
 "selection: your past experience, etc. If it's a workshop, specify the "
 "duration. This is not made public. Edit using <a href='http://daringfireball."
 "net/projects/markdown/basics' target='_blank'>Markdown</a>."
 msgstr ""
+"Antolatzaileei helarazi nahi diezun beste edozein kontu: zure esperientzia, "
+"xehetasunen bat,... Ez da publiko egingo. Editatu <a href='http://"
+"daringfireball.net/projects/markdown/basics' target='_blank'>Markdown</a> "
+"erabiliz."
 
-#: proposals/models.py:155
+#: proposals/models.py:159
 msgid "Básico"
 msgstr ""
 
-#: proposals/models.py:156
+#: proposals/models.py:160
 msgid "Intermedio"
 msgstr ""
 
-#: proposals/models.py:157
+#: proposals/models.py:161
 msgid "Avanzado"
 msgstr ""
 
-#: proposals/models.py:161
+#: proposals/models.py:165
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:165 templates/proposals/create.html:101
+#: proposals/models.py:169 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
-#: proposals/models.py:176
+#: proposals/models.py:180
 msgid "Pending"
-msgstr ""
+msgstr "Zain"
 
-#: proposals/models.py:177
+#: proposals/models.py:181
 msgid "Accepted"
-msgstr ""
+msgstr "Onartuta"
 
-#: proposals/models.py:178
+#: proposals/models.py:182
 msgid "Declined"
-msgstr ""
+msgstr "Ez da onartu"
 
 #: pycones/settings/base.py:66
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: pycones/settings/base.py:67
-msgid "English"
+msgid "Catalán"
 msgstr ""
+
+#: pycones/settings/base.py:68
+msgid "Gallego"
+msgstr ""
+
+#: pycones/settings/base.py:69
+msgid "Euskera"
+msgstr ""
+
+#: pycones/settings/base.py:70
+msgid "English"
+msgstr "English"
 
 #: sponsorship/models.py:18
 msgid "Text"
-msgstr ""
+msgstr "Testua"
 
 #: sponsorship/models.py:19
 msgid "File"
-msgstr ""
+msgstr "Fitxategia"
 
 #: sponsorship/models.py:20
 msgid "Web Logo"
-msgstr ""
+msgstr "Web Logoa"
 
 #: sponsorship/models.py:21
 msgid "Simple"
@@ -180,35 +201,35 @@ msgstr ""
 
 #: sponsorship/models.py:29
 msgid "cost"
-msgstr ""
+msgstr "prezioa"
 
 #: sponsorship/models.py:30 sponsorship/models.py:160
 msgid "description"
-msgstr ""
+msgstr "azalpena"
 
 #: sponsorship/models.py:30
 msgid "This is private."
-msgstr ""
+msgstr "Pribatua da."
 
 #: sponsorship/models.py:34
 msgid "sponsor level"
-msgstr ""
+msgstr "laguntzaile mota"
 
 #: sponsorship/models.py:35
 msgid "sponsor levels"
-msgstr ""
+msgstr "laguntzaile motak"
 
 #: sponsorship/models.py:48
 msgid "applicant"
-msgstr ""
+msgstr "eskatzailea"
 
 #: sponsorship/models.py:51
 msgid "Sponsor Name"
-msgstr ""
+msgstr "Laguntzailearen Izena"
 
 #: sponsorship/models.py:52
 msgid "external URL"
-msgstr ""
+msgstr "kanpo URLa"
 
 #: sponsorship/models.py:53
 msgid "annotation"
@@ -216,104 +237,110 @@ msgstr ""
 
 #: sponsorship/models.py:54
 msgid "Contact Name"
-msgstr ""
+msgstr "Izena"
 
 #: sponsorship/models.py:55
 msgid "Contact Email"
-msgstr ""
+msgstr "Helbide elektronikoa"
 
 #: sponsorship/models.py:56 sponsorship/models.py:171
 msgid "level"
-msgstr ""
+msgstr "maila"
 
 #: sponsorship/models.py:57
 msgid "added"
-msgstr ""
+msgstr "gehituta"
 
 #: sponsorship/models.py:58
 msgid "active"
-msgstr ""
+msgstr "aktibo"
 
 #: sponsorship/models.py:69 sponsorship/models.py:187
 msgid "sponsor"
-msgstr ""
+msgstr "laguntzailea"
 
 #: sponsorship/models.py:70
 msgid "sponsors"
-msgstr ""
+msgstr "laguntzaileak"
 
 #: sponsorship/models.py:161
 msgid "type"
-msgstr ""
+msgstr "mota"
 
 #: sponsorship/models.py:170 sponsorship/models.py:188
 msgid "benefit"
-msgstr ""
+msgstr "onura"
 
 #: sponsorship/models.py:174 sponsorship/models.py:192
 msgid "max words"
-msgstr ""
+msgstr "hitz kopuru maximoa"
 
 #: sponsorship/models.py:175 sponsorship/models.py:193
 msgid "other limits"
-msgstr ""
+msgstr "beste muga batzuk"
 
 #: sponsorship/models.py:197
 msgid "text"
-msgstr ""
+msgstr "testua"
 
 #: sponsorship/models.py:198
 msgid "file"
-msgstr ""
+msgstr "fitxategia"
 
 #: templates/base.html:45
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Toggle nabigazioa"
 
 #: templates/base.html:53
 msgid "PyConES 2015"
-msgstr ""
+msgstr "PyConES 2015"
 
 #: templates/base.html:54
 msgid "Información del evento"
+msgstr "Ekitaldiaren informazioa"
+
+#: templates/base.html:55 templates/pages/home.html:54
+msgid "Oradores Plenarios"
 msgstr ""
 
-#: templates/base.html:55 templates/pages/home.html:52
-msgid "Keynoters Speakers"
+#: templates/base.html:57
+msgid "Agenda"
 msgstr ""
 
-#: templates/base.html:56
+#: templates/base.html:59
 msgid "Blog"
-msgstr ""
+msgstr "Bloga"
 
-#: templates/base.html:92 templates/pages/code_of_conduct.html:8
+#: templates/base.html:95 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:30
 msgid "Código de conducta"
-msgstr ""
+msgstr "Jarrera kodea"
 
-#: templates/base.html:93
+#: templates/base.html:96
 msgid "Contacta con nosotros"
-msgstr ""
+msgstr "Jarri harremanetan gurekin"
 
 #: templates/landing.html:42
 msgid "PyConES"
-msgstr ""
+msgstr "PyConES"
 
 #: templates/landing.html:42
 msgid "Valencia 2015"
-msgstr ""
+msgstr "Valencia 2015"
 
 #: templates/landing.html:44
 msgid ""
 "Estamos preparando la nueva edición de la PyConES, dentro de poco habrá más "
 "novedades."
-msgstr ""
+msgstr "Hurrengo PyConES ari gara antolatzen. Laster izango duzu gure berri."
 
 #: templates/pages/code_of_conduct.html:9
 msgid ""
 "PyConES es una conferencia hecha por la comunidad pensada para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
+"PyConES konferentzia komunitateak sortu du, eta bere helburu nagusia da "
+"garatzaile komunitate barruan kolaborazioak eta dibulgazioa sustatzea. "
 
 #: templates/pages/code_of_conduct.html:10
 msgid ""
@@ -323,6 +350,10 @@ msgid ""
 "hacia el resto durante la conferencia y todos los eventos relacionados con "
 "ella, estén oficialmente auspiciados por PyConES o no."
 msgstr ""
+"Python komunitateko kide guztion parte-hartzea eskertzen dugu, eta guztiok "
+"esperientzia atsegina izatea nahi dugu. Horretarako, guztion arteko "
+"errespetua eta adeitasuna eskatzen dizuegu konferentzia dirauen bitartean "
+"eta jarduera guztietan, izan PyConESek ofizialki antolatutakoak zein ez."
 
 #: templates/pages/code_of_conduct.html:11
 msgid ""
@@ -331,6 +362,9 @@ msgid ""
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
+"PyConEs konferentziak parte hartzen duten delegatu, hizlari, expositore eta "
+"bolondres guztiek bete beharko dute jarrera-kodea. Antolatzaileen esku "
+"izango da ekitaldian zehar kode hori betetzen dela ziurtatzea."
 
 #: templates/pages/code_of_conduct.html:19
 msgid ""
@@ -340,13 +374,15 @@ msgid ""
 "persecución; todo acoso mediante fotografías o grabaciones; toda "
 "interrupción constante de charlas u otras actividades; todo contacto físico "
 "inapropiado y toda propuesta sexual no deseada."
-msgstr ""
+msgstr " "
 
 #: templates/pages/code_of_conduct.html:20
 msgid ""
 "Los participantes que sean apercibidos deberán desistir inmediatamente de su "
 "actitud."
 msgstr ""
+"Ohartarazten diren parte-hartzaileek euren jarrera aldatu beharko dute, "
+"oharra jaso eta berehala."
 
 #: templates/pages/code_of_conduct.html:21
 msgid ""
@@ -357,6 +393,10 @@ msgid ""
 "deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un "
 "ambiente sexualizado."
 msgstr ""
+"Expositoreak, erakusmahaiak, edo babesle zein enpresen guneak ere jazarpenik "
+"gabeko politika honekin babestuta egongo dira. Erakusmahaietan, bereziki, ez "
+"da onartuko inongo jarrera sexistarik. Pertsonalak eta bolondresek ezingo "
+"dute erabili uniforme edo janzkera sexistarik."
 
 #: templates/pages/code_of_conduct.html:22
 msgid ""
@@ -364,6 +404,9 @@ msgid ""
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
 "y las bromas ofensivas son inapropiadas en PyConES."
 msgstr ""
+"Zaindu zure hizkera. Gogoan izan ez dugula onartuko jarrera eta hizkuntza "
+"sexistarik, arrazistarik edo baztertzailerik. Gustu txarreko txantxak ere ez "
+"dira egokiak PyConES-en."
 
 #: templates/pages/code_of_conduct.html:23
 msgid ""
@@ -371,10 +414,12 @@ msgid ""
 "podrá tomar las medidas que considere adecuadas, como la amonestación o la "
 "expulsión sin derecho a reembolso."
 msgstr ""
+"Arau hauek betetzen ez dituzten lagunak zigortzeko eta kanporatzeko aukera "
+"izango dute antolatzaileek, sarreraren kostua itzultzeko eskubiderik gabe."
 
 #: templates/pages/code_of_conduct.html:24
 msgid "Información de contacto"
-msgstr ""
+msgstr "Kontakturako informazioa"
 
 #: templates/pages/code_of_conduct.html:25
 msgid ""
@@ -385,12 +430,18 @@ msgid ""
 "hablar con el personal del lugar y pedir que se te ponga en contacto con el "
 "responsable de la conferencia - Juan Luis Cano."
 msgstr ""
+"Jazarpena jaso baduzu, edo jazarpena jasotzen ari den norbait ikusten "
+"baduzu, jarri mesedez harremanetan antolatzaileekin. Konferentzia antolatzen "
+"ari den pertsonalak kamiseta bereziak izango ditu jantzita, \"Personal "
+"PyConES\" leloarekin. Gainera, pertsonalari eska diezaiokezu arduradun "
+"nagusiarekin (Juan Luis Cano) harremanetan jartzeko."
 
 #: templates/pages/code_of_conduct.html:26
 msgid ""
 "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
 "estas personas:"
 msgstr ""
+"Zerbait bereziki larria baduzu, jo ezazu ondorengo lagunetako batengana:"
 
 #: templates/pages/code_of_conduct.html:34
 msgid ""
@@ -400,14 +451,19 @@ msgid ""
 "víctimas de acoso para que puedan sentirse seguras durante el desarrollo de "
 "la conferencia. Tu bienestar es una de nuestras prioridades."
 msgstr ""
+"Konferentziako arduradunak zure esanetara izango dituzu edozein jazarpen "
+"jasoz gero. Segurtasun arduradunengana lagunduko dizute eta euren laguntza "
+"izango duzu konferentziak irauten duen bitartean ziur senti zaitezen. Zure "
+"ongizatea da gure lehentasuna."
 
 #: templates/pages/code_of_conduct.html:35
 msgid "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
 msgstr ""
+" Eskerrik asko jardunaldi ireki eta adiskidetsua sortzen laguntzearren."
 
 #: templates/pages/code_of_conduct.html:36
 msgid "Licencia"
-msgstr ""
+msgstr "Lizentzia"
 
 #: templates/pages/code_of_conduct.html:38
 msgid ""
@@ -423,10 +479,21 @@ msgid ""
 "Atribución 3.0 España.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Jarrera kode honen oinarriak ondorengo bi "
+"konferentzietako kodeetan oinarritzen dira: PyCon US 2013\n"
+"                        (<a href=\"https://us.pycon.org/2013/about/code-of-"
+"conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>) eta\n"
+"                        PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/"
+"conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), "
+"eta\n"
+"                        Creative Commons Atribución 3.0 España lizentziapean "
+"banatzen dira.\n"
+"                    "
 
 #: templates/pages/home.html:9
 msgid "¿Qué es PyConES 2015?"
-msgstr ""
+msgstr "Zer da PyConES 2015?"
 
 #: templates/pages/home.html:11
 msgid ""
@@ -442,6 +509,16 @@ msgid ""
 "a>.\n"
 "                "
 msgstr ""
+"\n"
+"                    <strong>PyConES</strong> da Espainian egiten den Python "
+"konferentzia garrantzitsuena.\n"
+"                    Aurtengoa izango da bere hirugarren edizioa, "
+"<strong>2015eko azaroaren 21ean eta 22an Valentzian</strong>,\n"
+"                    aurreko 2 urteetan Madrilen eta Zaragozan izandako "
+"ekitaldi arrakastatsuen jarraipena, eta mundu mailan egiten diren\n"
+"                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a> "
+"konferentzien formatu berarekin.\n"
+"                "
 
 #: templates/pages/home.html:19
 msgid ""
@@ -452,72 +529,62 @@ msgid ""
 "la asociación Python España.\n"
 "                "
 msgstr ""
+"\n"
+"                    Konferentziaren egoitza <strong>Valentziako "
+"Unibertsitate Politeknikoa</strong> izango da\n"
+"                    Python Españak eta komunitate lokalak antolatuta.\n"
+"                "
 
 #: templates/pages/home.html:24
 msgid "Ediciones anteriores"
-msgstr ""
+msgstr "Aurreko edizioak"
 
-#: templates/pages/home.html:53 templates/pages/keynoters.html:10
+#: templates/pages/home.html:57 templates/pages/keynoters.html:11
 msgid "Yamila Moreno"
 msgstr ""
 
-#: templates/pages/home.html:55
-msgid ""
-"Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
-"Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
-"cuestión de tiempo que se empezara a involucrar con Python y con el Open "
-"Source, como afición y como profesión.\n"
-"                "
+#: templates/pages/home.html:59 templates/pages/keynoters.html:13
+msgid "Python y Plutarco: el poder de una historia"
 msgstr ""
 
-#: templates/pages/home.html:59 templates/pages/keynoters.html:19
-msgid ""
-"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
-"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
-"España, fundó PyLadies España, y ha organizado conferencias internacional "
-"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
-"tiempo libre entrena a su drone para, algún día, dominar el mundo."
-msgstr ""
-
-#: templates/pages/home.html:61 templates/pages/keynoters.html:22
+#: templates/pages/home.html:62 templates/pages/keynoters.html:25
 msgid "Víctor Terrón"
 msgstr ""
 
-#: templates/pages/home.html:63 templates/pages/keynoters.html:28
-msgid ""
-"Respecto a mí, escrito en primera persona porque sólo la Reina de Inglaterra "
-"y los raperos pueden hablar de sí mismos en tercera:"
+#: templates/pages/home.html:64 templates/pages/keynoters.html:27
+msgid "Dijkstra es mi pastor, nada me falta"
 msgstr ""
 
-#: templates/pages/home.html:66 templates/pages/keynoters.html:31
-msgid ""
-"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
-"inmisericorde cruzada contra el código poco legible, los algoritmos "
-"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
-"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
-"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
+#: templates/pages/home.html:68
+msgid "¡Conoce más de nuestros keynoters!"
 msgstr ""
 
-#: templates/pages/home.html:74
+#: templates/pages/home.html:78
 msgid "Compra de entradas"
-msgstr ""
+msgstr "Sarrerak erostea"
 
-#: templates/pages/home.html:76
+#: templates/pages/home.html:80
 msgid "Compra tus entradas"
-msgstr ""
+msgstr "Erosi zure sarrerak"
 
-#: templates/pages/home.html:79
+#: templates/pages/home.html:83
 msgid ""
 "Con tu entrada podrás acceder los dos días de la conferencia completos. En "
 "la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
 "traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
+"                    Zure sarrerarekin 2 egunetako ekitaldi guztietara sartu "
+"ahal izango zara. Egoitzaren sarreran\n"
+"                    ticketea sarrera aurkeztu beharko duzu (ez ahaztu "
+"ekartzea) eta akreditazioa emango dizugu, \n"
+"                    WelcomePack-arekin batera.\n"
+"                "
 
-#: templates/pages/home.html:87
+#: templates/pages/home.html:91
 msgid "Patrocinadores"
-msgstr ""
+msgstr "Babesleak"
 
-#: templates/pages/home.html:111
+#: templates/pages/home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -526,34 +593,39 @@ msgid ""
 "\">¡Contacta con nosotros!</a>\n"
 "                        "
 msgstr ""
+"\n"
+"                        %(level_name)s mailako lehenengo babeslea izan nahi? "
+"<a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank\">Jarri "
+"harremanetan gurekin!</a>\n"
+"                        "
 
-#: templates/pages/home.html:120
+#: templates/pages/home.html:124
 msgid "Folleto (ES)"
-msgstr ""
+msgstr "Eskuorria (ES)"
 
-#: templates/pages/home.html:123
+#: templates/pages/home.html:127
 msgid "Folleto (EN)"
-msgstr ""
+msgstr "Eskuorria (EN)"
 
 #: templates/pages/info.html:12
 msgid "¿Cuándo?"
-msgstr ""
+msgstr "Noiz?"
 
 #: templates/pages/info.html:13
 msgid "Valencia, 21-22 de noviembre de 2015"
-msgstr ""
+msgstr "Valentzia, 2015eko azaroaren 21-22"
 
 #: templates/pages/info.html:19
 msgid "¿Dónde?"
-msgstr ""
+msgstr "Non?"
 
 #: templates/pages/info.html:20
 msgid "Escuela Técnica Superior de Ingeniería Informática"
-msgstr ""
+msgstr "Escuela Técnica Superior de Ingeniería Informática"
 
 #: templates/pages/info.html:21
 msgid "Universidad Politécnica de Valencia"
-msgstr ""
+msgstr "Universidad Politécnica de Valencia"
 
 #: templates/pages/info.html:32
 msgid ""
@@ -564,6 +636,11 @@ msgid ""
 "discriminación alguna bajo ninguna circunstancia.\n"
 "                            "
 msgstr ""
+"\n"
+"                            PyConESen ez dugu bazterketarik edo jazarpenik "
+"onartuko, inolakoa dela ere (generoa, erlijioa, jatorria, itxura "
+"fisikoa,...).\n"
+"                            "
 
 #: templates/pages/info.html:37
 msgid ""
@@ -574,6 +651,12 @@ msgid ""
 "explícitos son inapropiados en la conferencia y en las charlas.\n"
 "                            "
 msgstr ""
+"\n"
+"                            Konferentzietako eduki guztia sektore "
+"ezberdinetako entzulego profesional bati bideratuta egongo da. Hizkera eta "
+"irudi explizituki sexualak ez dira onartuko ez konferentzietan, ez "
+"hitzaldietan.\n"
+"                            "
 
 #: templates/pages/info.html:42
 msgid ""
@@ -584,6 +667,12 @@ msgid ""
 "PyConES.\n"
 "                            "
 msgstr ""
+"\n"
+"                            Izan adeitsua besteekin. Ez iraindu edo jazarri "
+"jardunaldira etorritako beste inor. Izan ezazu jarrera profesionala. Gogoan "
+"izan ez dugula onartzen jarrera eta txantxa sexistarik, arrazistarik edo "
+"baztertzailerik.\n"
+"                            "
 
 #: templates/pages/info.html:47
 msgid ""
@@ -593,6 +682,11 @@ msgid ""
 "conferencia sin derecho a reembolso.\n"
 "                            "
 msgstr ""
+"\n"
+"                            Arau hauek betetzen ez dituzten lagunak "
+"zigortzeko eta kanporatzeko aukera izango dute antolatzaileek, sarreraren "
+"kostua itzultzeko eskubiderik gabe.\n"
+"                            "
 
 #: templates/pages/info.html:52
 msgid ""
@@ -601,16 +695,16 @@ msgid ""
 "amistoso y abierto para todos.\n"
 "                            "
 msgstr ""
+"\n"
+"                            Eskerrik asko jardunaldi ireki eta adiskidetsua "
+"sortzen laguntzearren.\n"
+"                            "
 
 #: templates/pages/info.html:56
 msgid "Codigo de Conducta Completo"
-msgstr ""
+msgstr "Jarrera kodea (osorik)"
 
-#: templates/pages/keynoters.html:11
-msgid "Python y Plutarco: el poder de una historia"
-msgstr ""
-
-#: templates/pages/keynoters.html:13
+#: templates/pages/keynoters.html:15
 msgid ""
 "¿Qué tienen que ver las 'Vidas paralelas' de Plutarco y Python? ¿Qué podemos "
 "aprender de un tipo griego de hace 20 siglos? En esta keynote hablaré de "
@@ -619,7 +713,11 @@ msgid ""
 "de cambio social muy potente."
 msgstr ""
 
-#: templates/pages/keynoters.html:16
+#: templates/pages/keynoters.html:17 templates/pages/keynoters.html.py:31
+msgid "Acerca de"
+msgstr ""
+
+#: templates/pages/keynoters.html:19
 msgid ""
 "Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
 "Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
@@ -627,11 +725,16 @@ msgid ""
 "Source, como afición y como profesión."
 msgstr ""
 
-#: templates/pages/keynoters.html:23
-msgid "Dijkstra es mi pastor, nada me falta"
+#: templates/pages/keynoters.html:22
+msgid ""
+"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
+"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
+"España, fundó PyLadies España, y ha organizado conferencias internacional "
+"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
+"tiempo libre entrena a su drone para, algún día, dominar el mundo."
 msgstr ""
 
-#: templates/pages/keynoters.html:25
+#: templates/pages/keynoters.html:29
 msgid ""
 "¡Python es genial! Lo escuchamos una y otra vez en cada PyCon, pero ¿por qué "
 "es tan increíble Python? A menudo se oyen argumentos como que \"hay "
@@ -644,6 +747,15 @@ msgid ""
 "Internet y mejorándolo poco a poco, haciéndolo más Pythónico a cada paso "
 "hasta reducir el algoritmo a su más pura esencia. ¡Eso de encontrar el "
 "camino más corto en un grafo suena difícil, pero desde 1956 no lo es!"
+msgstr ""
+
+#: templates/pages/keynoters.html:36
+msgid ""
+"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
+"inmisericorde cruzada contra el código poco legible, los algoritmos "
+"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
+"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
+"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
 msgstr ""
 
 #: templates/proposals/base.html:13 templates/proposals/create.html:110
@@ -678,9 +790,26 @@ msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
 msgstr ""
 
 #: templates/proposals/create.html:18
+#, fuzzy
+#| msgid "Información del evento"
 msgid "Más información en el blog"
-msgstr ""
+msgstr "Ekitaldiaren informazioa"
 
 #: templates/proposals/success.html:7
 msgid "¡Gracias por tu propuesta!"
 msgstr ""
+
+#: templates/schedule/show.html:14
+msgid "Track Básico"
+msgstr ""
+
+#: templates/schedule/show.html:17
+msgid "Track Avanzado"
+msgstr ""
+
+#: templates/schedule/show.html:20
+msgid "Track Científico"
+msgstr ""
+
+#~ msgid "Detailed Abstract"
+#~ msgstr "Laburpen zehatza"

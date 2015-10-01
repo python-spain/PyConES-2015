@@ -57,6 +57,7 @@ class SlotKind(models.Model):
 
     schedule = models.ForeignKey(Schedule)
     label = models.CharField(max_length=50)
+    plenary = models.BooleanField(default=False)
 
     def __str__(self):
         return self.label
@@ -69,7 +70,7 @@ class Slot(models.Model):
     kind = models.ForeignKey(SlotKind)
     start = models.TimeField()
     end = models.TimeField()
-    content_override = MarkupField(blank=True)
+    content_override = MarkupField(blank=True, default_markup_type='markdown')
 
     def assign(self, content):
         """
@@ -128,7 +129,11 @@ class Slot(models.Model):
         return Room.objects.filter(pk__in=self.slotroom_set.values("room"))
 
     def __str__(self):
-        return "%s %s (%s - %s)" % (self.day, self.kind, self.start, self.end)
+        if not self.rooms:
+            return "%s %s (%s - %s)" % (self.day, self.kind, self.start, self.end)
+        rooms = ", ".join(map(lambda room : room.name, self.rooms))
+        return "%s %s (%s - %s, %s)" % (self.day, self.kind, self.start, self.end, rooms)
+
 
     class Meta:
         ordering = ["day", "start", "end"]
@@ -155,9 +160,9 @@ class SlotRoom(models.Model):
 class Presentation(models.Model):
 
     slot = models.OneToOneField(Slot, null=True, blank=True, related_name="content_ptr")
-    title = models.CharField(max_length=100)
-    description = MarkupField()
-    abstract = MarkupField()
+    title = models.CharField(max_length=100, default="", blank=True)
+    description = MarkupField(default="", blank=True, default_markup_type='markdown')
+    abstract = MarkupField(default="", blank=True, default_markup_type='markdown')
     speaker = models.ForeignKey("speakers.Speaker", related_name="presentations")
     additional_speakers = models.ManyToManyField("speakers.Speaker", related_name="copresentations",
                                                  blank=True)
@@ -181,8 +186,23 @@ class Presentation(models.Model):
             if speaker.user:
                 yield speaker
 
+    def get_title(self):
+        if self.title:
+            return self.title
+        return self.proposal_base.title
+
+    def get_description(self):
+        if self.description.raw:
+            return self.description
+        return self.proposal_base.description
+
+    def get_abstract(self):
+        if self.abstract.raw:
+            return self.abstract
+        return self.proposal_base.abstract
+
     def __str__(self):
-        return "#%s %s (%s)" % (self.number, self.title, self.speaker)
+        return "#%s %s (%s)" % (self.number, self.get_title(), self.speaker)
 
     class Meta:
         ordering = ["slot"]

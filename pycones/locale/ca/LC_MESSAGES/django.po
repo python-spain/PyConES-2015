@@ -1,18 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
+# Franc Rodriguez <franc@tecob.com>, 2015
+# kiko correoso <kikocorreoso@gmail.com>, 2015
+# Mai Giménez <mai@immutable.es>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 11:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-01 11:02+0200\n"
+"PO-Revision-Date: 2015-07-13 11:47+0000\n"
+"Last-Translator: Mai Giménez <mai@immutable.es>\n"
+"Language-Team: Catalan (http://www.transifex.com/python-espana/web-"
+"pycones-2015/language/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,43 +23,43 @@ msgstr ""
 
 #: blog/models.py:21
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #: blog/models.py:22
 msgid "Scheduled"
-msgstr ""
+msgstr "Planificat"
 
 #: blog/models.py:23
 msgid "Published"
-msgstr ""
+msgstr "Publicat"
 
 #: blog/models.py:57
 msgid "Seguir leyendo..."
-msgstr ""
+msgstr "Continua llegint"
 
 #: blog/views.py:48
 msgid "Web de la PyConES 2015"
-msgstr ""
+msgstr "Web de la PyConES 2015"
 
 #: conference/models.py:12 sponsorship/models.py:27 sponsorship/models.py:159
 msgid "name"
-msgstr ""
+msgstr "Nom"
 
 #: conference/models.py:15
 msgid "start date"
-msgstr ""
+msgstr "Data d'inici"
 
 #: conference/models.py:16
 msgid "end date"
-msgstr ""
+msgstr "Data de finalització"
 
 #: conference/models.py:19
 msgid "section"
-msgstr ""
+msgstr "Secció"
 
 #: conference/models.py:20
 msgid "sections"
-msgstr ""
+msgstr "Seccions"
 
 #: proposals/forms.py:19
 msgid "Nombre del ponente"
@@ -75,245 +78,274 @@ msgstr ""
 
 #: proposals/models.py:69
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
-#: proposals/models.py:80
+#: proposals/models.py:81
 msgid "Tipo de propuesta"
 msgstr ""
 
-#: proposals/models.py:82
+#: proposals/models.py:83
 msgid "Título"
 msgstr ""
 
-#: proposals/models.py:84
+#: proposals/models.py:85
 msgid "Breve descripción"
-msgstr ""
+msgstr "Descripció breu"
 
-#: proposals/models.py:86
+#: proposals/models.py:87
 msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
 msgstr ""
+"Si la teva proposta es acceptada es farà públic i es mostrarà al programa. "
+"Serà un únic paragraph amb un màxim de 500 paraules"
 
-#: proposals/models.py:90
+#: proposals/models.py:91
 msgid "Resumen detallado"
 msgstr ""
 
-#: proposals/models.py:93
+#: proposals/models.py:94
 msgid ""
 "Detailed outline. Will be made public if your proposal is accepted. Edit "
 "using <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
+"Descripció detallada. Es farà públic si la teva proposta és acceptada. "
+"Editar amb <a href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a>."
 
-#: proposals/models.py:98
+#: proposals/models.py:99
 msgid "Notas adicionales"
 msgstr ""
 
-#: proposals/models.py:102
+#: proposals/models.py:103
 msgid ""
 "Anything else you'd like the program committee to know when making their "
 "selection: your past experience, etc. If it's a workshop, specify the "
 "duration. This is not made public. Edit using <a href='http://daringfireball."
 "net/projects/markdown/basics' target='_blank'>Markdown</a>."
 msgstr ""
+"Qualsevol cosa més que t'agradaria fer saber al comitè de selecció per "
+"ajudar en la seva decisió: Experiència anterior, etc. Això no es farà "
+"públic. Editar amb <a href='http://daringfireball.net/projects/markdown/"
+"basics' target='_blank'>Markdown</a>."
 
-#: proposals/models.py:155
+#: proposals/models.py:159
 msgid "Básico"
 msgstr ""
 
-#: proposals/models.py:156
+#: proposals/models.py:160
 msgid "Intermedio"
 msgstr ""
 
-#: proposals/models.py:157
+#: proposals/models.py:161
 msgid "Avanzado"
 msgstr ""
 
-#: proposals/models.py:161
+#: proposals/models.py:165
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:165 templates/proposals/create.html:101
+#: proposals/models.py:169 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
-#: proposals/models.py:176
+#: proposals/models.py:180
 msgid "Pending"
-msgstr ""
+msgstr "Pendent"
 
-#: proposals/models.py:177
+#: proposals/models.py:181
 msgid "Accepted"
-msgstr ""
+msgstr "Acceptat"
 
-#: proposals/models.py:178
+#: proposals/models.py:182
 msgid "Declined"
-msgstr ""
+msgstr "Declinat"
 
 #: pycones/settings/base.py:66
 msgid "Español"
-msgstr ""
+msgstr "Espanyol"
 
 #: pycones/settings/base.py:67
-msgid "English"
+msgid "Catalán"
 msgstr ""
+
+#: pycones/settings/base.py:68
+msgid "Gallego"
+msgstr ""
+
+#: pycones/settings/base.py:69
+msgid "Euskera"
+msgstr ""
+
+#: pycones/settings/base.py:70
+msgid "English"
+msgstr "Anglés"
 
 #: sponsorship/models.py:18
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: sponsorship/models.py:19
 msgid "File"
-msgstr ""
+msgstr "Fitxer"
 
 #: sponsorship/models.py:20
 msgid "Web Logo"
-msgstr ""
+msgstr "Logo web"
 
 #: sponsorship/models.py:21
 msgid "Simple"
-msgstr ""
+msgstr "Simple"
 
 #: sponsorship/models.py:28
 msgid "order"
-msgstr ""
+msgstr "Ordre"
 
 #: sponsorship/models.py:29
 msgid "cost"
-msgstr ""
+msgstr "Cost"
 
 #: sponsorship/models.py:30 sponsorship/models.py:160
 msgid "description"
-msgstr ""
+msgstr "Descripció"
 
 #: sponsorship/models.py:30
 msgid "This is private."
-msgstr ""
+msgstr "Això és privat."
 
 #: sponsorship/models.py:34
 msgid "sponsor level"
-msgstr ""
+msgstr "Nivell de patrocinador"
 
 #: sponsorship/models.py:35
 msgid "sponsor levels"
-msgstr ""
+msgstr "Nivells de patrocinador"
 
 #: sponsorship/models.py:48
 msgid "applicant"
-msgstr ""
+msgstr "sol·licitant"
 
 #: sponsorship/models.py:51
 msgid "Sponsor Name"
-msgstr ""
+msgstr "Nom del patrocinador"
 
 #: sponsorship/models.py:52
 msgid "external URL"
-msgstr ""
+msgstr "URL externa"
 
 #: sponsorship/models.py:53
 msgid "annotation"
-msgstr ""
+msgstr "sol·licitant"
 
 #: sponsorship/models.py:54
 msgid "Contact Name"
-msgstr ""
+msgstr "Nom de contacte"
 
 #: sponsorship/models.py:55
 msgid "Contact Email"
-msgstr ""
+msgstr "Email de contacte"
 
 #: sponsorship/models.py:56 sponsorship/models.py:171
 msgid "level"
-msgstr ""
+msgstr "Nivell"
 
 #: sponsorship/models.py:57
 msgid "added"
-msgstr ""
+msgstr "afegit"
 
 #: sponsorship/models.py:58
 msgid "active"
-msgstr ""
+msgstr "actiu"
 
 #: sponsorship/models.py:69 sponsorship/models.py:187
 msgid "sponsor"
-msgstr ""
+msgstr "patrocinador"
 
 #: sponsorship/models.py:70
 msgid "sponsors"
-msgstr ""
+msgstr "patrocinadors"
 
 #: sponsorship/models.py:161
 msgid "type"
-msgstr ""
+msgstr "tipus"
 
 #: sponsorship/models.py:170 sponsorship/models.py:188
 msgid "benefit"
-msgstr ""
+msgstr "benefici"
 
 #: sponsorship/models.py:174 sponsorship/models.py:192
 msgid "max words"
-msgstr ""
+msgstr "Paraules màximes"
 
 #: sponsorship/models.py:175 sponsorship/models.py:193
 msgid "other limits"
-msgstr ""
+msgstr "Altres límits"
 
 #: sponsorship/models.py:197
 msgid "text"
-msgstr ""
+msgstr "text"
 
 #: sponsorship/models.py:198
 msgid "file"
-msgstr ""
+msgstr "fitxer"
 
 #: templates/base.html:45
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Canviar navegació"
 
 #: templates/base.html:53
 msgid "PyConES 2015"
-msgstr ""
+msgstr "PyConES 2015"
 
 #: templates/base.html:54
 msgid "Información del evento"
+msgstr "Informació del esdeveniment"
+
+#: templates/base.html:55 templates/pages/home.html:54
+msgid "Oradores Plenarios"
 msgstr ""
 
-#: templates/base.html:55 templates/pages/home.html:52
-msgid "Keynoters Speakers"
+#: templates/base.html:57
+msgid "Agenda"
 msgstr ""
 
-#: templates/base.html:56
+#: templates/base.html:59
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
-#: templates/base.html:92 templates/pages/code_of_conduct.html:8
+#: templates/base.html:95 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:30
 msgid "Código de conducta"
-msgstr ""
+msgstr "Codi de conducta"
 
-#: templates/base.html:93
+#: templates/base.html:96
 msgid "Contacta con nosotros"
-msgstr ""
+msgstr "Contacta amb nosaltres"
 
 #: templates/landing.html:42
 msgid "PyConES"
-msgstr ""
+msgstr "PyConES"
 
 #: templates/landing.html:42
 msgid "Valencia 2015"
-msgstr ""
+msgstr "València 2015"
 
 #: templates/landing.html:44
 msgid ""
 "Estamos preparando la nueva edición de la PyConES, dentro de poco habrá más "
 "novedades."
 msgstr ""
+"Estem preparant la nova edició de la PyConES, d'aquí a poc hi haurà més "
+"novetats."
 
 #: templates/pages/code_of_conduct.html:9
 msgid ""
 "PyConES es una conferencia hecha por la comunidad pensada para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
+"PyConES és una conferència feta per la comunitat pensada per a la divulgació "
+"i col·laboració dins de la comunitat de desenvolupadors."
 
 #: templates/pages/code_of_conduct.html:10
 msgid ""
@@ -323,6 +355,11 @@ msgid ""
 "hacia el resto durante la conferencia y todos los eventos relacionados con "
 "ella, estén oficialmente auspiciados por PyConES o no."
 msgstr ""
+"Valorem la participació de cada membre de la comunitat Python i volem que "
+"tots els assistents tinguin una experiència entretinguda i satisfactòria. "
+"Per això, s'espera que tots els assistents mostrin respecte i cortesia "
+"envers els altres durant la conferència i tots els esdeveniments relacionats "
+"amb ella, estiguin oficialment recolzats per PyConES o no."
 
 #: templates/pages/code_of_conduct.html:11
 msgid ""
@@ -331,6 +368,10 @@ msgid ""
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
+"En concret, tots els delegats, ponents, expositors i voluntaris que formen "
+"part en activitats relacionades amb PyConES hauran d'acatar el present codi "
+"de conducta. Els organitzadors es cuidaran de l'acompliment d'aquest codi "
+"durant l'esdeveniment."
 
 #: templates/pages/code_of_conduct.html:19
 msgid ""
@@ -341,12 +382,20 @@ msgid ""
 "interrupción constante de charlas u otras actividades; todo contacto físico "
 "inapropiado y toda propuesta sexual no deseada."
 msgstr ""
+"S'entén per assetjament tot comentari ofensiu que faci al·lusió al sexe, "
+"preferències sexuals, discapacitats, aspecte físic, ètnies i religions; tota "
+"pornografia en espais públics; tota intimidació deliberada, assetjament o "
+"persecució; tot assetjament mitjançant fotografies o gravacions; tota "
+"interrupció constant de les xerrades o altres activitats, tot contacte físic "
+"inapropiat i tota proposta sexual no desitjada."
 
 #: templates/pages/code_of_conduct.html:20
 msgid ""
 "Los participantes que sean apercibidos deberán desistir inmediatamente de su "
 "actitud."
 msgstr ""
+"Els participants que siguin apercebuts hauran de desistir immediatament de "
+"la seva actitud"
 
 #: templates/pages/code_of_conduct.html:21
 msgid ""
@@ -357,6 +406,12 @@ msgid ""
 "deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un "
 "ambiente sexualizado."
 msgstr ""
+"Els expositors, les casetes o pavellons de patrocinadors o empreses i "
+"activitats semblants també estan subjectes a la política contra "
+"l'assetjament. En particular, els expositors no hauran d'utilitzar material "
+"o dur a terme activitats sexistes. El personal de les casetes (incloent "
+"voluntaris) no hauran d'utilitzar uniformes o vestimentes sexistes, donat "
+"que això crearia un ambient sexualitzat."
 
 #: templates/pages/code_of_conduct.html:22
 msgid ""
@@ -364,6 +419,9 @@ msgid ""
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
 "y las bromas ofensivas son inapropiadas en PyConES."
 msgstr ""
+"Cuida el teu llenguatge. Recorda que les bromes sexistes, racistes i "
+"excloents en general podrien ofendre a altres persones. El llenguatge "
+"excessivament groller i les bromes ofensives són inapropiades a la PyConES."
 
 #: templates/pages/code_of_conduct.html:23
 msgid ""
@@ -371,10 +429,13 @@ msgid ""
 "podrá tomar las medidas que considere adecuadas, como la amonestación o la "
 "expulsión sin derecho a reembolso."
 msgstr ""
+"Si algun participant infringeix aquest codi de conducta, l'organització "
+"podrà prendre les mesures que consideri adequades, com l'amonestació o "
+"l'expulsió sense dret a reembors."
 
 #: templates/pages/code_of_conduct.html:24
 msgid "Información de contacto"
-msgstr ""
+msgstr "Informació de contacte"
 
 #: templates/pages/code_of_conduct.html:25
 msgid ""
@@ -385,12 +446,20 @@ msgid ""
 "hablar con el personal del lugar y pedir que se te ponga en contacto con el "
 "responsable de la conferencia - Juan Luis Cano."
 msgstr ""
+"Si estàs patint assetjament, notes que algú estan sent assetjat, o tens "
+"qualsevol altra preocupació, si us plau posa't en contacte amb un membre del "
+"personal de la conferència. El personal de la conferència vestirà samarretes "
+"amb la inscripció  \"Personal PyConES\". Amés pots parlar amb el personal "
+"del lloc y demanar que et posin en contacte amb el responsable de la "
+"conferència - Juan Luis Cano."
 
 #: templates/pages/code_of_conduct.html:26
 msgid ""
 "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
 "estas personas:"
 msgstr ""
+"Si es tracta d'una qüestió especialment urgent, dirigeix-te a qualsevol "
+"d'aquestes persones:"
 
 #: templates/pages/code_of_conduct.html:34
 msgid ""
@@ -400,14 +469,20 @@ msgid ""
 "víctimas de acoso para que puedan sentirse seguras durante el desarrollo de "
 "la conferencia. Tu bienestar es una de nuestras prioridades."
 msgstr ""
+"El personal de la conferència ajudarà gustosament als participants a que es "
+"posin en contacte amb el personal de seguretat del recinte o amb la policia "
+"local, i proporcionarà protecció o socorrerà de qualsevol altra forma a les "
+"víctimes d'assetjament per a que puguin sentir-se segures durant el "
+"transcurs de la conferència. El teu benestar és una de les nostres "
+"prioritats,"
 
 #: templates/pages/code_of_conduct.html:35
 msgid "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
-msgstr ""
+msgstr "Gràcies per fer-ne un esdeveniment obert a la comunitat i amistós."
 
 #: templates/pages/code_of_conduct.html:36
 msgid "Licencia"
-msgstr ""
+msgstr "Llicència"
 
 #: templates/pages/code_of_conduct.html:38
 msgid ""
@@ -423,10 +498,17 @@ msgid ""
 "Atribución 3.0 España.\n"
 "                    "
 msgstr ""
+"\n"
+"Aquest Codi de Conducta es basa en els codis de conducta de PyCon US 2013\n"
+" (<a href=\"https://us.pycon.org/2013/about/code-of-conduct/\">https://us."
+"pycon.org/2013/about/code-of-conduct/</a>) i\n"
+" PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/conference/diversity/"
+"\">http://ar.pycon.org/2012/conference/diversity/</a>), i\n"
+" està disponible sota llicència Creative Commons Reconeixement 3.0 Espanya."
 
 #: templates/pages/home.html:9
 msgid "¿Qué es PyConES 2015?"
-msgstr ""
+msgstr "Què és PyConES 2015?"
 
 #: templates/pages/home.html:11
 msgid ""
@@ -442,6 +524,14 @@ msgid ""
 "a>.\n"
 "                "
 msgstr ""
+"\n"
+"<strong>PyConES</strong> és la conferència nacional sobre Python més "
+"important d'Espanya.\n"
+"La PyConES celebrarà la seva tercera edició els dies <strong>21  i 22 de "
+"novembre de 2015</strong> a <strong>València</strong>, després de\n"
+"dues exitoses edicions a Madrid i Saragossa respectivament i seguint el "
+"format de l'esdeveniment mundial <a href=\"http://pycon.org\" target=\"_blank"
+"\">PyCon</a>."
 
 #: templates/pages/home.html:19
 msgid ""
@@ -452,72 +542,60 @@ msgid ""
 "la asociación Python España.\n"
 "                "
 msgstr ""
+"\n"
+"Concretament, la conferència tindrà lloc a l' <strong>Universitat "
+"Politècnica de València (UPV)</strong> i\n"
+"serà organitzada conjuntament per la comunitat local i l'associació Python "
+"Espanya."
 
 #: templates/pages/home.html:24
 msgid "Ediciones anteriores"
-msgstr ""
+msgstr "Edicions anteriors"
 
-#: templates/pages/home.html:53 templates/pages/keynoters.html:10
+#: templates/pages/home.html:57 templates/pages/keynoters.html:11
 msgid "Yamila Moreno"
 msgstr ""
 
-#: templates/pages/home.html:55
-msgid ""
-"Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
-"Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
-"cuestión de tiempo que se empezara a involucrar con Python y con el Open "
-"Source, como afición y como profesión.\n"
-"                "
+#: templates/pages/home.html:59 templates/pages/keynoters.html:13
+msgid "Python y Plutarco: el poder de una historia"
 msgstr ""
 
-#: templates/pages/home.html:59 templates/pages/keynoters.html:19
-msgid ""
-"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
-"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
-"España, fundó PyLadies España, y ha organizado conferencias internacional "
-"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
-"tiempo libre entrena a su drone para, algún día, dominar el mundo."
-msgstr ""
-
-#: templates/pages/home.html:61 templates/pages/keynoters.html:22
+#: templates/pages/home.html:62 templates/pages/keynoters.html:25
 msgid "Víctor Terrón"
 msgstr ""
 
-#: templates/pages/home.html:63 templates/pages/keynoters.html:28
-msgid ""
-"Respecto a mí, escrito en primera persona porque sólo la Reina de Inglaterra "
-"y los raperos pueden hablar de sí mismos en tercera:"
+#: templates/pages/home.html:64 templates/pages/keynoters.html:27
+msgid "Dijkstra es mi pastor, nada me falta"
 msgstr ""
 
-#: templates/pages/home.html:66 templates/pages/keynoters.html:31
-msgid ""
-"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
-"inmisericorde cruzada contra el código poco legible, los algoritmos "
-"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
-"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
-"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
+#: templates/pages/home.html:68
+msgid "¡Conoce más de nuestros keynoters!"
 msgstr ""
 
-#: templates/pages/home.html:74
+#: templates/pages/home.html:78
 msgid "Compra de entradas"
-msgstr ""
+msgstr "Compra d'entrades"
 
-#: templates/pages/home.html:76
+#: templates/pages/home.html:80
 msgid "Compra tus entradas"
-msgstr ""
+msgstr "Compra les teves entrades"
 
-#: templates/pages/home.html:79
+#: templates/pages/home.html:83
 msgid ""
 "Con tu entrada podrás acceder los dos días de la conferencia completos. En "
 "la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
 "traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
+"Amb una entrada podràs accedir els dos dies de la conferència . A l'entrada "
+"de l'edifici\n"
+"et canviarem la teva entrada de ticketea (no oblidis portar-la) per la teva "
+"acreditació i t'entregarem el WelcomePack"
 
-#: templates/pages/home.html:87
+#: templates/pages/home.html:91
 msgid "Patrocinadores"
-msgstr ""
+msgstr "Patrocinadors"
 
-#: templates/pages/home.html:111
+#: templates/pages/home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -526,34 +604,38 @@ msgid ""
 "\">¡Contacta con nosotros!</a>\n"
 "                        "
 msgstr ""
+"\n"
+"Vols ser el primer patrocinador %(level_name)s? <a href=\"mailto:"
+"patrocinadores2015@es.pycon.org\" target=\"_blank\">Contacta amb nosaltres\"!"
+"</a>"
 
-#: templates/pages/home.html:120
+#: templates/pages/home.html:124
 msgid "Folleto (ES)"
-msgstr ""
+msgstr "Fullet (ES)"
 
-#: templates/pages/home.html:123
+#: templates/pages/home.html:127
 msgid "Folleto (EN)"
-msgstr ""
+msgstr "Fullet (EN)"
 
 #: templates/pages/info.html:12
 msgid "¿Cuándo?"
-msgstr ""
+msgstr "Quan?"
 
 #: templates/pages/info.html:13
 msgid "Valencia, 21-22 de noviembre de 2015"
-msgstr ""
+msgstr "València, 21-22 de novembre de 2015"
 
 #: templates/pages/info.html:19
 msgid "¿Dónde?"
-msgstr ""
+msgstr "On?"
 
 #: templates/pages/info.html:20
 msgid "Escuela Técnica Superior de Ingeniería Informática"
-msgstr ""
+msgstr "Escola Tècnica Superior d'Enginyeria Informàtica"
 
 #: templates/pages/info.html:21
 msgid "Universidad Politécnica de Valencia"
-msgstr ""
+msgstr "Universitat Politècnica de València"
 
 #: templates/pages/info.html:32
 msgid ""
@@ -564,6 +646,10 @@ msgid ""
 "discriminación alguna bajo ninguna circunstancia.\n"
 "                            "
 msgstr ""
+"\n"
+"PyConES aspira a crear un ambient lliure d'assetjament o discriminacions per "
+"raó de gènere, orientació sexual, discapacitat, aspecte físic, ètnia o "
+"religió. No es tolerarà cap discriminació sota cap circumstància. "
 
 #: templates/pages/info.html:37
 msgid ""
@@ -574,6 +660,11 @@ msgid ""
 "explícitos son inapropiados en la conferencia y en las charlas.\n"
 "                            "
 msgstr ""
+"\n"
+"Tot el contingut de la conferència haurà d'ajustar-se a una audiència "
+"professional integrada per persones procedents de sectors diferents. Tan el "
+"llenguatge como les imatges sexualment explícites són inapropiades a la "
+"conferència i a les xerrades."
 
 #: templates/pages/info.html:42
 msgid ""
@@ -584,6 +675,10 @@ msgid ""
 "PyConES.\n"
 "                            "
 msgstr ""
+"\n"
+"Sigues amable amb els demés. No insultis o humiliïs a altres assistents. "
+"Comporta't de manera professional. Recorda que les bromes sexistes, racistes "
+"o discriminatòries estan prohibides a la PyConES."
 
 #: templates/pages/info.html:47
 msgid ""
@@ -593,6 +688,11 @@ msgid ""
 "conferencia sin derecho a reembolso.\n"
 "                            "
 msgstr ""
+"\n"
+"\n"
+"Els assistents que no compleixin aquestes regles podran -a decisió dels "
+"organitzadors- ésser sancionats o expulsats de la conferència sense dret a "
+"reembors."
 
 #: templates/pages/info.html:52
 msgid ""
@@ -601,16 +701,14 @@ msgid ""
 "amistoso y abierto para todos.\n"
 "                            "
 msgstr ""
+"\n"
+"Gràcies per ajudar-nos a fer aquest esdeveniment amistós i obert a tothom."
 
 #: templates/pages/info.html:56
 msgid "Codigo de Conducta Completo"
-msgstr ""
+msgstr "Codi de Conducta Complet"
 
-#: templates/pages/keynoters.html:11
-msgid "Python y Plutarco: el poder de una historia"
-msgstr ""
-
-#: templates/pages/keynoters.html:13
+#: templates/pages/keynoters.html:15
 msgid ""
 "¿Qué tienen que ver las 'Vidas paralelas' de Plutarco y Python? ¿Qué podemos "
 "aprender de un tipo griego de hace 20 siglos? En esta keynote hablaré de "
@@ -619,7 +717,11 @@ msgid ""
 "de cambio social muy potente."
 msgstr ""
 
-#: templates/pages/keynoters.html:16
+#: templates/pages/keynoters.html:17 templates/pages/keynoters.html.py:31
+msgid "Acerca de"
+msgstr ""
+
+#: templates/pages/keynoters.html:19
 msgid ""
 "Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
 "Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
@@ -627,11 +729,16 @@ msgid ""
 "Source, como afición y como profesión."
 msgstr ""
 
-#: templates/pages/keynoters.html:23
-msgid "Dijkstra es mi pastor, nada me falta"
+#: templates/pages/keynoters.html:22
+msgid ""
+"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
+"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
+"España, fundó PyLadies España, y ha organizado conferencias internacional "
+"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
+"tiempo libre entrena a su drone para, algún día, dominar el mundo."
 msgstr ""
 
-#: templates/pages/keynoters.html:25
+#: templates/pages/keynoters.html:29
 msgid ""
 "¡Python es genial! Lo escuchamos una y otra vez en cada PyCon, pero ¿por qué "
 "es tan increíble Python? A menudo se oyen argumentos como que \"hay "
@@ -644,6 +751,15 @@ msgid ""
 "Internet y mejorándolo poco a poco, haciéndolo más Pythónico a cada paso "
 "hasta reducir el algoritmo a su más pura esencia. ¡Eso de encontrar el "
 "camino más corto en un grafo suena difícil, pero desde 1956 no lo es!"
+msgstr ""
+
+#: templates/pages/keynoters.html:36
+msgid ""
+"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
+"inmisericorde cruzada contra el código poco legible, los algoritmos "
+"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
+"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
+"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
 msgstr ""
 
 #: templates/proposals/base.html:13 templates/proposals/create.html:110
@@ -678,9 +794,26 @@ msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
 msgstr ""
 
 #: templates/proposals/create.html:18
+#, fuzzy
+#| msgid "Información del evento"
 msgid "Más información en el blog"
-msgstr ""
+msgstr "Informació del esdeveniment"
 
 #: templates/proposals/success.html:7
 msgid "¡Gracias por tu propuesta!"
 msgstr ""
+
+#: templates/schedule/show.html:14
+msgid "Track Básico"
+msgstr ""
+
+#: templates/schedule/show.html:17
+msgid "Track Avanzado"
+msgstr ""
+
+#: templates/schedule/show.html:20
+msgid "Track Científico"
+msgstr ""
+
+#~ msgid "Detailed Abstract"
+#~ msgstr "Resúm detallat"
