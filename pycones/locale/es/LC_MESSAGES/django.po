@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-08 23:43+0200\n"
+"POT-Creation-Date: 2015-10-01 11:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,19 +77,19 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: proposals/models.py:80
+#: proposals/models.py:81
 msgid "Tipo de propuesta"
 msgstr ""
 
-#: proposals/models.py:82
+#: proposals/models.py:83
 msgid "Título"
 msgstr ""
 
-#: proposals/models.py:84
+#: proposals/models.py:85
 msgid "Breve descripción"
 msgstr ""
 
-#: proposals/models.py:86
+#: proposals/models.py:87
 msgid ""
 "If your proposal is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 500 characters."
@@ -97,11 +97,11 @@ msgstr ""
 "Si tu propuesta es aceptada esto se hará público y se añadirá al programa. "
 "Tiene que ser un párrafo, máximo 500 caracteres."
 
-#: proposals/models.py:90
+#: proposals/models.py:91
 msgid "Resumen detallado"
 msgstr ""
 
-#: proposals/models.py:93
+#: proposals/models.py:94
 msgid ""
 "Detailed outline. Will be made public if your proposal is accepted. Edit "
 "using <a href='http://daringfireball.net/projects/markdown/basics' "
@@ -111,11 +111,11 @@ msgstr ""
 "usando <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 
-#: proposals/models.py:98
+#: proposals/models.py:99
 msgid "Notas adicionales"
 msgstr ""
 
-#: proposals/models.py:102
+#: proposals/models.py:103
 msgid ""
 "Anything else you'd like the program committee to know when making their "
 "selection: your past experience, etc. If it's a workshop, specify the "
@@ -127,35 +127,35 @@ msgstr ""
 "duración. Esto no se hará público. Edita usando <a href='http://"
 "daringfireball.net/projects/markdown/basics' target='_blank'>Markdown</a>."
 
-#: proposals/models.py:155
+#: proposals/models.py:159
 msgid "Básico"
 msgstr ""
 
-#: proposals/models.py:156
+#: proposals/models.py:160
 msgid "Intermedio"
 msgstr ""
 
-#: proposals/models.py:157
+#: proposals/models.py:161
 msgid "Avanzado"
 msgstr ""
 
-#: proposals/models.py:161
+#: proposals/models.py:165
 msgid "Nivel de la audiencia"
 msgstr ""
 
-#: proposals/models.py:165 templates/proposals/create.html:101
+#: proposals/models.py:169 templates/proposals/create.html:101
 msgid "¿Estarías dispuesto a preparar un paper que acompañe la charla?"
 msgstr ""
 
-#: proposals/models.py:176
+#: proposals/models.py:180
 msgid "Pending"
 msgstr ""
 
-#: proposals/models.py:177
+#: proposals/models.py:181
 msgid "Accepted"
 msgstr ""
 
-#: proposals/models.py:178
+#: proposals/models.py:182
 msgid "Declined"
 msgstr ""
 
@@ -164,6 +164,18 @@ msgid "Español"
 msgstr ""
 
 #: pycones/settings/base.py:67
+msgid "Catalán"
+msgstr ""
+
+#: pycones/settings/base.py:68
+msgid "Gallego"
+msgstr ""
+
+#: pycones/settings/base.py:69
+msgid "Euskera"
+msgstr ""
+
+#: pycones/settings/base.py:70
 msgid "English"
 msgstr ""
 
@@ -287,20 +299,24 @@ msgstr ""
 msgid "Información del evento"
 msgstr ""
 
-#: templates/base.html:55
-msgid "Envía tu propuesta"
+#: templates/base.html:55 templates/pages/home.html:54
+msgid "Oradores Plenarios"
 msgstr ""
 
-#: templates/base.html:56
+#: templates/base.html:57
+msgid "Agenda"
+msgstr ""
+
+#: templates/base.html:59
 msgid "Blog"
 msgstr ""
 
-#: templates/base.html:92 templates/pages/code_of_conduct.html:8
+#: templates/base.html:95 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:30
 msgid "Código de conducta"
 msgstr ""
 
-#: templates/base.html:93
+#: templates/base.html:96
 msgid "Contacta con nosotros"
 msgstr ""
 
@@ -466,57 +482,46 @@ msgstr ""
 msgid "Ediciones anteriores"
 msgstr ""
 
-#: templates/pages/home.html:33
-msgid "Llamada a propuestas"
+#: templates/pages/home.html:57 templates/pages/keynoters.html:11
+msgid "Yamila Moreno"
 msgstr ""
 
-#: templates/pages/home.html:35
-msgid "¡Envía tu propuesta!"
+#: templates/pages/home.html:59 templates/pages/keynoters.html:13
+msgid "Python y Plutarco: el poder de una historia"
 msgstr ""
 
-#: templates/pages/home.html:38
-msgid ""
-"\n"
-"                    ¡Está abierta la llamada a propuestas para la PyConES "
-"2015! El plazo termina el <del>1</del> <ins>9</ins> de septiembre a\n"
-"                    las 00:00. Estos son los tipos aceptados:\n"
-"                "
+#: templates/pages/home.html:62 templates/pages/keynoters.html:25
+msgid "Víctor Terrón"
 msgstr ""
 
-#: templates/pages/home.html:44 templates/proposals/create.html:14
-msgid ""
-"<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
-"y domingo 22."
+#: templates/pages/home.html:64 templates/pages/keynoters.html:27
+msgid "Dijkstra es mi pastor, nada me falta"
 msgstr ""
 
-#: templates/pages/home.html:45 templates/proposals/create.html:15
-msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
+#: templates/pages/home.html:68
+msgid "¡Conoce más de nuestros keynoters!"
 msgstr ""
 
-#: templates/pages/home.html:52
+#: templates/pages/home.html:78
 msgid "Compra de entradas"
 msgstr ""
 
-#: templates/pages/home.html:54
+#: templates/pages/home.html:80
 msgid "Compra tus entradas"
 msgstr ""
 
-#: templates/pages/home.html:57
+#: templates/pages/home.html:83
 msgid ""
-"\n"
-"                    Con tu entrada podrás acceder los dos días de la "
-"conferencia completos. En la entrada del edificio\n"
-"                    te cambiaremos tu entrada de ticketea (no olvides "
-"traerla) por tu acreditación y te\n"
-"                    entregaremos el WelcomePack.\n"
-"                "
+"Con tu entrada podrás acceder los dos días de la conferencia completos. En "
+"la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
+"traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
 
-#: templates/pages/home.html:69
+#: templates/pages/home.html:91
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:93
+#: templates/pages/home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -526,11 +531,11 @@ msgid ""
 "                        "
 msgstr ""
 
-#: templates/pages/home.html:102
+#: templates/pages/home.html:124
 msgid "Folleto (ES)"
 msgstr ""
 
-#: templates/pages/home.html:105
+#: templates/pages/home.html:127
 msgid "Folleto (EN)"
 msgstr ""
 
@@ -605,6 +610,60 @@ msgstr ""
 msgid "Codigo de Conducta Completo"
 msgstr ""
 
+#: templates/pages/keynoters.html:15
+msgid ""
+"¿Qué tienen que ver las 'Vidas paralelas' de Plutarco y Python? ¿Qué podemos "
+"aprender de un tipo griego de hace 20 siglos? En esta keynote hablaré de "
+"historia de la literatura, de diversidad, de la Constitución, de un nuevo "
+"PEP y de por qué Python, y por extensión su comunidad, pueden ser un motor "
+"de cambio social muy potente."
+msgstr ""
+
+#: templates/pages/keynoters.html:17 templates/pages/keynoters.html.py:31
+msgid "Acerca de"
+msgstr ""
+
+#: templates/pages/keynoters.html:19
+msgid ""
+"Yamila Moreno se licenció en Teoría de la Literatura y Literatura Comparada. "
+"Un día, cayó en sus manos un Knoppix y poco después estaba programando. Fue "
+"cuestión de tiempo que se empezara a involucrar con Python y con el Open "
+"Source, como afición y como profesión."
+msgstr ""
+
+#: templates/pages/keynoters.html:22
+msgid ""
+"En los últimos 5 años, ha co-fundado Kaleidos y ha sido un miembro muy "
+"activo de la comunidad Open Source: ha co-fundado la Asociación Python "
+"España, fundó PyLadies España, y ha organizado conferencias internacional "
+"así como talleres locales dirigidos a grupos infrarrepresentados. En su "
+"tiempo libre entrena a su drone para, algún día, dominar el mundo."
+msgstr ""
+
+#: templates/pages/keynoters.html:29
+msgid ""
+"¡Python es genial! Lo escuchamos una y otra vez en cada PyCon, pero ¿por qué "
+"es tan increíble Python? A menudo se oyen argumentos como que \"hay "
+"librerías para todo\" o \"las listas por comprensión\", pero nada de esto es "
+"específico de Python y podría aplicarse a muchos otros lenguajes de "
+"programación. En esta charla planteo que, en el fondo y como propugnaba "
+"Edsger W.Dijkstra, todo se reduce a una cuestión de elegancia y sencillez. "
+"Y, como demostración, vamos a ver una implementación del algoritmo de "
+"Dijkstra: comenzando con el críptico código quesuele encontrarse por "
+"Internet y mejorándolo poco a poco, haciéndolo más Pythónico a cada paso "
+"hasta reducir el algoritmo a su más pura esencia. ¡Eso de encontrar el "
+"camino más corto en un grafo suena difícil, pero desde 1956 no lo es!"
+msgstr ""
+
+#: templates/pages/keynoters.html:36
+msgid ""
+"Trabajo como ingeniero de software en Google. Llevo años embarcado en una "
+"inmisericorde cruzada contra el código poco legible, los algoritmos "
+"gratuitamente complejos y los ponentes aburridos — no necesariamente en ese "
+"orden. Hay quien asegura haberme escuchado afirmar \"entre un código "
+"elegante que no funcione y uno feo que funcione, ¡prefiero el elegante!\"."
+msgstr ""
+
 #: templates/proposals/base.html:13 templates/proposals/create.html:110
 msgid "Enviar propuesta"
 msgstr ""
@@ -626,10 +685,32 @@ msgid ""
 "        "
 msgstr ""
 
+#: templates/proposals/create.html:14
+msgid ""
+"<strong>Charla</strong>: 30 minutos + 5 de preguntas + 5 de pausa. Sábado 21 "
+"y domingo 22."
+msgstr ""
+
+#: templates/proposals/create.html:15
+msgid "<strong>Taller/Tutorial</strong>: 2-3 horas. Viernes 20."
+msgstr ""
+
 #: templates/proposals/create.html:18
 msgid "Más información en el blog"
 msgstr ""
 
 #: templates/proposals/success.html:7
 msgid "¡Gracias por tu propuesta!"
+msgstr ""
+
+#: templates/schedule/show.html:14
+msgid "Track Básico"
+msgstr ""
+
+#: templates/schedule/show.html:17
+msgid "Track Avanzado"
+msgstr ""
+
+#: templates/schedule/show.html:20
+msgid "Track Científico"
 msgstr ""

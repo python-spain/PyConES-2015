@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.text import slugify
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext as _, get_language
 from django_extensions.db.models import TimeStampedModel
 from markupfield.fields import MarkupField
 
@@ -68,6 +68,15 @@ class Post(AbstractArticle):
             split_content[0],
             read_more
         )
+
+    def get_content(self):
+        language = get_language()
+        attr = "content_%s" % language
+        if hasattr(self, attr) and getattr(self, attr).raw is not None and getattr(self, attr).raw != "":
+            return getattr(self, attr)
+        elif hasattr(self, attr) and (getattr(self, attr).raw is None or getattr(self, attr).raw == ""):
+            return self.content_es
+        return self.content
 
     def save(self, *args, **kwargs):
         slug_base = self.slug if self.slug else self.title

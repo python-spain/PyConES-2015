@@ -8,6 +8,7 @@ from blog.models import Post
 
 class PostTranslationOptions(TranslationOptions):
     fields = ('title', 'slug', 'content')
+    fallback_languages = {'default': ('es', 'en', 'ca')}
 
 
 translator.register(Post, PostTranslationOptions)
