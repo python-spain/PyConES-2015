@@ -556,7 +556,7 @@ msgstr ""
 
 #: templates/pages/home.html:68
 msgid "¡Conoce más de nuestros keynoters!"
-msgstr ""
+msgstr "Learn more about our keynoters!"
 
 #: templates/pages/home.html:78
 msgid "Compra de entradas"
@@ -701,7 +701,7 @@ msgstr ""
 
 #: templates/pages/keynoters.html:17 templates/pages/keynoters.html.py:31
 msgid "Acerca de"
-msgstr ""
+msgstr "About"
 
 #: templates/pages/keynoters.html:19
 msgid ""
