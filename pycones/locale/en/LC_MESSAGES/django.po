@@ -697,7 +697,7 @@ msgid ""
 "historia de la literatura, de diversidad, de la Constitución, de un nuevo "
 "PEP y de por qué Python, y por extensión su comunidad, pueden ser un motor "
 "de cambio social muy potente."
-msgstr ""
+msgstr "What does 'Paralell Lives' of Plutarch have to do with Python? What can we learn from a Greek guy from 20 centuries ago? In this keynote I'll talk about History of Literature, diversity, about the Constitution, a new PEP and about why Python, and its community, can be a very powerful  driving force for social change."
 
 #: templates/pages/keynoters.html:17 templates/pages/keynoters.html.py:31
 msgid "Acerca de"

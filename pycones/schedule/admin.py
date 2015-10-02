@@ -11,11 +11,11 @@ admin.site.register(Room)
 admin.site.register(SlotKind)
 admin.site.register(
     Slot,
-    list_display=("day", "start", "end", "kind")
+    list_display=("id", "day", "start", "end", "kind")
 )
 admin.site.register(
     SlotRoom,
-    list_display=("slot", "room")
+    list_display=("id", "slot", "room")
 )
 admin.site.register(Presentation)
 
