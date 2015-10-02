@@ -11,7 +11,7 @@ admin.site.register(Room)
 admin.site.register(SlotKind)
 admin.site.register(
     Slot,
-    list_display=("id", "day", "start", "end", "kind")
+    list_display=("id", "day", "start", "end", "kind", "default_room")
 )
 admin.site.register(
     SlotRoom,

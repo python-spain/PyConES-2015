@@ -72,6 +72,7 @@ class Slot(models.Model):
     start = models.TimeField()
     end = models.TimeField()
     content_override = MarkupField(blank=True, default_markup_type='markdown')
+    default_room = models.ForeignKey(Room, null=True, blank=True)
 
     def assign(self, content):
         """
@@ -136,7 +137,7 @@ class Slot(models.Model):
         return "%s %s (%s - %s, %s)" % (self.day, self.kind, self.start, self.end, rooms)
 
     class Meta:
-        ordering = ["day", "start", "end"]
+        ordering = ["day", "start", "end", "default_room__order"]
 
 
 @python_2_unicode_compatible
