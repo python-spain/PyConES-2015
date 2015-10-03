@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 11:02+0200\n"
+"POT-Creation-Date: 2015-10-03 12:38+0200\n"
 "PO-Revision-Date: 2015-07-13 11:47+0000\n"
 "Last-Translator: Mai Giménez <mai@immutable.es>\n"
 "Language-Team: Catalan (http://www.transifex.com/python-espana/web-"
@@ -747,7 +747,7 @@ msgid ""
 "programación. En esta charla planteo que, en el fondo y como propugnaba "
 "Edsger W.Dijkstra, todo se reduce a una cuestión de elegancia y sencillez. "
 "Y, como demostración, vamos a ver una implementación del algoritmo de "
-"Dijkstra: comenzando con el críptico código quesuele encontrarse por "
+"Dijkstra: comenzando con el críptico código que suele encontrarse por "
 "Internet y mejorándolo poco a poco, haciéndolo más Pythónico a cada paso "
 "hasta reducir el algoritmo a su más pura esencia. ¡Eso de encontrar el "
 "camino más corto en un grafo suena difícil, pero desde 1956 no lo es!"
@@ -803,16 +803,16 @@ msgstr "Informació del esdeveniment"
 msgid "¡Gracias por tu propuesta!"
 msgstr ""
 
-#: templates/schedule/show.html:14
-msgid "Track Básico"
+#: templates/schedule/show.html:15
+msgid "Track PSF (básico)"
 msgstr ""
 
-#: templates/schedule/show.html:17
+#: templates/schedule/show.html:18
 msgid "Track Avanzado"
 msgstr ""
 
-#: templates/schedule/show.html:20
-msgid "Track Científico"
+#: templates/schedule/show.html:21
+msgid "Track BigML (científic)o"
 msgstr ""
 
 #~ msgid "Detailed Abstract"
