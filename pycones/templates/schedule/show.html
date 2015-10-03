@@ -9,17 +9,19 @@
                 <h2>{{ day.date }}</h2>
             </div>
         </div>
+        {% if forloop.counter0 != 0 %}
         <div class="row">
             <div class="col-xs-12 col-sm-4 track-title track-title-basic">
-                <h3>{% trans "Track Básico" %}</h3>
+                <h3>{% trans "Track PSF (básico)" %}</h3>
             </div>
             <div class="col-xs-12 col-sm-4 track-title track-title-advanced">
                 <h3>{% trans "Track Avanzado" %}</h3>
             </div>
             <div class="col-xs-12 col-sm-4 track-title track-title-science">
-                <h3>{% trans "Track Científico" %}</h3>
+                <h3>{% trans "Track BigML (científico)" %}</h3>
             </div>
         </div>
+        {% endif %}
         {% for slot in day.slots %}
             {# Assuming 3 tracks and a room for track #}
             {# Plenary uses all row #}

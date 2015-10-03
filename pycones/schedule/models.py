@@ -4,6 +4,7 @@ import datetime
 from django.core.exceptions import ObjectDoesNotExist
 
 from django.db import models
+from django.db.models import SET_NULL
 from django.utils.encoding import python_2_unicode_compatible
 from markupfield.fields import MarkupField
 from proposals.models import ProposalBase
@@ -71,6 +72,7 @@ class Slot(models.Model):
     start = models.TimeField()
     end = models.TimeField()
     content_override = MarkupField(blank=True, default_markup_type='markdown')
+    default_room = models.ForeignKey(Room, null=True, blank=True)
 
     def assign(self, content):
         """
@@ -131,12 +133,11 @@ class Slot(models.Model):
     def __str__(self):
         if not self.rooms:
             return "%s %s (%s - %s)" % (self.day, self.kind, self.start, self.end)
-        rooms = ", ".join(map(lambda room : room.name, self.rooms))
+        rooms = ", ".join(map(lambda room: room.name, self.rooms))
         return "%s %s (%s - %s, %s)" % (self.day, self.kind, self.start, self.end, rooms)
 
-
     class Meta:
-        ordering = ["day", "start", "end"]
+        ordering = ["day", "start", "end", "default_room__order"]
 
 
 @python_2_unicode_compatible
@@ -159,7 +160,7 @@ class SlotRoom(models.Model):
 @python_2_unicode_compatible
 class Presentation(models.Model):
 
-    slot = models.OneToOneField(Slot, null=True, blank=True, related_name="content_ptr")
+    slot = models.OneToOneField(Slot, null=True, blank=True, related_name="content_ptr", on_delete=SET_NULL)
     title = models.CharField(max_length=100, default="", blank=True)
     description = MarkupField(default="", blank=True, default_markup_type='markdown')
     abstract = MarkupField(default="", blank=True, default_markup_type='markdown')
