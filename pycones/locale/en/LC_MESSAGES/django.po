@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 11:02+0200\n"
+"POT-Creation-Date: 2015-10-05 22:50+0200\n"
 "PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -309,7 +309,7 @@ msgid "Blog"
 msgstr ""
 
 #: templates/base.html:95 templates/pages/code_of_conduct.html:8
-#: templates/pages/info.html:30
+#: templates/pages/info.html:42
 msgid "Código de conducta"
 msgstr "Code of Conduct"
 
@@ -576,11 +576,11 @@ msgstr ""
 "entrance we will give you your acreditation (don't forget your ticketea "
 "ticket) and your Welcome Pack."
 
-#: templates/pages/home.html:91
+#: templates/pages/home.html:90
 msgid "Patrocinadores"
 msgstr "Sponsors"
 
-#: templates/pages/home.html:115
+#: templates/pages/home.html:114
 #, python-format
 msgid ""
 "\n"
@@ -593,11 +593,11 @@ msgstr ""
 "Do you want to be the first %(level_name)s sponsor? <a href=\"mailto:"
 "patrocinadores2015@es.pycon.org\" target=\"_blank\">Contact with us!</a>"
 
-#: templates/pages/home.html:124
+#: templates/pages/home.html:123
 msgid "Folleto (ES)"
 msgstr "Leaflet (ES)"
 
-#: templates/pages/home.html:127
+#: templates/pages/home.html:126
 msgid "Folleto (EN)"
 msgstr "Leaflet (EN)"
 
@@ -606,8 +606,8 @@ msgid "¿Cuándo?"
 msgstr "When?"
 
 #: templates/pages/info.html:13
-msgid "Valencia, 21-22 de noviembre de 2015"
-msgstr "Valencia, 21st-22nd November 2015"
+msgid "Valencia, del 20 al 22 de noviembre de 2015"
+msgstr "Valencia, from November 20th to 22nd 2015"
 
 #: templates/pages/info.html:19
 msgid "¿Dónde?"
@@ -621,7 +621,15 @@ msgstr ""
 msgid "Universidad Politécnica de Valencia"
 msgstr ""
 
-#: templates/pages/info.html:32
+#: templates/pages/info.html:30
+msgid "¡Comparte coche!"
+msgstr "Find a ride!"
+
+#: templates/pages/info.html:35
+msgid "Comparte coche a Valencia"
+msgstr "Find a ride to Valencia"
+
+#: templates/pages/info.html:44
 msgid ""
 "\n"
 "                            PyConES aspira a crear un ambiente libre de "
@@ -636,7 +644,7 @@ msgstr ""
 "appearance, body size, race, or religion. We do not tolerate harassment of "
 "conference participants in any form."
 
-#: templates/pages/info.html:37
+#: templates/pages/info.html:49
 msgid ""
 "\n"
 "                            Todo el contenido de la conferencia deberá "
@@ -650,7 +658,7 @@ msgstr ""
 "including people of many different backgrounds. Sexual language and imagery "
 "is not appropriate for any conference venue, including talks."
 
-#: templates/pages/info.html:42
+#: templates/pages/info.html:54
 msgid ""
 "\n"
 "                            Sé amable con los demás. No insultes o humilles "
@@ -664,7 +672,7 @@ msgstr ""
 "professionally. Remember that harassment and sexist, racist, or exclusionary "
 "jokes are not appropriate for PyCon."
 
-#: templates/pages/info.html:47
+#: templates/pages/info.html:59
 msgid ""
 "\n"
 "                            Los asistentes que incumplan estas reglas podrán "
@@ -676,7 +684,7 @@ msgstr ""
 "Attendees violating these rules may be asked to leave the conference without "
 "a refund at the sole discretion of the conference organizers."
 
-#: templates/pages/info.html:52
+#: templates/pages/info.html:64
 msgid ""
 "\n"
 "                            Gracias por ayudarnos a hacer este evento "
@@ -686,7 +694,7 @@ msgstr ""
 "\n"
 "Thank you for helping make this a welcoming, friendly event for all."
 
-#: templates/pages/info.html:56
+#: templates/pages/info.html:68
 msgid "Codigo de Conducta Completo"
 msgstr "Complete Code of Conduct"
 

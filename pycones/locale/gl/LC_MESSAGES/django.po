@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 11:02+0200\n"
+"POT-Creation-Date: 2015-10-05 22:50+0200\n"
 "PO-Revision-Date: 2015-07-12 17:01+0000\n"
 "Last-Translator: Miguel González <migonzalvar@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/python-espana/web-"
@@ -314,7 +314,7 @@ msgid "Blog"
 msgstr "Blog"
 
 #: templates/base.html:95 templates/pages/code_of_conduct.html:8
-#: templates/pages/info.html:30
+#: templates/pages/info.html:42
 msgid "Código de conducta"
 msgstr "Código de comportamento"
 
@@ -589,11 +589,11 @@ msgstr ""
 "                    entregarémoste o WelcomePack.\n"
 "                "
 
-#: templates/pages/home.html:91
+#: templates/pages/home.html:90
 msgid "Patrocinadores"
 msgstr "Patrocinadores"
 
-#: templates/pages/home.html:115
+#: templates/pages/home.html:114
 #, python-format
 msgid ""
 "\n"
@@ -608,11 +608,11 @@ msgstr ""
 "\">¡Contacta connosco!</a>\n"
 "                        "
 
-#: templates/pages/home.html:124
+#: templates/pages/home.html:123
 msgid "Folleto (ES)"
 msgstr "Folleto (ES)"
 
-#: templates/pages/home.html:127
+#: templates/pages/home.html:126
 msgid "Folleto (EN)"
 msgstr "Folleto (EN)"
 
@@ -621,7 +621,9 @@ msgid "¿Cuándo?"
 msgstr "Cándo?"
 
 #: templates/pages/info.html:13
-msgid "Valencia, 21-22 de noviembre de 2015"
+#, fuzzy
+#| msgid "Valencia, 21-22 de noviembre de 2015"
+msgid "Valencia, del 20 al 22 de noviembre de 2015"
 msgstr "Valencia, 21-22 de novembro de 2015"
 
 #: templates/pages/info.html:19
@@ -636,7 +638,15 @@ msgstr "Escola Técnica Superior de Enxeñería Informática"
 msgid "Universidad Politécnica de Valencia"
 msgstr "Universidade Politécnica de Valencia"
 
-#: templates/pages/info.html:32
+#: templates/pages/info.html:30
+msgid "¡Comparte coche!"
+msgstr ""
+
+#: templates/pages/info.html:35
+msgid "Comparte coche a Valencia"
+msgstr ""
+
+#: templates/pages/info.html:44
 msgid ""
 "\n"
 "                            PyConES aspira a crear un ambiente libre de "
@@ -652,7 +662,7 @@ msgstr ""
 "discriminación algunha baixo ningunha circunstancia.\n"
 "                            "
 
-#: templates/pages/info.html:37
+#: templates/pages/info.html:49
 msgid ""
 "\n"
 "                            Todo el contenido de la conferencia deberá "
@@ -667,7 +677,7 @@ msgstr ""
 "coma as imaxes sexualmente explícitas son inapropiados na conferencia e nas "
 "charlas."
 
-#: templates/pages/info.html:42
+#: templates/pages/info.html:54
 msgid ""
 "\n"
 "                            Sé amable con los demás. No insultes o humilles "
@@ -681,7 +691,7 @@ msgstr ""
 "Compórtate de xeito profesional. Lembra que as bromas sexistas, racistas ou "
 "discriminatorias están prohibidas na PyConES."
 
-#: templates/pages/info.html:47
+#: templates/pages/info.html:59
 msgid ""
 "\n"
 "                            Los asistentes que incumplan estas reglas podrán "
@@ -694,7 +704,7 @@ msgstr ""
 "organizadores- ser sancionados ou expulsados da conferencia sen dereito a "
 "reembolso."
 
-#: templates/pages/info.html:52
+#: templates/pages/info.html:64
 msgid ""
 "\n"
 "                            Gracias por ayudarnos a hacer este evento "
@@ -704,7 +714,7 @@ msgstr ""
 "\n"
 "Gracias por axudarnos a facer este evento amigable e aberto para todos."
 
-#: templates/pages/info.html:56
+#: templates/pages/info.html:68
 msgid "Codigo de Conducta Completo"
 msgstr "Código de Conduta Completo"
 
