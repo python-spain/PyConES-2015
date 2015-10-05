@@ -21,6 +21,12 @@
                 <h3>{% trans "Track BigML (científico)" %}</h3>
             </div>
         </div>
+        {% else %}
+        <div class="row">
+            <div class="col-xs-12 track-title track-advanced">
+                <h3>{% trans "Talleres" %}</h3>
+            </div>
+        </div>
         {% endif %}
         {% for slot in day.slots %}
             {# Assuming 3 tracks and a room for track #}
