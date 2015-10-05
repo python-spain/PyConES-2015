@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-03 12:38+0200\n"
+"POT-Creation-Date: 2015-10-05 11:02+0200\n"
 "PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -815,6 +815,10 @@ msgstr "Advanced Track"
 #: templates/schedule/show.html:21
 msgid "Track BigML (científico)"
 msgstr "BigML track (scientific)"
+
+#: templates/schedule/show.html:27
+msgid "Talleres"
+msgstr "Workshops"
 
 #~ msgid "Envía tu propuesta"
 #~ msgstr "Submit your proposal"
