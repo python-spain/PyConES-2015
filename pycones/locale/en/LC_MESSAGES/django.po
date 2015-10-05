@@ -623,11 +623,11 @@ msgstr ""
 
 #: templates/pages/info.html:30
 msgid "¡Comparte coche!"
-msgstr "Share the car!"
+msgstr "Find a ride!"
 
 #: templates/pages/info.html:35
 msgid "Comparte coche a Valencia"
-msgstr "Share the car to Valencia"
+msgstr "Find a ride to Valencia"
 
 #: templates/pages/info.html:44
 msgid ""
