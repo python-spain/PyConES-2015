@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 11:02+0200\n"
+"POT-Creation-Date: 2015-10-05 20:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -517,11 +517,19 @@ msgid ""
 "traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
 
-#: templates/pages/home.html:91
+#: templates/pages/home.html:90
+msgid "¡Comparte coche!"
+msgstr ""
+
+#: templates/pages/home.html:93
+msgid "Comparte coche a Valencia"
+msgstr ""
+
+#: templates/pages/home.html:100
 msgid "Patrocinadores"
 msgstr ""
 
-#: templates/pages/home.html:115
+#: templates/pages/home.html:124
 #, python-format
 msgid ""
 "\n"
@@ -531,11 +539,11 @@ msgid ""
 "                        "
 msgstr ""
 
-#: templates/pages/home.html:124
+#: templates/pages/home.html:133
 msgid "Folleto (ES)"
 msgstr ""
 
-#: templates/pages/home.html:127
+#: templates/pages/home.html:136
 msgid "Folleto (EN)"
 msgstr ""
 

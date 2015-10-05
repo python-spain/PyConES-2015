@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 11:02+0200\n"
+"POT-Creation-Date: 2015-10-05 20:46+0200\n"
 "PO-Revision-Date: 2015-07-13 11:47+0000\n"
 "Last-Translator: Mai Giménez <mai@immutable.es>\n"
 "Language-Team: Catalan (http://www.transifex.com/python-espana/web-"
@@ -591,11 +591,19 @@ msgstr ""
 "et canviarem la teva entrada de ticketea (no oblidis portar-la) per la teva "
 "acreditació i t'entregarem el WelcomePack"
 
-#: templates/pages/home.html:91
+#: templates/pages/home.html:90
+msgid "¡Comparte coche!"
+msgstr ""
+
+#: templates/pages/home.html:93
+msgid "Comparte coche a Valencia"
+msgstr ""
+
+#: templates/pages/home.html:100
 msgid "Patrocinadores"
 msgstr "Patrocinadors"
 
-#: templates/pages/home.html:115
+#: templates/pages/home.html:124
 #, python-format
 msgid ""
 "\n"
@@ -609,11 +617,11 @@ msgstr ""
 "patrocinadores2015@es.pycon.org\" target=\"_blank\">Contacta amb nosaltres\"!"
 "</a>"
 
-#: templates/pages/home.html:124
+#: templates/pages/home.html:133
 msgid "Folleto (ES)"
 msgstr "Fullet (ES)"
 
-#: templates/pages/home.html:127
+#: templates/pages/home.html:136
 msgid "Folleto (EN)"
 msgstr "Fullet (EN)"
 

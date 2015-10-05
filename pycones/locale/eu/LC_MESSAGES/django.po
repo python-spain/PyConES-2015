@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 11:02+0200\n"
+"POT-Creation-Date: 2015-10-05 20:46+0200\n"
 "PO-Revision-Date: 2015-07-09 10:31+0000\n"
 "Last-Translator: Aitzol Naberan <anaberan@codesyntax.com>\n"
 "Language-Team: Basque (http://www.transifex.com/python-espana/web-"
@@ -580,11 +580,19 @@ msgstr ""
 "                    WelcomePack-arekin batera.\n"
 "                "
 
-#: templates/pages/home.html:91
+#: templates/pages/home.html:90
+msgid "¡Comparte coche!"
+msgstr ""
+
+#: templates/pages/home.html:93
+msgid "Comparte coche a Valencia"
+msgstr ""
+
+#: templates/pages/home.html:100
 msgid "Patrocinadores"
 msgstr "Babesleak"
 
-#: templates/pages/home.html:115
+#: templates/pages/home.html:124
 #, python-format
 msgid ""
 "\n"
@@ -599,11 +607,11 @@ msgstr ""
 "harremanetan gurekin!</a>\n"
 "                        "
 
-#: templates/pages/home.html:124
+#: templates/pages/home.html:133
 msgid "Folleto (ES)"
 msgstr "Eskuorria (ES)"
 
-#: templates/pages/home.html:127
+#: templates/pages/home.html:136
 msgid "Folleto (EN)"
 msgstr "Eskuorria (EN)"
 
