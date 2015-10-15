@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 22:50+0200\n"
+"POT-Creation-Date: 2015-10-15 10:23+0200\n"
 "PO-Revision-Date: 2015-07-09 10:31+0000\n"
 "Last-Translator: Aitzol Naberan <anaberan@codesyntax.com>\n"
 "Language-Team: Basque (http://www.transifex.com/python-espana/web-"
@@ -312,7 +312,7 @@ msgid "Blog"
 msgstr "Bloga"
 
 #: templates/base.html:95 templates/pages/code_of_conduct.html:8
-#: templates/pages/info.html:42
+#: templates/pages/info.html:47
 msgid "Código de conducta"
 msgstr "Jarrera kodea"
 
@@ -564,12 +564,17 @@ msgid "Compra de entradas"
 msgstr "Sarrerak erostea"
 
 #: templates/pages/home.html:80
-msgid "Compra tus entradas"
-msgstr "Erosi zure sarrerak"
+msgid "¡Entradas agotadas!"
+msgstr ""
 
 #: templates/pages/home.html:83
+#, fuzzy
+#| msgid ""
+#| "Con tu entrada podrás acceder los dos días de la conferencia completos. "
+#| "En la entrada del edificio te cambiaremos tu entrada de ticketea (no "
+#| "olvides traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgid ""
-"Con tu entrada podrás acceder los dos días de la conferencia completos. En "
+"Con tu entrada podrás acceder los tres días de la conferencia completos. En "
 "la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
 "traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgstr ""
@@ -629,15 +634,20 @@ msgstr "Escuela Técnica Superior de Ingeniería Informática"
 msgid "Universidad Politécnica de Valencia"
 msgstr "Universidad Politécnica de Valencia"
 
-#: templates/pages/info.html:30
-msgid "¡Comparte coche!"
+#: templates/pages/info.html:26
+#, python-format
+msgid "30 %% descuento RENFE"
 msgstr ""
 
 #: templates/pages/info.html:35
+msgid "¡Comparte coche!"
+msgstr ""
+
+#: templates/pages/info.html:40
 msgid "Comparte coche a Valencia"
 msgstr ""
 
-#: templates/pages/info.html:44
+#: templates/pages/info.html:49
 msgid ""
 "\n"
 "                            PyConES aspira a crear un ambiente libre de "
@@ -652,7 +662,7 @@ msgstr ""
 "fisikoa,...).\n"
 "                            "
 
-#: templates/pages/info.html:49
+#: templates/pages/info.html:54
 msgid ""
 "\n"
 "                            Todo el contenido de la conferencia deberá "
@@ -668,7 +678,7 @@ msgstr ""
 "hitzaldietan.\n"
 "                            "
 
-#: templates/pages/info.html:54
+#: templates/pages/info.html:59
 msgid ""
 "\n"
 "                            Sé amable con los demás. No insultes o humilles "
@@ -684,7 +694,7 @@ msgstr ""
 "baztertzailerik.\n"
 "                            "
 
-#: templates/pages/info.html:59
+#: templates/pages/info.html:64
 msgid ""
 "\n"
 "                            Los asistentes que incumplan estas reglas podrán "
@@ -698,7 +708,7 @@ msgstr ""
 "kostua itzultzeko eskubiderik gabe.\n"
 "                            "
 
-#: templates/pages/info.html:64
+#: templates/pages/info.html:69
 msgid ""
 "\n"
 "                            Gracias por ayudarnos a hacer este evento "
@@ -710,7 +720,7 @@ msgstr ""
 "sortzen laguntzearren.\n"
 "                            "
 
-#: templates/pages/info.html:68
+#: templates/pages/info.html:73
 msgid "Codigo de Conducta Completo"
 msgstr "Jarrera kodea (osorik)"
 
@@ -824,6 +834,9 @@ msgstr ""
 #: templates/schedule/show.html:27
 msgid "Talleres"
 msgstr ""
+
+#~ msgid "Compra tus entradas"
+#~ msgstr "Erosi zure sarrerak"
 
 #~ msgid "Detailed Abstract"
 #~ msgstr "Laburpen zehatza"
