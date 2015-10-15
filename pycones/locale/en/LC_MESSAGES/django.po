@@ -564,14 +564,9 @@ msgstr "Registration"
 
 #: templates/pages/home.html:80
 msgid "¡Entradas agotadas!"
-msgstr ""
+msgstr "Sold out!"
 
 #: templates/pages/home.html:83
-#, fuzzy
-#| msgid ""
-#| "Con tu entrada podrás acceder los dos días de la conferencia completos. "
-#| "En la entrada del edificio te cambiaremos tu entrada de ticketea (no "
-#| "olvides traerla) por tu acreditación y te entregaremos el WelcomePack."
 msgid ""
 "Con tu entrada podrás acceder los tres días de la conferencia completos. En "
 "la entrada del edificio te cambiaremos tu entrada de ticketea (no olvides "
@@ -629,7 +624,7 @@ msgstr ""
 #: templates/pages/info.html:26
 #, python-format
 msgid "30 %% descuento RENFE"
-msgstr ""
+msgstr "30 %% RENFE discount"
 
 #: templates/pages/info.html:35
 msgid "¡Comparte coche!"
