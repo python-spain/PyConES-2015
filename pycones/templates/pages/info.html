@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% load i18n %}
 
 {% block container %}
@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h2><i class="icon-arrow"></i>{% trans "¿Cuándo?" %}</h2>
-                        <p class="loud">{% trans "Valencia, 21-22 de noviembre de 2015" %}</p>
+                        <p class="loud">{% trans "Valencia, del 20 al 22 de noviembre de 2015" %}</p>
                     </div>
                 </div>
 
@@ -20,7 +20,24 @@
                         <p class="loud">{% trans "Escuela Técnica Superior de Ingeniería Informática" %}</p>
                         <p class="loud">{% trans "Universidad Politécnica de Valencia" %}</p>
                         <p>
+                            Camino de Vera, s/n<br/>
+                            46022 Valencia
+                        </p>
+                        <p class="loud"><a href="{% static "pdf/TES_2015_01987.pdf" %}" class="btn btn-primary btn-lg">{% trans "30 % descuento RENFE" %}</a> <a href="http://www.renfe.com/viajeros/tarifas/eventos_tutorial.html" target="_blank">¿Cómo aplicar el descuento?</a></p>
+                        <p>
                             <iframe width="100%" height="450" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-0.3549528121948242%2C39.48004647954756%2C-0.34218549728393555%2C39.485859505473975&amp;layer=mapnik&amp;marker=39.48253%2C-0.34695"></iframe>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2 id="share-car"><i class="icon-arrow"></i> {% trans "¡Comparte coche!" %}</h2>
+                        <iframe src="http://www.blablacar.es/widget/ES_WID_PUBLIC-pyconesvlc_PSGR&amp;?from=&amp;?to=Valencia" style="border:0; padding:0;margin: 35px 0 0 0;" width="100%" height="270px" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-center" style="margin-top: 200px">
+                            <a href="http://www.blablacar.es/coche-compartido/a-Valencia/#&amp;utm_source=WID&amp;utm_medium=Link&amp;utm_campaign=ES_WID_PUBLIC-pyconesvlc_PSGR&amp;comuto_cmkt=ES_WID_PUBLIC-pyconesvlc_PSGR" class="btn btn-primary btn-lg">{% trans "Comparte coche a Valencia" %}</a>
                         </p>
                     </div>
                 </div>
