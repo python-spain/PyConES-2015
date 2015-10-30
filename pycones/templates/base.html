@@ -57,6 +57,12 @@
                     <li><a href="{% url "schedule:show" %}">{% trans "Agenda" %}</a></li>
                     {% endif %}
                     <li><a href="{% url "blog:list" %}">{% trans "Blog" %}</a></li>
+                    {% if not request.user.is_authenticated %}
+                        <li><a href="{% url "attendees:sign_in" %}">{% trans "Zona de Asistentes" %}</a></li>
+                    {% else %}
+                        <li><a href="{% url "attendees:profile" %}">{% trans "Editar Datos" %}</a></li>
+                        <li><a href="{% url "attendees:log_out" %}">{% trans "Salir" %}</a></li>
+                    {% endif %}
                 </ul>
             </div>
 

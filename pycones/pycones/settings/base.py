@@ -39,6 +39,12 @@ ADMINS = (
 MANAGERS = ADMINS
 ########## END MANAGER CONFIGURATION
 
+########## AUTHENTICATION BACKENDS CONFIGURATION
+AUTHENTICATION_BACKENDS = (
+    'attendees.auth.AttendeeAuthBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+########## END AUTHENTICATION BACKENDS CONFIGURATION
 
 ########## DATABASE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
@@ -213,6 +219,7 @@ LOCAL_APPS = (
     'speakers',
     'proposals',
     'sponsorship',
+    'attendees',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -232,6 +239,7 @@ SUIT_CONFIG = {
         'schedule': 'icon-calendar',
         'speakers': 'icon-bullhorn',
         'sponsorship': 'icon-briefcase',
+        'attendees': 'icon-user',
     }
 }
 ########## END DJANGO SUIT CONFIGURATION
@@ -331,6 +339,19 @@ STATICFILES_FINDERS += (
 ########## TEST CONFIGURATION
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 ########## END TEST CONFIGURATION
+
+########## MESSAGES CONFIGURATION
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'debug',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-error',
+}
+########## END MESSAGES CONFIGURATION
+
 
 ########## MARKUP FIELD CONFIGURATION
 INSTALLED_APPS += (

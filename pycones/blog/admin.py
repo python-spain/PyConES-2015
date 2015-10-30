@@ -7,6 +7,7 @@ from markupfield.widgets import AdminMarkupTextareaWidget
 
 from blog.models import Post
 
+
 class PostAdminForm(forms.ModelForm):
 
     class Meta:
@@ -18,6 +19,7 @@ class PostAdminForm(forms.ModelForm):
             'content_es': AdminMarkupTextareaWidget(attrs={'class': 'span12'}),
             'content_en': AdminMarkupTextareaWidget(attrs={'class': 'span12'}),
         }
+
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ['id', 'title', 'created', 'status']
