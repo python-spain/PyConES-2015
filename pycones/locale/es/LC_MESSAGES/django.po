@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-15 10:23+0200\n"
+"POT-Creation-Date: 2015-10-30 12:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: attendees/admin.py:55
+msgid "Attendees imported!"
+msgstr ""
+
+#: attendees/forms.py:41 attendees/forms.py:82 attendees/forms.py:96
+msgid "Localizador"
+msgstr ""
+
+#: attendees/forms.py:43 attendees/forms.py:46 attendees/forms.py:100
+#: attendees/forms.py:103
+msgid "Contraseña"
+msgstr ""
+
+#: attendees/forms.py:52
+msgid "Repita la contraseña"
+msgstr ""
+
+#: attendees/forms.py:59 attendees/forms.py:90 attendees/forms.py:110
+msgid "El localzador de entrada no existe"
+msgstr ""
+
+#: attendees/forms.py:66
+msgid "Las contraseñas no son iguales"
+msgstr ""
+
+#: attendees/forms.py:73 attendees/forms.py:76
+msgid "Código de restauración no válido"
+msgstr ""
+
+#: attendees/forms.py:84 attendees/forms.py:98
+msgid "Localizador de entrada"
+msgstr ""
+
+#: attendees/forms.py:117 attendees/forms.py:120 attendees/forms.py:122
+msgid "La contraseña no es correcta"
+msgstr ""
+
+#: attendees/models.py:21
+msgid "Nombre"
+msgstr ""
+
+#: attendees/models.py:22
+msgid "Email"
+msgstr ""
+
+#: attendees/models.py:23
+msgid "DNI"
+msgstr ""
+
+#: attendees/models.py:26
+msgid "localizador ticketea"
+msgstr ""
+
+#: attendees/models.py:29
+msgid "Notas"
+msgstr ""
+
+#: attendees/models.py:30
+msgid "Alergias"
+msgstr ""
+
+#: attendees/models.py:63
+msgid "Establece tu contraseña"
+msgstr ""
+
+#: attendees/views.py:42
+msgid "Datos guardados correctamente"
+msgstr ""
+
+#: attendees/views.py:78
+msgid "Se ha establecido la nueva contraseña"
+msgstr ""
+
+#: attendees/views.py:106
+msgid ""
+"Se ha enviado un correo a la cuenta con la que compraste la entrada con un "
+"enlace para establecer tu contraseña."
+msgstr ""
 
 #: blog/models.py:21
 msgid "Draft"
@@ -159,23 +238,23 @@ msgstr ""
 msgid "Declined"
 msgstr ""
 
-#: pycones/settings/base.py:66
+#: pycones/settings/base.py:72
 msgid "Español"
 msgstr ""
 
-#: pycones/settings/base.py:67
+#: pycones/settings/base.py:73
 msgid "Catalán"
 msgstr ""
 
-#: pycones/settings/base.py:68
+#: pycones/settings/base.py:74
 msgid "Gallego"
 msgstr ""
 
-#: pycones/settings/base.py:69
+#: pycones/settings/base.py:75
 msgid "Euskera"
 msgstr ""
 
-#: pycones/settings/base.py:70
+#: pycones/settings/base.py:76
 msgid "English"
 msgstr ""
 
@@ -287,6 +366,56 @@ msgstr ""
 msgid "file"
 msgstr ""
 
+#: templates/admin/attendees/attendee/change_list.html:6
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: templates/admin/attendees/attendee/change_list.html:10
+#, python-format
+msgid "Import %(name)ss"
+msgstr ""
+
+#: templates/admin/attendees/attendee/import.html:8
+msgid "Import CSV file with attendees"
+msgstr ""
+
+#: templates/admin/attendees/attendee/import.html:14
+msgid "Import"
+msgstr ""
+
+#: templates/attendees/profile.html:7
+msgid "Datos del asistente"
+msgstr ""
+
+#: templates/attendees/profile.html:40 templates/attendees/restore.html:40
+msgid "Guardar"
+msgstr ""
+
+#: templates/attendees/request_code.html:7 templates/attendees/restore.html:7
+msgid "Establece o restaura tu contraseña"
+msgstr ""
+
+#: templates/attendees/request_code.html:33
+msgid "Enviar"
+msgstr ""
+
+#: templates/attendees/restore_email.html:3
+msgid "Entra en este enlace para establecer tu contraseña:"
+msgstr ""
+
+#: templates/attendees/sign_in.html:7
+msgid "Accede a la zona de asistentes"
+msgstr ""
+
+#: templates/attendees/sign_in.html:21
+msgid "Entrar"
+msgstr ""
+
+#: templates/attendees/sign_in.html:24
+msgid "¿No tienes contraseña o la has olvidado?"
+msgstr ""
+
 #: templates/base.html:45
 msgid "Toggle navigation"
 msgstr ""
@@ -311,12 +440,24 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: templates/base.html:95 templates/pages/code_of_conduct.html:8
+#: templates/base.html:61
+msgid "Zona de Asistentes"
+msgstr ""
+
+#: templates/base.html:63
+msgid "Editar Datos"
+msgstr ""
+
+#: templates/base.html:64
+msgid "Salir"
+msgstr ""
+
+#: templates/base.html:101 templates/pages/code_of_conduct.html:8
 #: templates/pages/info.html:47
 msgid "Código de conducta"
 msgstr ""
 
-#: templates/base.html:96
+#: templates/base.html:102
 msgid "Contacta con nosotros"
 msgstr ""
 
