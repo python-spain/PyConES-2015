@@ -28,6 +28,9 @@ class Attendee(TimeStampedModel):
     restore_code = models.CharField(max_length=16, null=True, blank=True, unique=True)
     notes = models.TextField(verbose_name=_("Notas"), null=True, blank=True)
     allergies = models.TextField(verbose_name=_("Alergias"), null=True, blank=True)
+    workshop_attendance = models.NullBooleanField(
+        verbose_name=_("¿Vas a asistir a los talleres del viernes?"), null=True, blank=True
+    )
 
     def create_user(self):
         """Creates user in case the is no user associated with this
