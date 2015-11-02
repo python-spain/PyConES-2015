@@ -3,7 +3,7 @@ django-braces==1.4.0
 django-extensions==1.5
 django-model-utils==2.2
 django-reversion==1.8.7
-ipython==2.4.1
+ipython==4.0.0
 logutils==0.3.3
 django-pipeline==1.4.6
 sphinx-rtd-theme==0.1.6

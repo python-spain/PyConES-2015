@@ -17,6 +17,7 @@ urlpatterns = i18n_patterns(
     url(r'^blog/', include('blog.urls', namespace="blog")),
     url(r'^proposals/', include('proposals.urls', namespace="proposals")),
     url(r'^schedule/', include('schedule.urls', namespace="schedule")),
+    url(r'^attendees/', include('attendees.urls', namespace="attendees")),
 )
 
 urlpatterns += [
