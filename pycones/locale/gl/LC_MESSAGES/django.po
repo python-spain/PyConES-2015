@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Web PyConES 2015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 13:17+0100\n"
+"POT-Creation-Date: 2015-11-02 17:10+0100\n"
 "PO-Revision-Date: 2015-07-12 17:01+0000\n"
 "Last-Translator: Miguel González <migonzalvar@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/python-espana/web-"
@@ -20,11 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: attendees/admin.py:55
+#: attendees/admin.py:58
 msgid "Attendees imported!"
 msgstr ""
 
 #: attendees/forms.py:41 attendees/forms.py:82 attendees/forms.py:96
+#: templates/attendees/restore.html:28
 msgid "Localizador"
 msgstr ""
 
@@ -33,7 +34,7 @@ msgstr ""
 msgid "Contraseña"
 msgstr ""
 
-#: attendees/forms.py:52
+#: attendees/forms.py:49 attendees/forms.py:52
 msgid "Repita la contraseña"
 msgstr ""
 
@@ -60,7 +61,7 @@ msgid "La contraseña no es correcta"
 msgstr ""
 
 #: attendees/models.py:21
-msgid "Nombre"
+msgid "Nombre completo y apellidos"
 msgstr ""
 
 #: attendees/models.py:22
@@ -411,7 +412,7 @@ msgid ""
 "completado sus datos."
 msgstr ""
 
-#: templates/attendees/profile.html:44 templates/attendees/restore.html:40
+#: templates/attendees/profile.html:44 templates/attendees/restore.html:50
 msgid "Guardar"
 msgstr ""
 
@@ -421,6 +422,15 @@ msgstr ""
 
 #: templates/attendees/request_code.html:33
 msgid "Enviar"
+msgstr ""
+
+#: templates/attendees/restore.html:19 templates/attendees/sign_in.html:16
+msgid ""
+"\n"
+"                Este año el acceso a la red WiFi durante el evento es "
+"personalizado, por lo que necesitamos que nos indiques\n"
+"                tu DNI para poder darte los credenciales de acceso.\n"
+"                "
 msgstr ""
 
 #: templates/attendees/restore_email.html:3
@@ -439,15 +449,6 @@ msgid ""
 "entrada de Ticketea y tu contraseña (si no\n"
 "                tienes contraseña la puedes generar entrando <a href="
 "\"%(request_restore_password)s\">aquí</a>).\n"
-"                "
-msgstr ""
-
-#: templates/attendees/sign_in.html:16
-msgid ""
-"\n"
-"                Este año el acceso a la red WiFi durante el evento es "
-"personalizado, por lo que necesitamos que nos indiques\n"
-"                tu DNI para poder darte los credenciales de acceso.\n"
 "                "
 msgstr ""
 

@@ -18,7 +18,7 @@ class Attendee(TimeStampedModel):
     """
     user = models.OneToOneField(settings.AUTH_USER_MODEL, null=True, blank=True)
 
-    name = models.CharField(verbose_name=_("Nombre"), max_length=128, null=True, blank=True)
+    name = models.CharField(verbose_name=_("Nombre completo y apellidos"), max_length=128, null=True, blank=True)
     email = models.EmailField(verbose_name=_("Email"), max_length=128, null=True, blank=True)
     dni = models.CharField(verbose_name=_("DNI"), max_length=16, unique=True, null=True, blank=True)
     barcode = models.CharField(max_length=32, unique=True, null=True, blank=True)

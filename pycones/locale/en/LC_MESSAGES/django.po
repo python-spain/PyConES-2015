@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 13:17+0100\n"
+"POT-Creation-Date: 2015-11-02 17:10+0100\n"
 "PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -19,11 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.1\n"
 
-#: attendees/admin.py:55
+#: attendees/admin.py:58
 msgid "Attendees imported!"
 msgstr ""
 
 #: attendees/forms.py:41 attendees/forms.py:82 attendees/forms.py:96
+#: templates/attendees/restore.html:28
 msgid "Localizador"
 msgstr "Locator"
 
@@ -32,7 +33,7 @@ msgstr "Locator"
 msgid "Contraseña"
 msgstr "Password"
 
-#: attendees/forms.py:52
+#: attendees/forms.py:49 attendees/forms.py:52
 msgid "Repita la contraseña"
 msgstr "Repeat password"
 
@@ -57,8 +58,8 @@ msgid "La contraseña no es correcta"
 msgstr "Password incorrect"
 
 #: attendees/models.py:21
-msgid "Nombre"
-msgstr "Name"
+msgid "Nombre completo y apellidos"
+msgstr "Name and surname"
 
 #: attendees/models.py:22
 msgid "Email"
@@ -110,8 +111,8 @@ msgid ""
 "Se ha enviado un correo a la cuenta con la que compraste la entrada con un "
 "enlace para establecer tu contraseña."
 msgstr ""
-"We've sent an email to the account that bought the entrance with a "
-"link to set your password."
+"We've sent an email to the account that bought the entrance with a link to "
+"set your password."
 
 #: blog/models.py:21
 msgid "Draft"
@@ -412,7 +413,7 @@ msgstr ""
 "for network access will be given with the welcome pack for those they have "
 "completed their data."
 
-#: templates/attendees/profile.html:44 templates/attendees/restore.html:40
+#: templates/attendees/profile.html:44 templates/attendees/restore.html:50
 msgid "Guardar"
 msgstr "Save"
 
@@ -423,6 +424,21 @@ msgstr "Sets or resets your password"
 #: templates/attendees/request_code.html:33
 msgid "Enviar"
 msgstr "Send"
+
+#: templates/attendees/restore.html:19 templates/attendees/sign_in.html:16
+msgid ""
+"\n"
+"                Este año el acceso a la red WiFi durante el evento es "
+"personalizado, por lo que necesitamos que nos indiques\n"
+"                tu DNI para poder darte los credenciales de acceso.\n"
+"                "
+msgstr ""
+"\n"
+"                This year the access to the WiFi network during the event is "
+"personalized, so we need you specify\n"
+"                your identity document number, to give you the access "
+"credentials.\n"
+"                "
 
 #: templates/attendees/restore_email.html:3
 msgid "Entra en este enlace para establecer tu contraseña:"
@@ -447,21 +463,6 @@ msgstr ""
 "entrance and your password (if you don't\n"
 "                have password, you can create one by clicking <a href="
 "\"%(request_restore_password)s\">here</a>).\n"
-"                "
-
-#: templates/attendees/sign_in.html:16
-msgid ""
-"\n"
-"                Este año el acceso a la red WiFi durante el evento es "
-"personalizado, por lo que necesitamos que nos indiques\n"
-"                tu DNI para poder darte los credenciales de acceso.\n"
-"                "
-msgstr ""
-"\n"
-"                This year the access to the WiFi network during the event is "
-"personalized, so we need you specify\n"
-"                your identity document number, to give you the access "
-"credentials.\n"
 "                "
 
 #: templates/attendees/sign_in.html:36
@@ -1032,6 +1033,9 @@ msgstr "BigML track (scientific)"
 #: templates/schedule/show.html:27
 msgid "Talleres"
 msgstr "Workshops"
+
+#~ msgid "Nombre"
+#~ msgstr "Name"
 
 #~ msgid "Compra tus entradas"
 #~ msgstr "Buy your tickets"
