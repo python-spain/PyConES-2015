@@ -25,7 +25,8 @@ class AttendeeAdmin(admin.ModelAdmin):
         "tracker",
         "notes",
         "allergies",
-        "restore_code"
+        "restore_code",
+        "workshop_attendance"
     ])]
 
     def get_urls(self):
