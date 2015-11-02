@@ -15,7 +15,7 @@
                 {% endfor %}
             {% endif %}
 
-            <p>{% trans "Este año el acceso a WiFi durante el evento será personal pra cada asistente, y para ello necesitamos que nos indiqueis vuestro DNI. Los credenciales de acceso a la red se darán junto al welcome pack a aquellos que hayan completado sus datos." %}</p>
+            <p>{% trans "Este año el acceso a WiFi durante el evento será personal para cada asistente, y para ello necesitamos que nos indiques el DNI. Los credenciales de acceso a la red se darán junto al welcome pack a aquellos que hayan completado sus datos." %}</p>
 
             <form method="post" class="form-horizontal" style="margin-top: 50px">
                 {% csrf_token %}
@@ -32,6 +32,8 @@
                             {{ field }}
                             {% if field.errors %}
                             <span class="help-block">{{ field.errors }}</span>
+                            {% else %}
+                            <span class="help-block">{{ field.help_text }}</span>
                             {% endif %}
                         </div>
                         {% endif %}

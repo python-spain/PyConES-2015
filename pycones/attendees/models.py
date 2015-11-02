@@ -27,7 +27,11 @@ class Attendee(TimeStampedModel):
     )
     restore_code = models.CharField(max_length=16, null=True, blank=True, unique=True)
     notes = models.TextField(verbose_name=_("Notas"), null=True, blank=True)
-    allergies = models.TextField(verbose_name=_("Alergias"), null=True, blank=True)
+    allergies = models.TextField(
+        verbose_name=_("Consideraciones para el catering"), null=True, blank=True,
+        help_text=_("Alergias, dieta especial o cualquier cosas que quieres que tengamos en cuenta para el catering. "
+                    "Se hará lo posible por ajustarse a las necesidades particulares.")
+    )
     workshop_attendance = models.NullBooleanField(
         verbose_name=_("¿Vas a asistir a los talleres del viernes?"), null=True, blank=True
     )
