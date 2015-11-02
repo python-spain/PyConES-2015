@@ -426,7 +426,7 @@ msgstr "Send"
 
 #: templates/attendees/restore_email.html:3
 msgid "Entra en este enlace para establecer tu contraseña:"
-msgstr ""
+msgstr "Enter this link to reset your password:"
 
 #: templates/attendees/sign_in.html:7
 msgid "Accede a la zona de asistentes"

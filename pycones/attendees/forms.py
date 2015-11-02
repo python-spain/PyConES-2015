@@ -46,7 +46,7 @@ class RestorePasswordForm(forms.Form):
             "placeholder": _("Contraseña"),
         }
     ))
-    repeat_password = forms.CharField(widget=forms.PasswordInput(
+    repeat_password = forms.CharField(label=_("Repita la contraseña"), widget=forms.PasswordInput(
         attrs={
             "class": "form-control",
             "placeholder": _("Repita la contraseña"),
