@@ -142,3 +142,16 @@ class AttendeeForm(forms.ModelForm):
                 "class": "form-control"
             }),
         }
+
+
+class AdminAttendeeForm(forms.ModelForm):
+
+    class Meta:
+        model = Attendee
+        fields = "__all__"
+
+    def clean_dni(self):
+        dni = self.cleaned_data.get("dni")
+        if not dni:
+            return None
+        return dni
