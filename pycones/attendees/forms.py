@@ -25,7 +25,7 @@ class ImportAttendeeForm(forms.Form):
                 attendee = Attendee.objects.create(
                     name=row["Nombre"],
                     email=row["E-mail"],
-                    barcode=row['Código de barras'],
+                    barcode=row['Código de barras'] if row['Código de barras'] else None,
                     tracker=row["Localizador"],
                 )
                 attendee.create_user()
