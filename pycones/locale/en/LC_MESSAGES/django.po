@@ -499,7 +499,7 @@ msgstr ""
 
 #: templates/base.html:61
 msgid "Zona de Asistentes"
-msgstr "Attenders Zone"
+msgstr "Attendees Area"
 
 #: templates/base.html:63
 msgid "Editar Datos"

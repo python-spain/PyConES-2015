@@ -9,7 +9,7 @@ from django.shortcuts import render
 from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
 
-from attendees.forms import ImportAttendeeForm
+from attendees.forms import ImportAttendeeForm, AdminAttendeeForm
 from attendees.models import Attendee
 from proposals.actions import export_as_csv_action
 
@@ -28,6 +28,7 @@ class AttendeeAdmin(admin.ModelAdmin):
         "restore_code",
         "workshop_attendance"
     ])]
+    form = AdminAttendeeForm
 
     def get_urls(self):
         """Override to add URL to import data."""

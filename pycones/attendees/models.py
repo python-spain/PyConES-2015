@@ -20,7 +20,7 @@ class Attendee(TimeStampedModel):
 
     name = models.CharField(verbose_name=_("Nombre completo y apellidos"), max_length=128, null=True, blank=True)
     email = models.EmailField(verbose_name=_("Email"), max_length=128, null=True, blank=True)
-    dni = models.CharField(verbose_name=_("DNI"), max_length=16, unique=True, null=True, blank=True)
+    dni = models.CharField(verbose_name=_("DNI"), max_length=16, unique=True, null=True, blank=True, default=None)
     barcode = models.CharField(max_length=32, unique=True, null=True, blank=True)
     tracker = models.CharField(
         max_length=16, unique=True, null=True, blank=True, verbose_name=_("localizador ticketea")
