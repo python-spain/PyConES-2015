@@ -155,3 +155,21 @@ class AdminAttendeeForm(forms.ModelForm):
         if not dni:
             return None
         return dni
+
+    def clean_barcode(self):
+        barcode = self.cleaned_data.get("barcode")
+        if not barcode:
+            return None
+        return barcode
+
+    def clean_restore_code(self):
+        restore_code = self.cleaned_data.get("restore_code")
+        if not restore_code:
+            return None
+        return restore_code
+
+    def clean_tracker(self):
+        tracker = self.cleaned_data.get("tracker")
+        if not tracker:
+            return None
+        return tracker
