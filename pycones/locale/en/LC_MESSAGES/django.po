@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 17:10+0100\n"
+"POT-Creation-Date: 2015-11-11 12:52+0100\n"
 "PO-Revision-Date: 2015-07-14 10:24+0100\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.1\n"
 
-#: attendees/admin.py:58
+#: attendees/admin.py:59
 msgid "Attendees imported!"
 msgstr ""
 
@@ -510,7 +510,7 @@ msgid "Salir"
 msgstr "Logout"
 
 #: templates/base.html:101 templates/pages/code_of_conduct.html:8
-#: templates/pages/info.html:47
+#: templates/pages/info.html:114
 msgid "Código de conducta"
 msgstr "Code of Conduct"
 
@@ -802,47 +802,128 @@ msgstr "Leaflet (ES)"
 msgid "Folleto (EN)"
 msgstr "Leaflet (EN)"
 
-#: templates/pages/info.html:12
-msgid "¿Cuándo?"
-msgstr "When?"
+#: templates/pages/info.html:10
+msgid "Localización"
+msgstr "Location"
 
-#: templates/pages/info.html:13
-msgid "Valencia, del 20 al 22 de noviembre de 2015"
-msgstr "Valencia, from November 20th to 22nd 2015"
+#: templates/pages/info.html:14
+msgid ""
+"\n"
+"                        La PyConES 2015 se celebra en la Escuela Técnica "
+"Superior de Informática (ETSINF) de la\n"
+"                        Universidad Politécnica de Valencia en el Campus de "
+"Vera,\n"
+"                        <strong>del 20 al 22 de noviembre de 2015</strong>. "
+"Se accede por la Avenida de los\n"
+"                        Naranjos (Avinguda deis Taronjers) y la puerta más "
+"recomendable para acceder es la puerta P.\n"
+"                        Desde ahí podéis acceder a los edificios donde se "
+"celebra la conferencia que son los\n"
+"                        etiquetados como <strong>1G</strong>  (ETSINF) y "
+"<strong>1F</strong> (DSIIC).\n"
+"                        Las charlas plenarias serán en el Paraninfo "
+"(<strong>3A</strong>).\n"
+"                    "
+msgstr ""
+"\n"
+"                        The PyConES 2015 held in the School of Computing (ETSINF) of the \n"
+"                        Polytechnic University of Valencia, at the Campus de "
+"Vera,\n"
+"                       <strong> from 20 to 22 November 2015 </strong>. "
+"It is accessed by the Avenida de los\n"
+"                        Naranjos (Avinguda bear Taronjers) and the door "
+"is recommended to access is door P.\n"
+"                        From there you can access the building where "
+"the conference is done, that are labeled\n"
+"                        as <strong> 1G </strong> (ETSINF) and "
+"<strong> 1F </strong> (DSIIC).\n"
+"                        Keynotes will be in the Paraninfo "
+"(<strong>3A</strong>).\n"
+"                    "
 
-#: templates/pages/info.html:19
-msgid "¿Dónde?"
-msgstr "Where?"
+#: templates/pages/info.html:35
+msgid ""
+"Los talleres del viernes serán en el edificio DSIIC, frente a la ETSINF."
+msgstr "The Friday's workshops will be on DSIC building opposite the ETSINF"
 
-#: templates/pages/info.html:20
+#: templates/pages/info.html:36
+msgid ""
+"Las aulas para las charlas del sábado y domingo se encuentran en la planta "
+"baja de la ETSINF."
+msgstr "The classrooms for talks Saturday and Sunday are in the ground floor of the ETSINF."
+
+#: templates/pages/info.html:37
+msgid ""
+"Las charlas plenarias, apertura y cierre del congreso serán en el Paraninfo "
+"(Edificio 3A)."
+msgstr "The keynotes opening and closing of the congress will be held in the Auditorium (Building 3A)."
+
+#: templates/pages/info.html:38
+msgid ""
+"El cátering para las comidas será en la Cafetería La Vella. Los cafés en la "
+"planta baja de la ETSINF."
+msgstr "The catering for meals will be in the Cafeteria La Vella. The cafes on the ground floor of the ETSINF."
+
+#: templates/pages/info.html:54 templates/schedule/show.html:27
+msgid "Talleres"
+msgstr "Workshops"
+
+#: templates/pages/info.html:73
+msgid "Cómo llegar"
+msgstr "How to arrive"
+
+#: templates/pages/info.html:74
+msgid ""
+"El campus de Vera está situado al norte de la ciudad de Valencia en un "
+"entorno tranquilo que limita con la huerta."
+msgstr "The Vera campus is located north of the city of Valencia in a quiet environment that borders the vegetable garden."
+
+#: templates/pages/info.html:75
+msgid ""
+"Puedes llegar además de utilizando el coche y andando en trasporte público:"
+msgstr "You can arrive in addition to using the car and walking, by using public transport:"
+
+#: templates/pages/info.html:77 templates/pages/info.html.py:80
+msgid "líneas"
+msgstr "lines"
+
+#: templates/pages/info.html:80
+msgid "Parada"
+msgstr "Stop"
+
+#: templates/pages/info.html:84
+msgid "Dirección"
+msgstr "Address"
+
+#: templates/pages/info.html:85
 msgid "Escuela Técnica Superior de Ingeniería Informática"
 msgstr ""
 
-#: templates/pages/info.html:21
+#: templates/pages/info.html:86
 msgid "Universidad Politécnica de Valencia"
 msgstr ""
 
-#: templates/pages/info.html:26
+#: templates/pages/info.html:94
 #, python-format
 msgid "30 %% descuento RENFE"
 msgstr "30 %% RENFE discount"
 
-#: templates/pages/info.html:35
+#: templates/pages/info.html:100
 msgid "¡Comparte coche!"
 msgstr "Find a ride!"
 
-#: templates/pages/info.html:40
+#: templates/pages/info.html:105
 msgid "Comparte coche a Valencia"
 msgstr "Find a ride to Valencia"
 
-#: templates/pages/info.html:49
+#: templates/pages/info.html:116
 msgid ""
 "\n"
-"                            PyConES aspira a crear un ambiente libre de "
-"acosos o discriminaciones por razón de género, orientación sexual, "
-"discapacidad, aspecto físico, etnia o religión. No se tolerará "
-"discriminación alguna bajo ninguna circunstancia.\n"
-"                            "
+"                        PyConES aspira a crear un ambiente libre de acosos o "
+"discriminaciones por razón de género, orientación sexual, discapacidad, "
+"aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo "
+"ninguna circunstancia.\n"
+"                    "
 msgstr ""
 "\n"
 "PyConES is dedicated to providing a harassment-free conference experience "
@@ -850,57 +931,56 @@ msgstr ""
 "appearance, body size, race, or religion. We do not tolerate harassment of "
 "conference participants in any form."
 
-#: templates/pages/info.html:54
+#: templates/pages/info.html:121
 msgid ""
 "\n"
-"                            Todo el contenido de la conferencia deberá "
-"ajustarse a una audiencia profesional integrada por personas procedentes de "
-"sectores diferentes. Tanto el lenguaje como las imágenes sexualmente "
-"explícitos son inapropiados en la conferencia y en las charlas.\n"
-"                            "
+"                        Todo el contenido de la conferencia deberá ajustarse "
+"a una audiencia profesional integrada por personas procedentes de sectores "
+"diferentes. Tanto el lenguaje como las imágenes sexualmente explícitos son "
+"inapropiados en la conferencia y en las charlas.\n"
+"                    "
 msgstr ""
 "\n"
 "All communication should be appropriate for a professional audience "
 "including people of many different backgrounds. Sexual language and imagery "
 "is not appropriate for any conference venue, including talks."
 
-#: templates/pages/info.html:59
+#: templates/pages/info.html:126
 msgid ""
 "\n"
-"                            Sé amable con los demás. No insultes o humilles "
-"a otros asistentes. Compórtate de manera profesional. Recuerda que las "
-"bromas sexistas, racistas o discriminatorias están prohibidas en la "
-"PyConES.\n"
-"                            "
+"                        Sé amable con los demás. No insultes o humilles a "
+"otros asistentes. Compórtate de manera profesional. Recuerda que las bromas "
+"sexistas, racistas o discriminatorias están prohibidas en la PyConES.\n"
+"                    "
 msgstr ""
 "\n"
 "Be kind to others. Do not insult or put down other attendees. Behave "
 "professionally. Remember that harassment and sexist, racist, or exclusionary "
 "jokes are not appropriate for PyCon."
 
-#: templates/pages/info.html:64
+#: templates/pages/info.html:131
 msgid ""
 "\n"
-"                            Los asistentes que incumplan estas reglas podrán "
-"-a discreción de los organizadores- ser sancionados o expulsados de la "
+"                        Los asistentes que incumplan estas reglas podrán -a "
+"discreción de los organizadores- ser sancionados o expulsados de la "
 "conferencia sin derecho a reembolso.\n"
-"                            "
+"                    "
 msgstr ""
 "\n"
 "Attendees violating these rules may be asked to leave the conference without "
 "a refund at the sole discretion of the conference organizers."
 
-#: templates/pages/info.html:69
+#: templates/pages/info.html:136
 msgid ""
 "\n"
-"                            Gracias por ayudarnos a hacer este evento "
-"amistoso y abierto para todos.\n"
-"                            "
+"                        Gracias por ayudarnos a hacer este evento amistoso y "
+"abierto para todos.\n"
+"                    "
 msgstr ""
 "\n"
 "Thank you for helping make this a welcoming, friendly event for all."
 
-#: templates/pages/info.html:73
+#: templates/pages/info.html:140
 msgid "Codigo de Conducta Completo"
 msgstr "Complete Code of Conduct"
 
@@ -1030,9 +1110,14 @@ msgstr "Advanced Track"
 msgid "Track BigML (científico)"
 msgstr "BigML track (scientific)"
 
-#: templates/schedule/show.html:27
-msgid "Talleres"
-msgstr "Workshops"
+#~ msgid "¿Cuándo?"
+#~ msgstr "When?"
+
+#~ msgid "Valencia, del 20 al 22 de noviembre de 2015"
+#~ msgstr "Valencia, from November 20th to 22nd 2015"
+
+#~ msgid "¿Dónde?"
+#~ msgstr "Where?"
 
 #~ msgid "Nombre"
 #~ msgstr "Name"
