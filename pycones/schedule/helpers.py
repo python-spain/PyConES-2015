@@ -47,6 +47,30 @@ def export_to_pentabarf(schedule):
 
         # Slots
         for slot in day.slot_set.order_by("start"):
+            if slot.kind.plenary:
+                room_element = rooms[slot.default_room.pk]
+                event_element = ElementTree.SubElement(room_element, 'event', attrib={"id": str(slot.pk)})
+                date_element = ElementTree.SubElement(event_element, "date")
+                date_element.text = datetime.datetime(
+                    day=slot.day.date.day,
+                    month=slot.day.date.month,
+                    year=slot.day.date.year,
+                    hour=slot.start.hour,
+                    minute=slot.start.minute,
+                ).strftime("%Y-%m-%dT%H:%M:%S+0100")
+                start_element = ElementTree.SubElement(event_element, "start")
+                start_element.text = slot.start.strftime("%H:%M")
+                duration_element = ElementTree.SubElement(event_element, "duration")
+                duration = datetime.datetime.combine(datetime.date.today(), slot.end) - \
+                    datetime.datetime.combine(datetime.date.today(), slot.start)
+                duration_element.text = "{:02}:{:02}".format(
+                    math.floor(duration.seconds/60/60),
+                    math.floor((duration.seconds/60) % 60)
+                )
+                room_name_element = ElementTree.SubElement(event_element, "room")
+                room_name_element.text = slot.default_room.name
+                title_element = ElementTree.SubElement(event_element, "title")
+                title_element.text = slot.content_override.raw
             if slot.content is not None and slot.default_room is not None:
                 room_element = rooms[slot.default_room.pk]
                 event_element = ElementTree.SubElement(room_element, 'event', attrib={"id": str(slot.pk)})
