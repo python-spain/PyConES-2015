@@ -130,16 +130,20 @@ class AttendeeForm(forms.ModelForm):
         exclude = ("user", "barcode", "tracker", "restore_code", "notes")
         widgets = {
             "name": forms.TextInput(attrs={
-                "class": "form-control"
+                "class": "form-control",
+                "readonly": "readonly"
             }),
             "email": forms.EmailInput(attrs={
-                "class": "form-control"
+                "class": "form-control",
+                "readonly": "readonly"
             }),
             "dni": forms.TextInput(attrs={
-                "class": "form-control"
+                "class": "form-control",
+                "readonly": "readonly"
             }),
             "allergies": forms.Textarea(attrs={
-                "class": "form-control"
+                "class": "form-control",
+                "readonly": "readonly"
             }),
         }
 
