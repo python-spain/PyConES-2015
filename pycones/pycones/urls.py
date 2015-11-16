@@ -21,6 +21,9 @@ urlpatterns = i18n_patterns(
 )
 
 urlpatterns += [
+    url(r'schedule/pentabarf\.xml', "schedule.views.pentabarf_view", name="schedule_pentabarf"),
+    url(r'schedule/xcal\.xml', "schedule.views.xcal_view", name="schedule_xcal"),
+    url(r'schedule\.ics', "schedule.views.icalendar_view", name="schedule_icalendar"),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', include(admin.site.urls)),
 ]
