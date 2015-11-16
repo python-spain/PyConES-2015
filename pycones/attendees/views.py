@@ -4,6 +4,7 @@ from braces.views import LoginRequiredMixin
 
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
+from django.core.urlresolvers import reverse
 from django.http import Http404
 from django.shortcuts import render, redirect
 from django.views.generic import View
@@ -32,19 +33,20 @@ class EditAttendanceView(LoginRequiredMixin, View):
     @staticmethod
     def post(request):
         """Register an attendee."""
-        try:
-            attendee = Attendee.objects.get(user=request.user)
-        except Attendee.DoesNotExist:
-            raise Http404
-        form = AttendeeForm(request.POST, instance=attendee)
-        if form.is_valid():
-            form.save()
-            messages.success(request, _("Datos guardados correctamente"))
-        data = {
-            "attendee": attendee,
-            "form": form
-        }
-        return render(request, "attendees/profile.html", data)
+        # try:
+        #     attendee = Attendee.objects.get(user=request.user)
+        # except Attendee.DoesNotExist:
+        #     raise Http404
+        # form = AttendeeForm(request.POST, instance=attendee)
+        # if form.is_valid():
+        #     form.save()
+        #     messages.success(request, _("Datos guardados correctamente"))
+        # data = {
+        #     "attendee": attendee,
+        #     "form": form
+        # }
+        # return render(request, "attendees/profile.html", data)
+        return redirect(reverse("attendees:profile"))
 
 
 class RestorePasswordView(View):

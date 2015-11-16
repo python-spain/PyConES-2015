@@ -17,7 +17,7 @@
 
             <p>{% trans "Este año el acceso a WiFi durante el evento será personal para cada asistente, y para ello necesitamos que nos indiques el DNI. Los credenciales de acceso a la red se darán junto al welcome pack a aquellos que hayan completado sus datos." %}</p>
 
-            <form method="post" class="form-horizontal" style="margin-top: 50px">
+            <form class="form-horizontal" style="margin-top: 50px">
                 {% csrf_token %}
                 {% for field in form %}
                     <div class="form-group {% if field.errors %}has-error{% endif %}">
@@ -39,11 +39,11 @@
                         {% endif %}
                     </div>
                 {% endfor %}
-                <div class="form-group">
-                    <div class="col-sm-offset-4 col-sm-8">
-                        <button type="submit" class="btn btn-primary">{% trans "Guardar" %}</button>
-                    </div>
-                </div>
+{#                <div class="form-group">#}
+{#                    <div class="col-sm-offset-4 col-sm-8">#}
+{#                        <button type="submit" class="btn btn-primary">{% trans "Guardar" %}</button>#}
+{#                    </div>#}
+{#                </div>#}
             </form>
 
         </div>
