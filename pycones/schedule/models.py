@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import datetime
-from django.core.exceptions import ObjectDoesNotExist
 
+import datetime
+
+from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
 from django.db.models import SET_NULL
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.translation import ugettext_lazy as _
 from markupfield.fields import MarkupField
+
 from proposals.models import ProposalBase
 
 
@@ -171,6 +174,11 @@ class Presentation(models.Model):
     proposal_base = models.OneToOneField("proposals.ProposalBase", related_name="presentation")
     section = models.ForeignKey("conference.Section", related_name="presentations")
 
+    video_url = models.URLField(_("video URL"), blank=True, null=True)
+
+    keynote_url = models.URLField(_("keynote URL"), blank=True, null=True)
+    keynote = models.FileField(_("keynote file"), blank=True, null=True, upload_to="keynotes")
+
     @property
     def number(self):
         return self.proposal.number
@@ -201,6 +209,18 @@ class Presentation(models.Model):
         if self.abstract.raw:
             return self.abstract
         return self.proposal_base.abstract
+
+    def get_video_url(self):
+        if not self.video_url:
+            return ""
+        return self.video_url
+
+    def get_keynote_url(self):
+        if self.keynote and not self.keynote_url:
+            return self.keynote.url
+        elif self.keynote_url:
+            return self.keynote_url
+        return ""
 
     def __str__(self):
         return "#%s %s (%s)" % (self.number, self.get_title(), self.speaker)

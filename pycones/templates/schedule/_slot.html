@@ -1,3 +1,4 @@
+{% load i18n %}
 <div class="row">
     <div class="col-xs-12">
         <div class="slot-inner" data-slot="{{ slot.id }}">
@@ -21,4 +22,17 @@
     <div class="col-xs-12">
         <p>{{ slot.content.get_description|linebreaksbr }}</p>
     </div>
+    {% if slot.content and (slot.content.get_video_url or slot.content.get_keynote_url) %}
+    <div class="col-xs-12">
+        <h4>{% trans "Contenido" %}</h4>
+        <ul class="list-unstyled">
+            {% if slot.content.get_keynote_url %}
+            <li><a href="{{ slot.content.get_keynote_url }}">{{ slot.content.get_keynote_url }}</a></li>
+            {% endif %}
+            {% if slot.content.get_video_url %}
+            <li><a href="{{ slot.content.get_video_url }}">{{ slot.content.get_video_url }}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
 </div>
