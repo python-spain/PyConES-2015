@@ -1110,6 +1110,12 @@ msgstr "Advanced Track"
 msgid "Track BigML (científico)"
 msgstr "BigML track (scientific)"
 
+msgid "Descargar presentación"
+msgstr "Download keynote"
+
+msgid "Ver vídeo"
+msgstr "See video"
+
 #~ msgid "¿Cuándo?"
 #~ msgstr "When?"
 
