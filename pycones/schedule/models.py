@@ -77,6 +77,11 @@ class Slot(models.Model):
     content_override = MarkupField(blank=True, default_markup_type='markdown')
     default_room = models.ForeignKey(Room, null=True, blank=True)
 
+    video_url = models.URLField(_("video URL"), blank=True, null=True)
+
+    keynote_url = models.URLField(_("keynote URL"), blank=True, null=True)
+    keynote = models.FileField(_("keynote file"), blank=True, null=True, upload_to="keynotes")
+
     def assign(self, content):
         """
         Assign the given content to this slot and if a previous slot content
@@ -105,6 +110,24 @@ class Slot(models.Model):
             return self.content_ptr
         except ObjectDoesNotExist:
             return None
+
+    def get_video_url(self):
+        if self.video_url:
+            return self.video_url
+        if not self.content_ptr.video_url:
+            return ""
+        return self.content_ptr.video_url
+
+    def get_keynote_url(self):
+        if self.keynote and not self.keynote_url:
+            return self.keynote
+        elif self.keynote_url:
+            return self.keynote_url
+        if self.content_ptr.keynote and not self.content_ptr.keynote_url:
+            return self.content_ptr.keynote.url
+        elif self.content_ptr.keynote_url:
+            return self.content_ptr.keynote_url
+        return ""
 
     @property
     def start_datetime(self):
